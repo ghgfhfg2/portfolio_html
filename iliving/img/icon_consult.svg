@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18.696" viewBox="0 0 20 18.696">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#777}
+        </style>
+    </defs>
+    <g id="prefix__icon_consult" transform="translate(-1 .695)">
+        <path id="prefix__패스_2165" d="M554 315.478c0-4.675-4.486-8.478-10-8.478s-10 3.8-10 8.478 4.486 8.478 10 8.478a11.624 11.624 0 0 0 2.805-.344l3.744 1.983a.87.87 0 0 0 1.276-.806l-.167-3.867a7.722 7.722 0 0 0 2.342-5.444zm-3.817 4.451a.87.87 0 0 0-.279.676l.118 2.743-2.7-1.431a.87.87 0 0 0-.407-.1.881.881 0 0 0-.235.032 9.9 9.9 0 0 1-2.677.37c-4.555 0-8.261-3.023-8.261-6.739s3.706-6.739 8.261-6.739 8.261 3.023 8.261 6.739a6.076 6.076 0 0 1-2.081 4.449z" class="prefix__cls-1" data-name="패스 2165" transform="translate(-533 -307.695)"/>
+        <circle id="prefix__타원_262" cx="1.304" cy="1.304" r="1.304" class="prefix__cls-1" data-name="타원 262" transform="translate(5.348 6.261)"/>
+        <circle id="prefix__타원_263" cx="1.304" cy="1.304" r="1.304" class="prefix__cls-1" data-name="타원 263" transform="translate(9.696 6.261)"/>
+        <circle id="prefix__타원_264" cx="1.304" cy="1.304" r="1.304" class="prefix__cls-1" data-name="타원 264" transform="translate(14.043 6.261)"/>
+    </g>
+</svg>

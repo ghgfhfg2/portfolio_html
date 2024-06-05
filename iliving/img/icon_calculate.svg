@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18.261" height="20" viewBox="0 0 18.261 20">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#777}
+        </style>
+    </defs>
+    <g id="prefix__icon_calculate" transform="translate(-434 -306)">
+        <path id="prefix__패스_2160" d="M452.261 306.87a.87.87 0 0 0-.87-.87H434.87a.87.87 0 0 0-.87.87v18.26a.87.87 0 0 0 .87.87h16.522a.87.87 0 0 0 .87-.87.781.781 0 0 1 0-.435zm-16.522.87h14.783v16.522h-14.783z" class="prefix__cls-1" data-name="패스 2160"/>
+        <path id="prefix__패스_2161" d="M445.87 329.448a.87.87 0 0 0 .87-.87v-1.762a.87.87 0 0 0-1.739 0v1.762a.87.87 0 0 0 .869.87z" class="prefix__cls-1" data-name="패스 2161" transform="translate(-6.217 -11.274)"/>
+        <path id="prefix__패스_2162" d="M453.87 326.414a.87.87 0 0 0 .87-.87v-4.1a.87.87 0 0 0-1.739 0v4.1a.87.87 0 0 0 .869.87z" class="prefix__cls-1" data-name="패스 2162" transform="translate(-10.739 -8.24)"/>
+        <path id="prefix__패스_2163" d="M461.87 324.391a.87.87 0 0 0 .87-.87v-5.651a.87.87 0 1 0-1.739 0v5.652a.87.87 0 0 0 .869.869z" class="prefix__cls-1" data-name="패스 2163" transform="translate(-15.261 -6.217)"/>
+        <path id="prefix__패스_2164" d="M453.13 336h-8.26a.87.87 0 0 0 0 1.739h8.261a.87.87 0 0 0 0-1.739z" class="prefix__cls-1" data-name="패스 2164" transform="translate(-5.652 -16.957)"/>
+    </g>
+</svg>

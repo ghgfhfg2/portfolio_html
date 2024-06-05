@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19.212" viewBox="0 0 20 19.212">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#777}
+        </style>
+    </defs>
+    <g id="prefix__icon_home" transform="translate(-334.113 -306)">
+        <path id="prefix__패스_2158" d="M353.869 315.386l-9.141-9.141a.835.835 0 0 0-.591-.245h-.047a.836.836 0 0 0-.591.245l-9.141 9.141a.835.835 0 1 0 1.181 1.181l8.574-8.574 8.574 8.574a.835.835 0 0 0 1.181-1.181z" class="prefix__cls-1" data-name="패스 2158"/>
+        <path id="prefix__패스_2159" d="M354.365 321a.836.836 0 0 0-.835.835v10.441h-10.859v-10.441a.835.835 0 1 0-1.671 0v11.277a.836.836 0 0 0 .835.835h12.53a.836.836 0 0 0 .835-.835v-11.277a.836.836 0 0 0-.835-.835z" class="prefix__cls-1" data-name="패스 2159" transform="translate(-4.01 -8.735)"/>
+    </g>
+</svg>

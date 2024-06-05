@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__icon_recent" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#333}
+        </style>
+    </defs>
+    <path id="prefix__패스_2207" d="M820.7 202.823a12 12 0 1 0 12 12 12 12 0 0 0-12-12zm0 22a10 10 0 1 1 10-10 10.011 10.011 0 0 1-10 10z" class="prefix__cls-1" data-name="패스 2207" transform="translate(-808.695 -202.823)"/>
+    <path id="prefix__패스_2208" d="M825.748 213.823H821.7v-4.49a1 1 0 0 0-2 0v5.49a1 1 0 0 0 1 1h5.053a1 1 0 0 0 0-2z" class="prefix__cls-1" data-name="패스 2208" transform="translate(-808.695 -202.823)"/>
+</svg>

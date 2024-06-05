@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37.811" height="37.811" viewBox="0 0 37.811 37.811">
+    <defs>
+        <style>
+            .prefix__cls-3{fill:none;stroke-linecap:round;stroke-width:1.5px;stroke-linejoin:round;stroke:#303030}
+        </style>
+    </defs>
+    <g id="prefix__icon_main02" transform="translate(.75 .75)">
+        <path id="prefix__선_40" d="M0 0L5.429 5.429" data-name="선 40" transform="translate(30.571 30.571)" style="stroke-linejoin:round;stroke-linecap:round;stroke-width:1.5px;stroke:#05c4c4;fill:none"/>
+        <path id="prefix__패스_2272" d="M2.243 0h27.071a2.243 2.243 0 0 1 2.243 2.243v27.071a2.243 2.243 0 0 1-2.243 2.243H2.243A2.243 2.243 0 0 1 0 29.314V2.243A2.243 2.243 0 0 1 2.243 0z" data-name="패스 2272" style="stroke:#303030;stroke-linecap:round;stroke-width:1.5px;fill:none"/>
+        <path id="prefix__선_41" d="M0 0L18 0" class="prefix__cls-3" data-name="선 41" transform="translate(7.218 8.901)"/>
+        <path id="prefix__선_42" d="M0 0L18 0" class="prefix__cls-3" data-name="선 42" transform="translate(7.218 16.023)"/>
+        <path id="prefix__선_43" d="M0 0L18 0" class="prefix__cls-3" data-name="선 43" transform="translate(7.218 23.144)"/>
+        <g id="prefix__그룹_276" data-name="그룹 276" transform="translate(18.557 18.557)">
+            <g id="prefix__타원_277" data-name="타원 277" style="fill:#fff;stroke-linejoin:round;stroke-linecap:round;stroke-width:1.5px;stroke:#05c4c4">
+                <circle cx="8.2" cy="8.2" r="8.2" style="stroke:none"/>
+                <circle cx="8.2" cy="8.2" r="7.45" style="fill:none"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__icon_main04" width="36.802" height="36.815" viewBox="0 0 36.802 36.815">
+    <defs>
+        <style>
+            .prefix__cls-1,.prefix__cls-2{fill:#fff}.prefix__cls-1,.prefix__cls-2,.prefix__cls-3{stroke-linecap:round;stroke-linejoin:round}.prefix__cls-2,.prefix__cls-3{stroke:#303030;stroke-width:1.5px}.prefix__cls-3,.prefix__cls-7{fill:none}.prefix__cls-3{fill-rule:evenodd}.prefix__cls-5,.prefix__cls-6{stroke:none}.prefix__cls-6{fill:#303030}
+        </style>
+    </defs>
+    <g id="prefix__그룹_285" data-name="그룹 285" transform="translate(11.424)">
+        <g id="prefix__패스_2181" class="prefix__cls-1" data-name="패스 2181">
+            <path d="M164.503 572.878c-2.96 0-5.82-.467-7.848-1.282-1.47-.591-3.224-1.646-3.224-3.313 0-6.704 4.967-12.157 11.072-12.157 6.106 0 11.073 5.453 11.073 12.157 0 1.667-1.753 2.722-3.224 3.313-2.028.815-4.888 1.282-7.849 1.282z" class="prefix__cls-5" transform="translate(-152.681 -543.321)"/>
+            <path d="M164.503 572.128c2.868 0 5.627-.448 7.569-1.228.943-.38 1.69-.836 2.16-1.322.532-.55.594-1.003.594-1.295 0-6.29-4.63-11.407-10.323-11.407-5.691 0-10.322 5.117-10.322 11.407 0 .292.062.745.594 1.295.47.486 1.217.943 2.16 1.322 1.942.78 4.7 1.228 7.568 1.228m0 1.5c-5.91 0-11.822-1.782-11.822-5.345 0-7.129 5.293-12.907 11.822-12.907 6.53 0 11.823 5.778 11.823 12.907 0 3.563-5.911 5.345-11.823 5.345z" class="prefix__cls-6" transform="translate(-152.681 -543.321)"/>
+        </g>
+        <g id="prefix__타원_279" class="prefix__cls-2" data-name="타원 279" transform="translate(3.964)">
+            <ellipse cx="7.858" cy="8.071" class="prefix__cls-5" rx="7.858" ry="8.071"/>
+            <ellipse cx="7.858" cy="8.071" class="prefix__cls-7" rx="7.108" ry="7.321"/>
+        </g>
+        <path id="prefix__패스_2182" d="M163.647 552.069a2.677 2.677 0 0 0 2.662 1.716 3 3 0 0 0 2.661-1.716" class="prefix__cls-3" data-name="패스 2182" transform="translate(-154.452 -542.787)"/>
+    </g>
+    <g id="prefix__그룹_286" data-name="그룹 286">
+        <g id="prefix__패스_2184" class="prefix__cls-1" data-name="패스 2184">
+            <path d="M150.88 574.435c-2.953 0-5.807-.506-7.829-1.388-1.48-.645-3.244-1.805-3.244-3.663 0-7.31 4.967-13.258 11.072-13.258 6.106 0 11.073 5.947 11.073 13.258 0 1.858-1.764 3.018-3.245 3.663-2.021.882-4.875 1.388-7.828 1.388z" class="prefix__cls-5" transform="translate(-139.057 -543.321)"/>
+            <path d="M150.88 573.685c2.853 0 5.597-.483 7.528-1.325 1.274-.556 2.794-1.524 2.794-2.976 0-6.897-4.63-12.508-10.323-12.508-5.691 0-10.322 5.61-10.322 12.508 0 1.452 1.52 2.42 2.794 2.976 1.931.842 4.675 1.325 7.528 1.325m0 1.5c-5.91 0-11.822-1.934-11.822-5.801 0-7.737 5.293-14.008 11.822-14.008 6.53 0 11.823 6.271 11.823 14.008 0 3.867-5.911 5.801-11.823 5.801z" class="prefix__cls-6" transform="translate(-139.057 -543.321)"/>
+        </g>
+        <g id="prefix__타원_280" class="prefix__cls-2" data-name="타원 280" transform="translate(3.964)">
+            <ellipse cx="7.858" cy="8.071" class="prefix__cls-5" rx="7.858" ry="8.071"/>
+            <ellipse cx="7.858" cy="8.071" class="prefix__cls-7" rx="7.108" ry="7.321"/>
+        </g>
+        <path id="prefix__패스_2185" d="M150.024 552.069a2.675 2.675 0 0 0 2.661 1.716 3 3 0 0 0 2.661-1.716" class="prefix__cls-3" data-name="패스 2185" transform="translate(-140.828 -542.787)"/>
+        <path id="prefix__패스_2186" d="M155.849 558.3l-3.289 4.253-3.318-4.253" class="prefix__cls-3" data-name="패스 2186" transform="translate(-140.702 -543.793)"/>
+    </g>
+    <path id="prefix__패스_2187" d="M175.415 568.019a4.147 4.147 0 0 0-.763 0 3.944 3.944 0 0 0-3.579 4.01 3.944 3.944 0 0 0-3.579-4.01 4.05 4.05 0 0 0-.747 0 3.926 3.926 0 0 0-3.116 2.081c-1.81 3.58 2.279 7.929 6.785 11.081a1.151 1.151 0 0 0 1.313 0c4.5-3.145 8.579-7.484 6.8-11.058a3.929 3.929 0 0 0-3.114-2.104z" data-name="패스 2187" transform="translate(-142.954 -545.36)" style="stroke:#05c4c4;stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:round;fill:#fff"/>
+</svg>

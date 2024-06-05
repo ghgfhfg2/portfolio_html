@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>나도영업왕</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link href="./css/m/base.css" rel="stylesheet" type="text/css">
+    <link href="./css/m/board.css" rel="stylesheet" type="text/css">
+    <link href="./css/m/common.css" rel="stylesheet" type="text/css">
+    <link href="./css/m/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/m/layout.css" rel="stylesheet" type="text/css">
+    <link href="./css/m/content.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="./js/swiper_4.5.0.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>    
+</head>
+<body>
+    <div id="wrapper">
+        <!-- 전체메뉴 -->
+        <aside class="total_menu_box">
+            <div class="top_box content_box">
+                <h2>전체메뉴</h2>
+                <button type="button" class="btn_close" onclick="comClickRemoveOn('.total_menu_box');comClickRemoveOn2('body','fix');"></button>
+            </div>            
+            <a href="#" class="profile">
+                <img src="./img/img_profile.svg" class="profile_img">
+                김대현 님
+            </a>    
+            <div class="top_menu">
+                <a href="#"><i class="ic01"></i>최근 본 상품</a>
+                <a href="#"><i class="ic02"></i>나의주력상품</a>
+                <a href="#"><i class="ic03"><span class="num">3</span></i>상품바구니</a>
+                <a href="#"><i class="ic04"><span class="num">3</span></i>상담관리</a>
+            </div>
+            <ul class="lnb">                
+                <li><a href="#" class="guide"><span>필독</span>아이리빙영업왕 앱사용가이드</a></li>
+                <li><a href="#">접수임시저장함</a></li>
+                <li><a href="#">접수현황</a></li>
+                <li><a href="#">정책확인</a></li>
+                <li><a href="#">비교상담</a></li>
+                <li><a href="#">정산관리</a></li>
+                <li><a href="#">고객관리</a></li>
+                <li><a href="#">브랜드별가입조건</a></li>
+            </ul>
+            <ul class="bot_menu">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">이용문의</a></li>
+                <li><a href="#">홈페이지분양신청</a></li>
+                <li><a href="#">로그아웃</a></li>
+            </ul>
+            <div class="version_box content_box">
+                <span>버전정보</span>
+                <span>v1.0</span>
+            </div>
+            <div class="copyright">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+                <p>
+                    문의전화 : 1566-9543
+                </p>
+                <p>
+                    copyright (주)아이리빙 All Right Reserved.
+                </p>
+            </div>
+        </aside>
+        <!-- //전체메뉴 -->
+        <div id="pop_bg_box"></div>
+        <!-- 상단영역 -->
+        <header id="header">
+            <div class="head_box content_box">
+                <div class="left_box com_flex_box align_center">
+                    <button type="button" class="btn_move_back"></button>
+                    <h1>상품검색</h1>
+                </div>
+                <div class="right_box">
+                    <a href="#" class="btn_head_home"></a>
+                    <a href="#" class="btn_head_search"></a>
+                    <a href="#" class="btn_head_cart"></a>
+                </div>
+            </div>
+        </header>
+        <!-- //상단영역 -->
+        <!-- 컨텐츠 영역 -->
+        <div id="container">
+            <!-- 컨텐츠 입력 -->                       
+            <div class="swiper-container shop_detail_slide">
+                <ul class="swiper-wrapper">                    
+                    <li class="swiper-slide">
+                        <img src="./img/prod_sample.jpg" alt="">
+                    </li>   
+                    <li class="swiper-slide">
+                        <img src="./img/prod_sample.jpg" alt="">
+                    </li>                  
+                </ul>  
+                <div class="page_box">                    
+                </div>  
+            </div>     
+            <script>
+                new Swiper('.shop_detail_slide', {  
+                        slidesPerView: 1,
+                        spaceBetween:10,
+                        loop:true,      
+                        pagination: {
+                            el:'.shop_detail_slide .page_box',
+                            clickable: true,
+                        },                  
+                        a11y: false
+                    });
+            </script>
+            <div class="detail_prod_info mt20">
+                <div class="content_box">
+                    <h2 class="fon_16">삼성 2020 NEW 더세로 QLED TV 43인치</h2>
+                    <p class="detail_prod_option mt5">삼성 2020 NEW 더세로 QLED TV 43인치</p>
+                </div>
+                <div class="detail_price_box">
+                    <dl>
+                        <dt>렌탈료</dt>
+                        <dd>29,900원</dd>
+                    </dl>
+                    <dl class="fon_16 col_oran">
+                        <dt>제휴카드할인</dt>
+                        <dd>-10,000원</dd>
+                    </dl>
+                    <dl class="fon_18 col_blue2 fon_bold">
+                        <dt>총렌탈료</dt>
+                        <dd>월 19,900원</dd>
+                    </dl>
+                    <div class="txt_right mt10">
+                        <button type="button" class="btn_basic" onclick="comClickAddOn2('#policy_confirm,#pop_bg_box','on')">정책확인</button>
+                    </div>
+                </div>
+            </div>
+            <div class="detail_prod_info2 content_box">
+                <dl>
+                    <dt>의무약정</dt>
+                    <dd class="com_flex_box radio_box">
+                        <input type="radio" name="yakjeong" id="yaer_3" class="custom_radio" checked>
+                        <label for="yaer_3" style="margin-right: 7px;">3년</label>
+                        <input type="radio" name="yakjeong" id="yaer_4" class="custom_radio">
+                        <label for="yaer_4" style="margin-right: 7px;">4년</label>
+                        <input type="radio" name="yakjeong" id="yaer_5" class="custom_radio">
+                        <label for="yaer_5">5년</label>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>카드할인</dt>
+                    <dd>
+                        <div class="select_ul_box mb10">
+                            <button type="button" class="select_txt" id="btn_select">제휴카드선택</button>
+                            <ul class="select_list" id="select_card">
+                                <li>카드선택1</li>
+                                <li>카드선택2</li>
+                                <li>카드선택2</li>
+                            </ul>
+                        </div>
+                        <div class="select_ul_box mb10">
+                            <button type="button" class="select_txt" id="btn_select2">예상 전월실적 선택</button>
+                            <ul class="select_list" id="select_result">
+                                <li>실적선택1</li>
+                                <li>실적선택2</li>
+                                <li>실적선택3</li>
+                            </ul>
+                        </div>
+                        <script>
+                            selextUl('#btn_select','#select_card');
+                            selextUl('#btn_select2','#select_result');
+                        </script>
+                    </dd>
+                </dl>
+            </div>
+            <div class="detail_prod_info3 mt20 pb20 content_box">
+                <dl>
+                    <dt>색상</dt>
+                    <dd>네이비</dd>
+                </dl>
+                <dl>
+                    <dt>브랜드</dt>
+                    <dd>LG헬로비전</dd>
+                </dl>
+                <dl>
+                    <dt>제조사</dt>
+                    <dd>삼성전자</dd>
+                </dl>
+                <dl>
+                    <dt>관리주기</dt>
+                    <dd>-</dd>
+                </dl>
+                <dl>
+                    <dt>소유권이전시기</dt>
+                    <dd>3년</dd>
+                </dl>
+            </div>
+            <!-- 제품상세정보 -->
+            <ul class="tab_box_type_1_1 com_tab_list">
+                <li><a href="#" class="on">제품상세</a></li>
+                <li><a href="#">스펙</a></li>
+                <li><a href="#">제휴카드</a></li>
+            </ul>
+            <div class="com_tab_con_box">
+                <div class="com_tab_con">
+                    <img src="./img/img_detail_sample.jpg" alt="">
+                </div>
+                <div class="com_tab_con">
+                    스펙내용
+                </div>
+                <div class="com_tab_con">
+                    제휴카드내용
+                </div>
+            </div>
+            <!-- //제품상세정보 -->
+            <!-- 상세페이지 하단고정메뉴 -->
+            <div class="detail_foot_menu">
+                <div class="left_box">
+                    <button type="button" class="btn_share"></button>
+                    <button type="button" class="btn_like"></button>
+                </div>
+                <button type="button" class="btn_accept" onclick="comClickAddOn2('.detail_accept_box_bg, .detail_accept_box', 'on');">접수하기</button>
+            </div>      
+            <div class="detail_accept_box_bg" onclick="comClickRemoveOn2('.detail_accept_box_bg, .detail_accept_box', 'on')"></div>
+            <div class="detail_accept_box">
+                <div class="content_box">
+                    <div class="txt_box">
+                        <p class="subject">삼성 2020 NEW 더세로 QLED TV 43인치
+                            Q43LST05AFXKR</p>
+                        <dl>
+                            <dt>의무약정</dt>
+                            <dd>36개월</dd>
+                        </dl>
+                        <dl>
+                            <dt>소유권이전시기</dt>
+                            <dd>5년</dd>
+                        </dl>
+                        <dl>
+                            <dt>제휴카드</dt>
+                            <dd>현대큐밍 하나카드</dd>
+                        </dl>
+                        <dl>
+                            <dt>예상전월실적</dt>
+                            <dd>30만원</dd>
+                        </dl>
+                    </div>
+                    <div class="price_box">
+                        <dl>
+                            <dt>렌탈료</dt>
+                            <dd>29,900원</dd>
+                        </dl>
+                        <dl class="fon_bold">
+                            <dt>제휴카드할인</dt>
+                            <dd>-10,000원</dd>
+                        </dl>
+                        <dl class="fon_18 col_blue2 fon_bold">
+                            <dt>총렌탈료</dt>
+                            <dd>월 19,900원</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="btn_box">
+                    <button type="button" class="btn_1">상품바구니담기</button>
+                    <button type="button" class="btn_2">접수하기</button>
+                </div>
+            </div>            
+            <!-- //상세페이지 하단고정메뉴 -->
+            <!-- 정책확인 팝업 -->   
+            <div class="center_pop_box" id="policy_confirm">
+                <div class="top_box">
+                    <h3 class="fon_16">정책확인</h3>
+                    <button type="button" class="com_btn_close" onclick="comClickRemoveOn2('#policy_confirm,#pop_bg_box','on')"></button>
+                </div>
+                <div class="con_box center">
+                    수수료 200,000원
+                </div>
+                <button type="button" class="btn_confirm" onclick="comClickRemoveOn2('#policy_confirm,#pop_bg_box','on')">확인</button>
+            </div>
+            <!-- //정책확인 팝업 -->   
+            
+            <!-- //컨텐츠 입력 -->
+            <button type="button" class="btn_move_top"></button>
+        </div>
+        <!-- //컨텐츠 영역 -->
+        <!-- 하단영역 -->        
+        <ul class="foot_menu_box">
+           <li><a href="javascript:void(0)" class="ic01" onclick="comClickAddOn('.total_menu_box');comClickAddOn2('body','fix');">전체메뉴</a></li> 
+           <li><a href="#" class="ic02"">검색</a></li> 
+           <li><a href="#" class="ic03">홈</a></li> 
+           <li><a href="#" class="ic04">정산관리</a></li> 
+           <li><a href="#" class="ic05">상담관리</a></li> 
+        </ul>
+        <!-- //하단영역 -->
+    </div>
+</body>
+</html>

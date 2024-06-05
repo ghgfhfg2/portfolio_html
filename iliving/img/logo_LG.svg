@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="34.998" viewBox="0 0 35 34.998">
+    <defs>
+        <style>
+            .prefix__cls-2{stroke:transparent;stroke-miterlimit:10;fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__logo_LG" transform="translate(-4.5 -2.5)">
+        <path id="prefix__패스_2223" d="M139.763 152.134a17 17 0 1 0-17-17 17 17 0 0 0 17 17" data-name="패스 2223" transform="translate(-117.763 -115.136)" style="stroke:transparent;stroke-miterlimit:10;fill:#920b29"/>
+        <path id="prefix__패스_2224" d="M137.744 126.889v14.9h4.736v-1.329h-3.38v-13.571z" class="prefix__cls-2" data-name="패스 2224" transform="translate(-116.42 -114.351)"/>
+        <path id="prefix__패스_2225" d="M133.552 130.957a2.038 2.038 0 1 0-2.036-2.037 2.041 2.041 0 0 0 2.036 2.037" class="prefix__cls-2" data-name="패스 2225" transform="translate(-116.978 -114.352)"/>
+        <path id="prefix__패스_2226" d="M140.21 120.684c-.172-.008-.511-.012-.676-.012a14.231 14.231 0 1 0 14.225 14.228v-.648H143.6v1.322h8.806v.191A12.9 12.9 0 1 1 139.535 122c.156 0 .52 0 .676.008z" class="prefix__cls-2" data-name="패스 2226" transform="translate(-117.535 -114.909)"/>
+    </g>
+</svg>

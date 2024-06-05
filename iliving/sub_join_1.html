@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>나도영업왕</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link href="./css/m/base.css" rel="stylesheet" type="text/css">
+    <link href="./css/m/board.css" rel="stylesheet" type="text/css">
+    <link href="./css/m/common.css" rel="stylesheet" type="text/css">
+    <link href="./css/m/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/m/layout.css" rel="stylesheet" type="text/css">
+    <link href="./css/m/content.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="./js/swiper_4.5.0.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- 전체메뉴 -->
+        <aside class="total_menu_box">
+            <div class="top_box content_box">
+                <h2>전체메뉴</h2>
+                <button type="button" class="btn_close"
+                    onclick="comClickRemoveOn('.total_menu_box');comClickRemoveOn2('body','fix');"></button>
+            </div>
+            <a href="#" class="profile">
+                <img src="./img/img_profile.svg" class="profile_img">
+                김대현 님
+            </a>
+            <div class="top_menu">
+                <a href="#"><i class="ic01"></i>최근 본 상품</a>
+                <a href="#"><i class="ic02"></i>나의주력상품</a>
+                <a href="#"><i class="ic03"><span class="num">3</span></i>상품바구니</a>
+                <a href="#"><i class="ic04"><span class="num">3</span></i>상담관리</a>
+            </div>
+            <ul class="lnb">
+                <li><a href="#" class="guide"><span>필독</span>아이리빙영업왕 앱사용가이드</a></li>
+                <li><a href="#">접수임시저장함</a></li>
+                <li><a href="#">접수현황</a></li>
+                <li><a href="#">정책확인</a></li>
+                <li><a href="#">비교상담</a></li>
+                <li><a href="#">정산관리</a></li>
+                <li><a href="#">고객관리</a></li>
+                <li><a href="#">브랜드별가입조건</a></li>
+            </ul>
+            <ul class="bot_menu">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">이용문의</a></li>
+                <li><a href="#">홈페이지분양신청</a></li>
+                <li><a href="#">로그아웃</a></li>
+            </ul>
+            <div class="version_box content_box">
+                <span>버전정보</span>
+                <span>v1.0</span>
+            </div>
+            <div class="copyright">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+                <p>
+                    문의전화 : 1566-9543
+                </p>
+                <p>
+                    copyright (주)아이리빙 All Right Reserved.
+                </p>
+            </div>
+        </aside>
+        <!-- //전체메뉴 -->
+        <div id="pop_bg_box"></div>
+        <!-- 상단영역 -->
+        <header id="header">
+            <div class="head_box content_box">
+                <div class="left_box com_flex_box align_center">
+                    <button type="button" class="btn_move_back"></button>
+                    <h1>상품검색</h1>
+                </div>
+                <div class="right_box">
+                    <a href="#" class="btn_head_home"></a>
+                    <a href="#" class="btn_head_search"></a>
+                    <a href="#" class="btn_head_cart"></a>
+                </div>
+            </div>
+        </header>
+        <!-- //상단영역 -->
+        <!-- 컨텐츠 영역 -->
+        <div id="container">
+            <!-- 컨텐츠 입력 -->
+
+            <div class="content_box">
+                <h2 class="sub_top_h2">가입정보입력</h2>
+            </div>
+            <form action="" name="regisForm">
+                <div class="com_input_con on">
+                    <dl>
+                        <dt>아이디</dt>
+                        <dd>
+                            <div class="com_flex_box">
+                                <input type="text" class="custom_input" placeholder="아이디입력" value="">
+                                <button type="button" class="input_next_btn ml10">중복확인</button>
+                            </div>
+                            <p class="input_info">이미 가입된 아이디입니다.</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>비밀번호</dt>
+                        <dd>
+                            <div class="pw_input pos_rel mb10">
+                                <input type="password" class="custom_input" placeholder="영문, 숫자포함 8자이상 입력" value="" id="pw_1">
+                                <button type="button" class="btn_pw_view">
+                                    <span class="view on">보기</span>
+                                    <span class="hide">숨기기</span>
+                                </button>
+                            </div>
+                            <div class="pw_input pos_rel">
+                                <input type="password" class="custom_input" placeholder="비밀번호를 한번 더 입력">
+                                <button type="button" class="btn_pw_view">
+                                    <span class="view on">보기</span>
+                                    <span class="hide">숨기기</span>
+                                </button>
+                            </div>
+                            <p class="input_info" id="checkpw"></p>
+                        </dd>
+                    </dl>
+                    <dl class="com_flex_box align_center pt20">
+                        <dt class="mt0 mb0" style="width: 80px;">이름</dt>
+                        <dd>김지현</dd>
+                    </dl>
+                    <dl class="com_flex_box align_center pt15">
+                        <dt class="mt0 mb0" style="width: 80px;">연락처</dt>
+                        <dd>010-1234-5678</dd>
+                    </dl>
+                    <dl class="com_flex_box align_center pt15">
+                        <dt class="mt0 mb0" style="width: 80px;">생년월일</dt>
+                        <dd>1988년 5월 6일</dd>
+                    </dl>
+                    <dl>
+                        <dt>이메일</dt>
+                        <dd>
+                            <div class="com_flex_box">
+                                <input type="text" class="custom_input" placeholder="이메일주소입력">
+                                <div class="custom_select ml10" style="width: 130px;flex-shrink: 0;">
+                                    <select name="" id="">
+                                        <option value="">직접입력</option>
+                                        <option value="">@nver.com</option>
+                                        <option value="">@daum.net</option>
+                                        <option value="">@gmail.com</option>
+                                        <option value="">@nate.com</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <p class="col_gray fon_12 mt10">
+                                아이디찾기를 할때 이메일을 사용하오니 정확하게 입력해주세요.
+                            </p>
+                            <p class="input_info">이메일을 입력해주세요.</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>주소</dt>
+                        <dd>
+                            <div class="com_flex_box">
+                                <input type="text" name="zip1_1" id="zip1_1" size="3" readonly="readonly"
+                                    class="custom_input has_btn" placeholder="우편번호" value="a">
+                                <input type="hidden" name="zip1_2" id="zip1_2" size="3" readonly="readonly" />
+                                <button type="button" class="input_next_btn ml10"
+                                    onclick="shop_DaumPostcode('zip1_1','zip1_2','addr_1','addr_2')">주소검색</button>
+                            </div>
+                            <input type="text" name="addr_1" id="addr_1" size="3" readonly="readonly"
+                                class="custom_input mt10" placeholder="주소입력" value="a">
+                            <input type="text" name="addr_2" id="addr_2" size="66" class="custom_input mt10"
+                                placeholder="상세주소입력">
+                            <p class="input_info">주소를 입력해주세요.</p>
+                        </dd>
+                        <dd>
+                            <ul class="col_gray fon_12 mt10">
+                                <li>
+                                    - 주소를 입력하면 확인후 자동으로 해당 지역의 담당자가 배정됩니다.
+                                </li>
+                                <li>
+                                    - 한번 지정된 주소는 임의로 수정이 불가하오니 정확하게 입력해주세요.(가입승인시 확인할수 있음)
+                                </li>
+                                <li>
+                                    - 허위주소 입력시 발생되는 불이익은 본사에서 책임지지 않습니다.
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt></dt>
+                        <dd></dd>
+                    </dl>
+                    <dl>
+                        <dt></dt>
+                        <dd></dd>
+                    </dl>
+                </div>
+                <div class="foot_fix_btn_box">
+                    <button type="button" class="btn_big flex blue_2 disabled" disabled="true" id="btn_join">가입승인요청</button>
+                </div>
+            </form>
+        <!-- 주소선택 레이어 -->
+        <div id="adress_layer" style="display:none;position:fixed;overflow:hidden;z-index:1;-webkit-overflow-scrolling:touch;">
+           <!-- <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnCloseLayer" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" onclick="closeDaumPostcode()" alt="닫기 버튼">-->
+            </div>
+        <!-- //주소선택 레이어 -->
+        <!--<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>-->
+        <script>
+         function joinOn(){
+            var inputArr = [];
+            var input = $('form[name=regisForm]').find('input[type=text],input[type=password]');
+            var inputVal = input.value;
+            var btn = $('#btn_join');
+            input.on('keyup', function(){
+                inputArr = [];
+                for(i=0;i<input.length;i++){
+                    inputArr.push(input[i].value);
+                }
+                if(inputArr.includes('')){
+                    btn.addClass('disabled');
+                    btn.attr('disabled',true);
+                }else{
+                    btn.removeClass('disabled');
+                    btn.attr('disabled',false);
+                }                
+
+            });
+        }
+        joinOn();
+
+        function passwordCheck(){
+            var password =  $('.pw_input input');
+            var checkpw = $('#checkpw');
+            password.on('keyup',valCheck);            
+                function valCheck(){
+                    console.log(password[0].value);
+                    console.log(password[1].value);
+                    if(password[1].value != "" && password[0].value != password[1].value){
+                        console.log(1);
+                        checkpw.text("비밀번호가 일치하지 않습니다.");
+                    }else{
+                        console.log(2);
+                        checkpw.text("");
+                    }
+                }
+           
+        }
+        passwordCheck();
+            
+        
+
+
+    // 우편번호 찾기 화면을 넣을 element
+            var element_layer = document.getElementById('adress_layer');
+
+            function closeDaumPostcode() {
+                // iframe을 넣은 element를 안보이게 한다.
+                element_layer.style.display = 'none';
+            }            
+            function shop_DaumPostcode(zip1,zip2,addr1,addr2) {
+                new daum.Postcode({
+                    oncomplete: function(data) {
+                        // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+        
+                        // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                        // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                        var fullAddr = ''; // 최종 주소 변수
+                        var extraAddr = ''; // 조합형 주소 변수
+        
+                        // 사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                        if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                            fullAddr = data.roadAddress;
+        
+                        } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                            fullAddr = data.jibunAddress;
+                        }
+        
+                        // 사용자가 선택한 주소가 도로명 타입일때 조합한다.
+                        if(data.userSelectedType === 'R'){
+                            //법정동명이 있을 경우 추가한다.
+                            if(data.bname !== ''){
+                                extraAddr += data.bname;
+                            }
+                            // 건물명이 있을 경우 추가한다.
+                            if(data.buildingName !== ''){
+                                extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                            }
+                            // 조합형주소의 유무에 따라 양쪽에 괄호를 추가하여 최종 주소를 만든다.
+                            fullAddr += (extraAddr !== '' ? ' ('+ extraAddr +')' : '');
+                        }
+        
+                        // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                        //document.getElementById(zip1).value = data.postcode.substring(0,3); //6자리 우편번호 사용
+                        //document.getElementById(zip2).value = data.postcode.substring(4,7); //6자리 우편번호 사용
+                        document.getElementById(zip1).value = data.zonecode; //5자리 기초구역번호 사용
+                        document.getElementById(addr1).value = fullAddr;
+        
+                        // 커서를 상세주소 필드로 이동한다.
+                        document.getElementById(addr2).focus();
+
+                        // iframe을 넣은 element를 안보이게 한다.
+                        // (autoClose:false 기능을 이용한다면, 아래 코드를 제거해야 화면에서 사라지지 않는다.)
+                        element_layer.style.display = 'none';
+                    },
+                    width : '100%',
+                    height : '100%',
+                    maxSuggestItems : 5
+                }).embed(element_layer);
+                // iframe을 넣은 element를 보이게 한다.
+                element_layer.style.display = 'block';
+                // iframe을 넣은 element의 위치를 화면의 가운데로 이동시킨다.
+                initLayerPosition();                
+            }
+            // 브라우저의 크기 변경에 따라 레이어를 가운데로 이동시키고자 하실때에는
+            // resize이벤트나, orientationchange이벤트를 이용하여 값이 변경될때마다 아래 함수를 실행 시켜 주시거나,
+            // 직접 element_layer의 top,left값을 수정해 주시면 됩니다.
+            function initLayerPosition(){
+                var width = 300; //우편번호서비스가 들어갈 element의 width
+                var height = 400; //우편번호서비스가 들어갈 element의 height
+                var borderWidth = 5; //샘플에서 사용하는 border의 두께
+
+                // 위에서 선언한 값들을 실제 element에 넣는다.
+                element_layer.style.width = width + 'px';
+                element_layer.style.height = height + 'px';
+                element_layer.style.border = borderWidth + 'px solid';
+                // 실행되는 순간의 화면 너비와 높이 값을 가져와서 중앙에 뜰 수 있도록 위치를 계산한다.
+                element_layer.style.left = (((window.innerWidth || document.documentElement.clientWidth) - width)/2 - borderWidth) + 'px';
+                element_layer.style.top = (((window.innerHeight || document.documentElement.clientHeight) - height)/2 - borderWidth) + 'px';
+            }            
+        </script>   
+
+            <!-- //컨텐츠 입력 -->
+            <button type="button" class="btn_move_top"></button>
+        </div>
+        <!-- //컨텐츠 영역 -->
+        <!-- 하단영역 -->
+        <ul class="foot_menu_box">
+            <li><a href="javascript:void(0)" class="ic01"
+                    onclick="comClickAddOn('.total_menu_box');comClickAddOn2('body','fix');">전체메뉴</a></li>
+            <li><a href="#" class="ic02"">검색</a></li> 
+           <li><a href=" #" class="ic03">홈</a></li>
+            <li><a href="#" class="ic04">정산관리</a></li>
+            <li><a href="#" class="ic05">상담관리</a></li>
+        </ul>
+        <!-- //하단영역 -->
+    </div>
+</body>
+
+</html>

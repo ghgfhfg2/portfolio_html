@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+/*
+=========================================================================
+/* Name: 나도영업왕
+/* PART: LAYOUT STYLE 
+/* Version: 1.0 / day: 2020-04
+=========================================================================
+*/
+
+#wrapper,#container,#footer{width: 100%;position: relative;}
+#container{padding-bottom: 52px;}
+body.fix{overflow: hidden;}
+.content_box{width: 100%;padding: 0 20px;} 
+
+.head_box{width: 100%;display: flex;justify-content: space-between;align-items: center;height: 54px;background-color: #fff;}
+.head_box.main{box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.06);}
+.head_box .ic_logo{width: 27px;height: 21px;margin-right: 8px;display: none;}
+.head_box.main .ic_logo{display: inline-block;}
+.head_box h1{font-weight: bold;font-size: 18px;color: #303030;}
+.head_box .right_box{height: 100%;}
+.head_box .btn_head_home{display: inline-block;width: 18px;height: 100%;background: url(../../img/btn_home.svg) no-repeat center / 18px;}
+.head_box .btn_head_search{display: inline-block;width: 18px;height: 100%;background: url(../../img/btn_search.svg) no-repeat center / 18px;margin-left: 20px;}
+.head_box .btn_head_cart{display: inline-block;width: 18px;height: 100%;background: url(../../img/btn_cart.svg) no-repeat center / 18px;margin-left: 20px;}
+.head_box .btn_head_down{display: inline-block;width: 18px;height: 100%;background: url(../../img/btn_download.svg) no-repeat center / 18px;margin-left: 20px;}
+.head_box .btn_head_share{display: inline-block;width: 18px;height: 100%;background: url(../../img/btn_share_black.svg) no-repeat center / 18px;margin-left: 20px;}
+
+.btn_move_back{width: 18px;height: 16px;background: url(../../img/btn_back.svg) no-repeat center;margin-right: 20px;}
+.head_box.main .btn_move_back{display: none;}
+
+
+/* 전체메뉴 */
+.total_menu_box{position: fixed;width: 100%;height: 100%;background-color: #fff;overflow: auto;z-index: -10;transition: all 0.2s;left: -100%;}
+.total_menu_box.on{z-index: 1000;left: 0;}
+.total_menu_box .top_box{width: 100%;height: 54px;display: flex;align-items: center;justify-content: space-between;}
+.total_menu_box .top_box h2{font-size: 18px;font-weight: 800;}
+.total_menu_box .top_box .btn_close{width: 18px;height: 18px;background: url(../../img/btn_close.svg) no-repeat center;}
+
+.total_menu_box .profile{display: block;width: 100%;height: 80px;border: 1px solid #f2f2f2;border-width: 1px 0;line-height: 80px;font-size: 18px;padding: 0 30px 0 20px;position: relative;}
+.total_menu_box .profile::after{content: "";display: inline-block;width: 10px;height: 100%;background: url(../../img/icon_arrow_right.svg) no-repeat center;position: absolute;right: 20px;top:0}
+.total_menu_box .profile_img{margin-right: 13px;}
+
+.total_menu_box .top_menu{display: flex;height: 100px;}
+.total_menu_box .top_menu a{display: block;flex: 1;padding-top: 60px;font-size: 12px;text-align: center;position: relative;}
+.total_menu_box .top_menu a i{display: inline-block;position: absolute;background-repeat: no-repeat;background-position: center;left: 50%;top: 26px;width: 24px;height: 24px;margin-left: -12px;}
+.total_menu_box .top_menu a i.ic01{background-image: url(../../img/icon_recent.svg);}
+.total_menu_box .top_menu a i.ic02{background-image: url(../../img/icon_heart.svg);}
+.total_menu_box .top_menu a i.ic03{background-image: url(../../img/icon_cart02.svg);}
+.total_menu_box .top_menu a i.ic04{background-image: url(../../img/icon_consult02.svg);}
+.total_menu_box .top_menu a i .num{font-style: normal;display: inline-block;width: 18px;height: 18px;border-radius: 50%;background-color: #ffd00b;position: absolute;right: -10px;top: -6px;text-align: center;color: #fff;line-height: 18px;font-size: 12px;}
+
+.total_menu_box .lnb{display: flex;flex-direction: column;}
+.total_menu_box .lnb li{width: 100%;}
+.total_menu_box .lnb li a{display: block;height: 54px;line-height: 54px;padding: 0 30px 0 20px;position: relative;font-size: 14px;border-bottom: 1px solid #f2f2f2;}
+.total_menu_box .lnb li a::after{content: "";display: inline-block;width:8.5px;height: 100%;position: absolute;right: 20px;top: 0;background: url(../../img/icon_arrow_right_02.svg) no-repeat center;}
+.total_menu_box .lnb li a.guide{border-bottom: none;background-color: #304857
+;color: #fff;display: flex;align-items: center;}
+.total_menu_box .lnb li a.guide span{height: 22px;border-radius: 11px;font-size: 12px;background-color: #fff;color: #304857;padding: 0 9px;line-height: 22px;margin-right: 10px;}
+.total_menu_box .lnb li a.guide::after{background-image: url(../../img/icon_arrow_right_02.svg);}
+
+.total_menu_box .bot_menu{width: 100%;display: flex;flex-wrap: wrap;border-top: 1px solid #ddd;}
+.total_menu_box .bot_menu li{width: 50%;border-right: 1px solid #ddd;border-bottom: 1px solid #ddd;}
+.total_menu_box .bot_menu li:nth-child(2n+2){border-right: none;}
+.total_menu_box .bot_menu li a{display: block;height: 50px;line-height: 50px;text-align: center;}
+
+.total_menu_box .version_box{display: flex;justify-content: space-between;align-items: center;background-color: #f6f7f9;height: 36px;}
+
+.total_menu_box .copyright{background-color: #434343;color: #fff;font-size: 12px;padding: 20px;}
+.total_menu_box .copyright ul{padding-bottom: 8px;border-bottom: 1px solid rgba(255,255,255,0.3);margin-bottom: 8px;display: flex;}
+.total_menu_box .copyright ul li{margin-right: 20px;}
+
+
+/* 맨위로 버튼 */
+.btn_move_top{display: inline-block;width: 40px;height: 40px;border: 1px solid #ddd;border-radius: 50%;position: fixed;bottom: 72px;right: 20px;background: #fff url(../../img/icon_arrow_top01.svg) no-repeat center / 15px;z-index: 100;}
+
+
+/* 하단 고정메뉴 */
+.foot_menu_box{width: 100%;display: flex;height: 52px;position: fixed;left: 0;bottom: 0;z-index: 250;background-color: #fff;box-shadow: 0 -2px 2px rgba(0,0,0,0.04);}
+.foot_menu_box li{flex: 1;}
+.foot_menu_box li a{text-align: center;padding-top: 30px;font-size: 9px;color: #777;position: relative;display: block;height: 100%;outline: none;}
+.foot_menu_box li a::before{content: "";display: inline-block;width: 100%;height: 100%;background-repeat: no-repeat;background-position: center 9px;position: absolute;left: 0;top: 0;}
+.foot_menu_box li a.ic01::before{background-image: url(../../img/icon_menu.svg);}
+.foot_menu_box li a.ic02::before{background-image: url(../../img/icon_seach.svg);}
+.foot_menu_box li a.ic03::before{background-image: url(../../img/icon_home.svg);}
+.foot_menu_box li a.ic04::before{background-image: url(../../img/icon_calculate.svg);}
+.foot_menu_box li a.ic05::before{background-image: url(../../img/icon_consult.svg);}
+
+

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35.5" height="35.5" viewBox="0 0 35.5 35.5">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;stroke:#303030}
+        </style>
+    </defs>
+    <g id="prefix__icon_main05" transform="translate(.75 .75)">
+        <g id="prefix__그룹_289" data-name="그룹 289">
+            <rect id="prefix__사각형_1582" width="34" height="34" class="prefix__cls-1" data-name="사각형 1582" rx="2.243"/>
+            <path id="prefix__선_45" d="M0 0L14.386 0" class="prefix__cls-1" data-name="선 45" transform="translate(14.266 9.444)"/>
+            <path id="prefix__선_46" d="M0 0L14.386 0" class="prefix__cls-1" data-name="선 46" transform="translate(14.266 17)"/>
+            <path id="prefix__선_47" d="M0 0L14.386 0" class="prefix__cls-1" data-name="선 47" transform="translate(14.266 24.556)"/>
+            <path id="prefix__사각형_1583" d="M0 0H4.884V4.884H0z" class="prefix__cls-1" data-name="사각형 1583" transform="translate(5.647 7.072)"/>
+            <path id="prefix__사각형_1584" d="M0 0H4.884V4.884H0z" class="prefix__cls-1" data-name="사각형 1584" transform="translate(5.647 14.558)"/>
+            <path id="prefix__사각형_1585" d="M0 0H4.884V4.884H0z" class="prefix__cls-1" data-name="사각형 1585" transform="translate(5.647 22.044)"/>
+        </g>
+        <path id="prefix__패스_2188" d="M222.07 565.053l3.314 3.635.074-.1 4.472-6.047" data-name="패스 2188" transform="translate(-216.986 -543.428)" style="stroke:#05c4c4;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+    </g>
+</svg>

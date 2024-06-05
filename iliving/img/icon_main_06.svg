@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37.5" height="36.663" viewBox="0 0 37.5 36.663">
+    <defs>
+        <style>
+            .prefix__cls-3{fill:#303030}.prefix__cls-4{fill:#05c4c4}
+        </style>
+    </defs>
+    <g id="prefix__icon_main06" transform="translate(.75 .75)">
+        <path id="prefix__패스_2189" d="M323.094 542h-26.049a2.047 2.047 0 0 0-2.045 2.049v15.193a2.047 2.047 0 0 0 2.045 2.049h10.041l4.2 4.182a1.319 1.319 0 0 0 2.243-.8l.348-3.381h9.221a2.047 2.047 0 0 0 2.045-2.049v-15.194a2.047 2.047 0 0 0-2.049-2.049z" data-name="패스 2189" transform="translate(-295 -542)" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none;stroke:#303030"/>
+        <circle id="prefix__타원_285" cx="7.953" cy="7.953" r="7.953" data-name="타원 285" transform="translate(20.093 19.256)" style="fill:#fff;stroke:#05c4c4;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+        <circle id="prefix__타원_286" cx="2.128" cy="2.128" r="2.128" class="prefix__cls-3" data-name="타원 286" transform="translate(5.585 7.311)"/>
+        <circle id="prefix__타원_287" cx="2.128" cy="2.128" r="2.128" class="prefix__cls-3" data-name="타원 287" transform="translate(12.761 7.311)"/>
+        <circle id="prefix__타원_288" cx="2.128" cy="2.128" r="2.128" class="prefix__cls-3" data-name="타원 288" transform="translate(19.519 7.311)"/>
+        <g id="prefix__그룹_292" data-name="그룹 292" transform="translate(25.331 22.899)">
+            <g id="prefix__그룹_291" data-name="그룹 291">
+                <path id="prefix__패스_2190" d="M328.1 577.474a.886.886 0 0 0-.914.914.871.871 0 0 0 .26.651.968.968 0 0 0 1.31 0 .87.87 0 0 0 .259-.651.885.885 0 0 0-.914-.914z" class="prefix__cls-4" data-name="패스 2190" transform="translate(-325.57 -570.674)"/>
+                <path id="prefix__패스_2191" d="M330.366 570.493a2.164 2.164 0 0 0-.934-.839 3.282 3.282 0 0 0-1.467-.3 3.02 3.02 0 0 0-1.432.331 2.5 2.5 0 0 0-.984.909 2.374 2.374 0 0 0-.252.556.834.834 0 0 0 1.1 1.06c.488-.235.63-.832.815-1.023a1 1 0 0 1 .759-.286 1.119 1.119 0 0 1 .733.216.733.733 0 0 1 .262.6.915.915 0 0 1-.211.6 4.614 4.614 0 0 1-.7.637 2.449 2.449 0 0 0-.778.884 2.679 2.679 0 0 0-.21 1.025c-.005.034 0 .191 0 .191a.81.81 0 0 0 1.613 0 2.9 2.9 0 0 1 .235-.743 3.406 3.406 0 0 1 .759-.754 2.283 2.283 0 0 0 1.015-1.838 2.329 2.329 0 0 0-.323-1.226z" class="prefix__cls-4" data-name="패스 2191" transform="translate(-325.257 -569.352)"/>
+            </g>
+        </g>
+    </g>
+</svg>

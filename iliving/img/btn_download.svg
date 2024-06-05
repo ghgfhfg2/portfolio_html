@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__btn_download" width="18" height="18" viewBox="0 0 18 18">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#333}
+        </style>
+    </defs>
+    <g id="prefix__그룹_340" data-name="그룹 340" transform="translate(-808.924 -256.914)">
+        <path id="prefix__패스_2266" d="M826.174 256.914h-7.9a.748.748 0 0 0-.67.416l-1.427 2.863h-6.5a.75.75 0 0 0-.75.75v13.221a.75.75 0 0 0 .75.75h16.5a.75.75 0 0 0 .75-.75v-16.5a.75.75 0 0 0-.753-.75zm-.75 16.5h-15v-11.721h6.215a.75.75 0 0 0 .671-.416l1.426-2.863h6.688z" class="prefix__cls-1" data-name="패스 2266"/>
+        <path id="prefix__패스_2267" d="M818.686 263.808a.75.75 0 0 0-1.5 0v5.05l-.971-.97a.75.75 0 1 0-1.061 1.06l2.182 2.181a.762.762 0 0 0 .582.271.752.752 0 0 0 .6-.3l2.2-2.2a.75.75 0 1 0-1.061-1.061l-.97.97z" class="prefix__cls-1" data-name="패스 2267"/>
+    </g>
+</svg>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>나도영업왕</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link href="./css/m/base.css" rel="stylesheet" type="text/css">
+    <link href="./css/m/board.css" rel="stylesheet" type="text/css">
+    <link href="./css/m/common.css" rel="stylesheet" type="text/css">
+    <link href="./css/m/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/m/layout.css" rel="stylesheet" type="text/css">
+    <link href="./css/m/content.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="./js/swiper_4.5.0.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- 전체메뉴 -->
+        <aside class="total_menu_box">
+            <div class="top_box content_box">
+                <h2>전체메뉴</h2>
+                <button type="button" class="btn_close"
+                    onclick="comClickRemoveOn('.total_menu_box');comClickRemoveOn2('body','fix');"></button>
+            </div>
+            <a href="#" class="profile">
+                <img src="./img/img_profile.svg" class="profile_img">
+                김대현 님
+            </a>
+            <div class="top_menu">
+                <a href="#"><i class="ic01"></i>최근 본 상품</a>
+                <a href="#"><i class="ic02"></i>나의주력상품</a>
+                <a href="#"><i class="ic03"><span class="num">3</span></i>상품바구니</a>
+                <a href="#"><i class="ic04"><span class="num">3</span></i>상담관리</a>
+            </div>
+            <ul class="lnb">
+                <li><a href="#" class="guide"><span>필독</span>아이리빙영업왕 앱사용가이드</a></li>
+                <li><a href="#">접수임시저장함</a></li>
+                <li><a href="#">접수현황</a></li>
+                <li><a href="#">정책확인</a></li>
+                <li><a href="#">비교상담</a></li>
+                <li><a href="#">정산관리</a></li>
+                <li><a href="#">고객관리</a></li>
+                <li><a href="#">브랜드별가입조건</a></li>
+            </ul>
+            <ul class="bot_menu">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">이용문의</a></li>
+                <li><a href="#">홈페이지분양신청</a></li>
+                <li><a href="#">로그아웃</a></li>
+            </ul>
+            <div class="version_box content_box">
+                <span>버전정보</span>
+                <span>v1.0</span>
+            </div>
+            <div class="copyright">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+                <p>
+                    문의전화 : 1566-9543
+                </p>
+                <p>
+                    copyright (주)아이리빙 All Right Reserved.
+                </p>
+            </div>
+        </aside>
+        <!-- //전체메뉴 -->
+        <div id="pop_bg_box"></div>
+        <!-- 상단영역 -->
+        <header id="header">
+            <div class="head_box content_box">
+                <div class="left_box com_flex_box align_center">
+                    <button type="button" class="btn_move_back"></button>
+                    <h1>상품검색</h1>
+                </div>
+                <div class="right_box">
+                    <a href="#" class="btn_head_home"></a>
+                    <a href="#" class="btn_head_search"></a>
+                    <a href="#" class="btn_head_cart"></a>
+                </div>
+            </div>
+        </header>
+        <!-- //상단영역 -->
+        <!-- 컨텐츠 영역 -->
+        <div id="container">
+            <!-- 컨텐츠 입력 -->
+
+            <div class="content_box">
+                <p class="fon_bold">2020 NEW 더 세로 QLED TV 43인치</p>
+                <div class="com_flex_box accept_prod_box">
+                    <div class="left_box">
+                        <div class="prod_img_box">
+                            <img src="./img/prod_img.jpg" alt="">
+                        </div>
+                        <button type="button" class="btn_basic mt10" style="width: 90px;"
+                            onclick="comClickAddOn2('#policy_confirm,#pop_bg_box','on')">정책확인</button>
+                    </div>
+                    <div class="right_box">
+                        <div class="option_box">
+                            <dl>
+                                <dt>모델명</dt>
+                                <dd>Q43LST05AFXKR</dd>
+                            </dl>
+                            <dl>
+                                <dt>의무약정</dt>
+                                <dd>3년</dd>
+                            </dl>
+                            <dl>
+                                <dt>소유권이전</dt>
+                                <dd>3년</dd>
+                            </dl>
+                            <dl>
+                                <dt>제휴카드</dt>
+                                <dd>LG헬로비전 롯데카드</dd>
+                            </dl>
+                            <dl>
+                                <dt>예상전월실적</dt>
+                                <dd>30만원이상</dd>
+                            </dl>
+                        </div>
+                        <div class="price_box fon_12">
+                            <dl>
+                                <dt>렌탈료</dt>
+                                <dd>29,900원</dd>
+                            </dl>
+                            <dl class="col_oran">
+                                <dt>카드할인</dt>
+                                <dd>-10,000원</dd>
+                            </dl>
+                        </div>
+                        <dl class="fon_bold">
+                            <dt>총렌탈료</dt>
+                            <dd>월 19,900원</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="accept_total_price mt20">
+                <dl>
+                    <dt>렌탈료합계</dt>
+                    <dd>29,900원</dd>
+                </dl>
+                <dl>
+                    <dt>제휴카드할인</dt>
+                    <dd>-10,000원</dd>
+                </dl>
+                <div class="total">
+                    <dl class="fon_18 col_yell">
+                        <dt>총렌탈료</dt>
+                        <dd>월 19,900원</dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- 접수정보 입력 -->
+            <div class="accept_input_tit">
+                접수정보
+            </div>
+            <div class="com_input_con on">
+                <div class="com_flex_box">
+                    <dl class="com_flex_box" style="width: 50%;">
+                        <dt class="fon_bold mr20 mt0">접수일</dt>
+                        <dd>2019.11.18</dd>
+                    </dl>
+                    <dl class="com_flex_box" style="width: 50%;">
+                        <dt class="fon_bold mr20 mt0">등록자</dt>
+                        <dd>(주)아이리빙</dd>
+                    </dl>
+                </div>
+            </div>
+            <button type="button" class="accept_input_tit">고객정보</button>
+            <div class="com_input_con on">
+                <div class="com_flex_box">
+                    <input type="radio" name="customer" class="custom_radio" id="customer_1" checked>
+                    <label for="customer_1" style="flex: 1;margin-right: 8px;" onclick="comClickShow('#input_type_1');comClickHide('#input_type_2')">개인</label>
+                    <input type="radio" name="customer" class="custom_radio" id="customer_2">
+                    <label for="customer_2" style="flex: 1;" onclick="comClickShow('#input_type_2');comClickHide('#input_type_1')">사업자</label>
+                </div>
+                <div id="input_type_1" class="mt20">
+                    <dl>
+                        <dt class="col_blue2">고객명*</dt>
+                        <dd>
+                            <input type="text" class="custom_input" value="김지현">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="col_blue2">생년월일*</dt>
+                        <dd>
+                            <input type="text" class="custom_input" placeholder="예) 19880515">
+                        </dd>
+                    </dl>
+                </div>
+                <div id="input_type_2" class="mt20" style="display: none;">
+                    <dl>
+                        <dt class="col_blue2">상호명*</dt>
+                        <dd>
+                            <input type="text" class="custom_input" value="김지현">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="col_blue2">대표자명*</dt>
+                        <dd>
+                            <input type="text" class="custom_input" placeholder="대표자명 입력">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="col_blue2">사업자번호*</dt>
+                        <dd>
+                            <input type="text" class="custom_input" placeholder="사업자번호 입력">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="col_blue2">휴대폰번호*</dt>
+                        <dd>
+                            <input type="text" class="custom_input" placeholder="예) 01012345678">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>연락처</dt>
+                        <dd>
+                            <input type="text" class="custom_input" placeholder="예) 021234567">
+                        </dd>
+                    </dl>
+                </div>
+                <dl>
+                    <dt class="col_blue2">주소*</dt>
+                    <dd>
+                        <div class="com_flex_box">
+                            <input type="text" name="zip1_1" id="zip1_1" size="3" readonly="readonly" class="custom_input has_btn" placeholder="우편번호">
+                            <input type="hidden" name="zip1_2" id="zip1_2" size="3" value=""readonly="readonly" />
+                            <button type="button" class="input_next_btn ml10" onclick="shop_DaumPostcode('zip1_1','zip1_2','addr_1','addr_2')">주소검색</button>
+                        </div>
+                        <input type="text" name="addr_1" id="addr_1" size="3" readonly="readonly" class="custom_input mt10" placeholder="주소입력">                       
+                        <input type="text" name="addr_2" id="addr_2" size="66" class="custom_input mt10" placeholder="상세주소입력">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>이메일</dt>
+                    <dd>
+                        <div class="com_flex_box">
+                            <input type="text" class="custom_input" placeholder="이메일주소입력">
+                            <div class="custom_select ml10" style="width: 130px;flex-shrink: 0;">
+                                <select name="" id="">
+                                    <option value="">직접입력</option>
+                                    <option value="">@nver.com</option>
+                                    <option value="">@daum.net</option>
+                                    <option value="">@gmail.com</option>
+                                    <option value="">@nate.com</option>
+                                </select>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <button type="button" class="accept_input_tit on">납부정보</button>
+            <div class="com_input_con on">
+                <p class="col_blue2 txt_center fon_12">* 코웨이 렌탈 접수시 납부정보를 필수로 입력하세요.</p>
+                <dl>
+                    <dt>납부방법</dt>
+                    <dd>
+                        <div class="custom_select">
+                            <select name="" id="">
+                                <option value="">신용카드</option>
+                                <option value="">가상계좌</option>
+                            </select>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>계약자와의 관계</dt>
+                    <dd>
+                        <div class="custom_select">
+                            <select name="" id="">
+                                <option value="">본인</option>
+                                <option value="">가족</option>
+                            </select>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>생년월일</dt>
+                    <dd><input type="text" class="custom_input" placeholder="예) 19880515"></dd>
+                </dl>
+                <dl>
+                    <dt>카드사</dt>
+                    <dd><input type="text" class="custom_input" placeholder="카드사 입력"></dd>
+                </dl>
+                <dl>
+                    <dt>카드번호</dt>
+                    <dd class="com_flex_box">
+                        <input type="text" class="custom_input mr10" style="flex:1">
+                        <input type="text" class="custom_input mr10" style="flex:1">
+                        <input type="text" class="custom_input mr10" style="flex:1">
+                        <input type="text" class="custom_input" style="flex:1">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>유효기간</dt>
+                    <dd><input type="text" class="custom_input" placeholder="예) MM/YY"></dd>
+                </dl>
+            </div>
+            <button type="button" class="accept_input_tit on">고객사은품정보</button>
+            <div class="com_input_con on">
+                <dl>
+                    <dt>품목</dt>
+                    <dd><input type="text" class="custom_input" placeholder="예) 상품권 20만원, 현금, 상품명"></dd>
+                </dl>
+                <dl>
+                    <dt class="com_flex_box between">
+                        수령인
+                        <input type="checkbox" class="custom_check" id="same_check">
+                        <label for="same_check" style="color: #999;font-weight: 400;font-size: 14px;">접수인과 동일</label>
+                    </dt>
+                    <dd><input type="text" class="custom_input" placeholder="예) MM/YY"></dd>
+                </dl>
+                <dl>
+                    <dt>연락처</dt>
+                    <dd><input type="text" class="custom_input" placeholder="예) MM/YY"></dd>
+                </dl>
+                <dl>
+                    <dt>주소</dt>
+                    <dd>
+                        <div class="com_flex_box">
+                            <input type="text" name="zip2_1" id="zip2_1" size="3" readonly="readonly" class="custom_input has_btn" placeholder="우편번호">
+                            <input type="hidden" name="zip2_2" id="zip2_2" size="3" value=""readonly="readonly" />
+                            <button type="button" class="input_next_btn ml10" onclick="shop_DaumPostcode('zip2_1','zip2_2','addr_2_1','addr_2_2')">주소검색</button>
+                        </div>
+                        <input type="text" name="addr_2_1" id="addr_2_1" size="3" readonly="readonly" class="custom_input mt10" placeholder="주소입력">                       
+                        <input type="text" name="addr_2_2" id="addr_2_2" size="66" class="custom_input mt10" placeholder="상세주소입력">
+                    </dd>
+                </dl>
+            </div>
+            <button type="button" class="accept_input_tit on">메모</button>
+            <div class="com_input_con on">
+                <dl>
+                    <dt>개인메모</dt>
+                    <dd>
+                        <textarea name="" id="" class="custom_textarea" placeholder="메모를 입력하세요"></textarea>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>접수요청메모</dt>
+                    <dd>
+                        <textarea name="" id="" class="custom_textarea" placeholder="본사에 요청할 사항을 입력하세요"></textarea>
+                    </dd>
+                </dl>
+            </div>
+            <button type="button" class="accept_input_tit on">첨부파일</button>
+            <div class="com_input_con pl0 pr0 on">
+                <p class="fon_10 col_gray pb20 content_box">jpg, png, gif, pdf 확장자 파일만 등록할 수 있습니다.<br>
+                    첨부파일은 5개까지 등록가능합니다.</p>
+                <div class="attached_file">
+                    <ul>
+                        <li>
+                            <div id="preview_1">
+                            </div>
+                            <span id="file_name_1"><span class="col_gray">파일을  첨부하세요.</span></span>
+                            <div class="btn_box">
+                                <input type="file" class="hidden" id="attached_file_1" accept=".jpg,.jpeg,.png,.gif,pdf">
+                                <label for="attached_file_1" class="btn_basic flex txt_center mr5" onclick="inputFile('#attached_file_1','#preview_1','#file_name_1')">첨부하기</label>
+                                <button type="button" class="btn_basic" onclick="inputFileReset('#attached_file_1','#preview_1','#file_name_1')">삭제</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="preview_2">
+                            </div>
+                            <span id="file_name_2"><span class="col_gray">파일을  첨부하세요.</span></span>
+                            <div class="btn_box">
+                                <input type="file" class="hidden" id="attached_file_2" accept=".jpg,.jpeg,.png,.gif,pdf">
+                                <label for="attached_file_2" class="btn_basic flex txt_center mr5" onclick="inputFile('#attached_file_2','#preview_2','#file_name_2')">첨부하기</label>
+                                <button type="button" class="btn_basic" onclick="inputFileReset('#attached_file_2','#preview_2','#file_name_2')">삭제</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="preview_3">
+                            </div>
+                            <span id="file_name_3"><span class="col_gray">파일을  첨부하세요.</span></span>
+                            <div class="btn_box">
+                                <input type="file" class="hidden" id="attached_file_3" accept=".jpg,.jpeg,.png,.gif,pdf">
+                                <label for="attached_file_3" class="btn_basic flex txt_center mr5" onclick="inputFile('#attached_file_3','#preview_3','#file_name_3')">첨부하기</label>
+                                <button type="button" class="btn_basic" onclick="inputFileReset('#attached_file_3','#preview_3','#file_name_3')">삭제</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="preview_4">
+                            </div>
+                            <span id="file_name_4"><span class="col_gray">파일을  첨부하세요.</span></span>
+                            <div class="btn_box">
+                                <input type="file" class="hidden" id="attached_file_4" accept=".jpg,.jpeg,.png,.gif,pdf">
+                                <label for="attached_file_4" class="btn_basic flex txt_center mr5" onclick="inputFile('#attached_file_4','#preview_4','#file_name_4')">첨부하기</label>
+                                <button type="button" class="btn_basic" onclick="inputFileReset('#attached_file_1','#preview_4','#file_name_4')">삭제</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="preview_5">
+                            </div>
+                            <span id="file_name_5"><span class="col_gray">파일을  첨부하세요.</span></span>
+                            <div class="btn_box">
+                                <input type="file" class="hidden" id="attached_file_5" accept=".jpg,.jpeg,.png,.gif,pdf">
+                                <label for="attached_file_5" class="btn_basic flex txt_center mr5" onclick="inputFile('#attached_file_5','#preview_5','#file_name_5')">첨부하기</label>
+                                <button type="button" class="btn_basic" onclick="inputFileReset('#attached_file_1','#preview_5','#file_name_5')">삭제</button>
+                            </div>
+                        </li>
+                    </ul>                    
+                </div>
+            </div>
+            <div class="foot_fix_btn_box">
+                <button type="button" class="btn_big blue_3 flex" style="margin-right: 1px;" onclick="comClickAddOn2('#temp_save,#pop_bg_box','on')">임시저장</button>
+                <button type="button" class="btn_big blue_2 flex">접수하기</button>
+            </div>
+
+            <!-- //접수정보 입력 -->
+
+            </div>
+            <!-- 정책확인 팝업 -->
+            <div class="center_pop_box" id="policy_confirm">
+                <div class="top_box">
+                    <h3 class="fon_16">정책확인</h3>
+                    <button type="button" class="com_btn_close"
+                        onclick="comClickRemoveOn2('#policy_confirm,#pop_bg_box','on')"></button>
+                </div>
+                <div class="con_box center">
+                    수수료 200,000원
+                </div>
+                <button type="button" class="btn_confirm"
+                    onclick="comClickRemoveOn2('#policy_confirm,#pop_bg_box','on')">확인</button>
+            </div>
+            <!-- //정책확인 팝업 -->
+            <!-- 임시저장팝업 -->
+            <div class="center_pop_box" id="temp_save">
+                <div class="top_box">
+                    <h3 class="fon_16">임시저장 메모입력</h3>
+                    <button type="button" class="com_btn_close"
+                        onclick="comClickRemoveOn2('#temp_save,#pop_bg_box','on')"></button>
+                </div>
+                <div class="con_box">
+                    <dl>
+                        <dt style="width: 55px;">고객명</dt>
+                        <dd>
+                            <input type="text" class="custom_input" value="">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt style="width: 55px;">연락처</dt>
+                        <dd>
+                            <input type="text" class="custom_input" value="">
+                        </dd>
+                    </dl>
+                    <dl class="column">
+                        <dt>메모입력</dt>
+                        <dd>
+                            <textarea name="" id="" class="custom_textarea">
+                                
+                            </textarea>
+                        </dd>
+                    </dl>
+                </div>
+                <button type="button" class="btn_confirm"
+                    onclick="comClickRemoveOn2('#temp_save','on');comClickAddOn2('#save_finish','on');">임시저장</button>
+            </div>
+            <!-- //임시저장팝업 -->
+            <!-- 저장완료 팝업 -->
+            <div class="center_pop_box" id="save_finish"">
+                <div class="top_box">
+                    <h3 class="fon_16">임시저장완료</h3>
+                    <button type="button" class="com_btn_close"
+                        onclick="comClickRemoveOn2('#save_finish,#pop_bg_box','on')"></button>
+                </div>
+                <div class="con_box center">
+                    접수임시저장이 완료되었습니다.
+                </div>
+                <button type="button" class="btn_confirm"
+                    onclick="comClickRemoveOn2('#save_finish,#pop_bg_box','on')">확인</button>
+            </div>
+            <!-- //저장완료 팝업 -->
+        <!-- 주소선택 레이어 -->
+        <div id="adress_layer" style="display:none;position:fixed;overflow:hidden;z-index:1;-webkit-overflow-scrolling:touch;">
+            <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnCloseLayer" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" onclick="closeDaumPostcode()" alt="닫기 버튼">
+            </div>
+        <!-- //주소선택 레이어 -->
+        <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+        <script>
+    // 우편번호 찾기 화면을 넣을 element
+            var element_layer = document.getElementById('adress_layer');
+
+            function closeDaumPostcode() {
+                // iframe을 넣은 element를 안보이게 한다.
+                element_layer.style.display = 'none';
+            }            
+            function shop_DaumPostcode(zip1,zip2,addr1,addr2) {
+                new daum.Postcode({
+                    oncomplete: function(data) {
+                        // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+        
+                        // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                        // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                        var fullAddr = ''; // 최종 주소 변수
+                        var extraAddr = ''; // 조합형 주소 변수
+        
+                        // 사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                        if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                            fullAddr = data.roadAddress;
+        
+                        } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                            fullAddr = data.jibunAddress;
+                        }
+        
+                        // 사용자가 선택한 주소가 도로명 타입일때 조합한다.
+                        if(data.userSelectedType === 'R'){
+                            //법정동명이 있을 경우 추가한다.
+                            if(data.bname !== ''){
+                                extraAddr += data.bname;
+                            }
+                            // 건물명이 있을 경우 추가한다.
+                            if(data.buildingName !== ''){
+                                extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                            }
+                            // 조합형주소의 유무에 따라 양쪽에 괄호를 추가하여 최종 주소를 만든다.
+                            fullAddr += (extraAddr !== '' ? ' ('+ extraAddr +')' : '');
+                        }
+        
+                        // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                        //document.getElementById(zip1).value = data.postcode.substring(0,3); //6자리 우편번호 사용
+                        //document.getElementById(zip2).value = data.postcode.substring(4,7); //6자리 우편번호 사용
+                        document.getElementById(zip1).value = data.zonecode; //5자리 기초구역번호 사용
+                        document.getElementById(addr1).value = fullAddr;
+        
+                        // 커서를 상세주소 필드로 이동한다.
+                        document.getElementById(addr2).focus();
+
+                        // iframe을 넣은 element를 안보이게 한다.
+                        // (autoClose:false 기능을 이용한다면, 아래 코드를 제거해야 화면에서 사라지지 않는다.)
+                        element_layer.style.display = 'none';
+                    },
+                    width : '100%',
+                    height : '100%',
+                    maxSuggestItems : 5
+                }).embed(element_layer);
+                // iframe을 넣은 element를 보이게 한다.
+                element_layer.style.display = 'block';
+                // iframe을 넣은 element의 위치를 화면의 가운데로 이동시킨다.
+                initLayerPosition();                
+            }
+            // 브라우저의 크기 변경에 따라 레이어를 가운데로 이동시키고자 하실때에는
+            // resize이벤트나, orientationchange이벤트를 이용하여 값이 변경될때마다 아래 함수를 실행 시켜 주시거나,
+            // 직접 element_layer의 top,left값을 수정해 주시면 됩니다.
+            function initLayerPosition(){
+                var width = 300; //우편번호서비스가 들어갈 element의 width
+                var height = 400; //우편번호서비스가 들어갈 element의 height
+                var borderWidth = 5; //샘플에서 사용하는 border의 두께
+
+                // 위에서 선언한 값들을 실제 element에 넣는다.
+                element_layer.style.width = width + 'px';
+                element_layer.style.height = height + 'px';
+                element_layer.style.border = borderWidth + 'px solid';
+                // 실행되는 순간의 화면 너비와 높이 값을 가져와서 중앙에 뜰 수 있도록 위치를 계산한다.
+                element_layer.style.left = (((window.innerWidth || document.documentElement.clientWidth) - width)/2 - borderWidth) + 'px';
+                element_layer.style.top = (((window.innerHeight || document.documentElement.clientHeight) - height)/2 - borderWidth) + 'px';
+            }            
+        </script>        
+        <!-- //컨텐츠 입력 -->
+        <button type="button" class="btn_move_top"></button>
+    </div>
+    <!-- //컨텐츠 영역 -->
+    <!-- 하단영역 -->
+    <ul class="foot_menu_box">
+        <li><a href="javascript:void(0)" class="ic01"
+                onclick="comClickAddOn('.total_menu_box');comClickAddOn2('body','fix');">전체메뉴</a></li>
+        <li><a href="#" class="ic02"">검색</a></li> 
+           <li><a href=" #" class="ic03">홈</a></li>
+        <li><a href="#" class="ic04">정산관리</a></li>
+        <li><a href="#" class="ic05">상담관리</a></li>
+    </ul>
+    <!-- //하단영역 -->
+    </div>
+</body>
+
+</html>

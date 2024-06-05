@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35.5" height="35.5" viewBox="0 0 35.5 35.5">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:none;stroke:#303030;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}.prefix__cls-2{fill:#05c4c4}
+        </style>
+    </defs>
+    <g id="prefix__icon_main03" transform="translate(.75 .75)">
+        <rect id="prefix__사각형_1581" width="34" height="34" class="prefix__cls-1" data-name="사각형 1581" rx="2.243"/>
+        <path id="prefix__선_44" d="M0 0L0 26.067" class="prefix__cls-1" data-name="선 44" transform="translate(17 3.859)"/>
+        <g id="prefix__그룹_280" data-name="그룹 280" transform="translate(4.162 11.724)">
+            <g id="prefix__그룹_278" data-name="그룹 278">
+                <path id="prefix__패스_2174" d="M307.629 471.515a.939.939 0 0 1-.835-.532L304 465.417l-2.793 5.566a.918.918 0 0 1-1.278.414 1.032 1.032 0 0 1-.39-1.354l3.561-7.1a.94.94 0 0 1 .834-.531h.13a.939.939 0 0 1 .834.531l3.562 7.1a1.033 1.033 0 0 1-.39 1.354.9.9 0 0 1-.441.118z" class="prefix__cls-2" data-name="패스 2174" transform="translate(-299.429 -462.414)"/>
+            </g>
+            <g id="prefix__그룹_279" data-name="그룹 279" transform="translate(1.457 4.735)">
+                <path id="prefix__패스_2175" d="M306.414 469.124h-4.5a.944.944 0 0 1 0-1.889h4.5a.944.944 0 0 1 0 1.889z" class="prefix__cls-2" data-name="패스 2175" transform="translate(-300.971 -467.235)"/>
+            </g>
+        </g>
+        <g id="prefix__그룹_281" data-name="그룹 281" transform="translate(21.455 11.827)">
+            <path id="prefix__패스_2176" d="M317.738 463.444a.921.921 0 0 1 .922-.921h2.859a3.475 3.475 0 0 1 2.363.737 2.538 2.538 0 0 1 .844 2.017 1.834 1.834 0 0 1-.305.992 1.544 1.544 0 0 1-.771.652 2.168 2.168 0 0 1 1.082.788 2.06 2.06 0 0 1 .424 1.252 2.764 2.764 0 0 1-.391 1.485 2.522 2.522 0 0 1-1.138.975 4.248 4.248 0 0 1-1.768.34h-3.2a.922.922 0 0 1-.922-.922zm3.691 2.819a1.44 1.44 0 0 0 .911-.255.879.879 0 0 0 .324-.731.89.89 0 0 0-.324-.742 1.439 1.439 0 0 0-.911-.255H320.2a.632.632 0 0 0-.632.632v.719a.633.633 0 0 0 .632.633zm.339 3.74a1.56 1.56 0 0 0 .976-.272 1.023 1.023 0 0 0 0-1.541 1.56 1.56 0 0 0-.976-.272H320.2a.632.632 0 0 0-.632.632v.822a.632.632 0 0 0 .632.632z" class="prefix__cls-2" data-name="패스 2176" transform="translate(-317.738 -462.523)"/>
+        </g>
+    </g>
+</svg>

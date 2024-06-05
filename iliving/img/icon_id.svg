@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#333}
+        </style>
+    </defs>
+    <g id="prefix__icon_id" transform="translate(-967.59 -277.252)">
+        <path id="prefix__패스_2316" d="M977.59 297.252a10 10 0 1 1 10-10 9.988 9.988 0 0 1-10 10zm0-18.34a8.34 8.34 0 1 0 8.34 8.34 8.354 8.354 0 0 0-8.34-8.34z" class="prefix__cls-1" data-name="패스 2316"/>
+        <path id="prefix__패스_2317" d="M974.313 285.38a.854.854 0 0 1-.851-.851v-.213a.851.851 0 0 1 1.7 0v.213a.854.854 0 0 1-.849.851z" class="prefix__cls-1" data-name="패스 2317"/>
+        <path id="prefix__패스_2318" d="M980.866 285.38a.854.854 0 0 1-.851-.851v-.213a.851.851 0 1 1 1.7 0v.213a.854.854 0 0 1-.849.851z" class="prefix__cls-1" data-name="패스 2318"/>
+        <path id="prefix__패스_2319" d="M977.59 291.677a6.9 6.9 0 0 1-4.852-2 .843.843 0 0 1 1.192-1.191 5.188 5.188 0 0 0 7.362 0 .842.842 0 1 1 1.191 1.191 6.888 6.888 0 0 1-4.893 2z" class="prefix__cls-1" data-name="패스 2319"/>
+    </g>
+</svg>
