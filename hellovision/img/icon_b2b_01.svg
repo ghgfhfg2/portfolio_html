@@ -1,0 +1,47 @@
+<svg id="icon_b2b_01" xmlns="http://www.w3.org/2000/svg" width="60" height="48" viewBox="0 0 60 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #ed174d;
+      }
+
+      .cls-3 {
+        fill: #80a7ff;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="그룹_212" data-name="그룹 212">
+    <g id="사각형_275" data-name="사각형 275" class="cls-1">
+      <rect class="cls-4" width="49" height="34" rx="5"/>
+      <rect class="cls-5" x="1" y="1" width="47" height="32" rx="4"/>
+    </g>
+    <rect id="사각형_276" data-name="사각형 276" width="49" height="2" transform="translate(0 14)"/>
+    <rect id="사각형_277" data-name="사각형 277" width="49" height="2" transform="translate(0 7)"/>
+  </g>
+  <g id="그룹_213" data-name="그룹 213" transform="translate(11 14)">
+    <g id="사각형_278" data-name="사각형 278" class="cls-1">
+      <rect class="cls-4" width="49" height="34" rx="5"/>
+      <rect class="cls-5" x="1" y="1" width="47" height="32" rx="4"/>
+    </g>
+    <g id="그룹_211" data-name="그룹 211" transform="translate(13 10)">
+      <circle id="타원_43" data-name="타원 43" class="cls-2" cx="7" cy="7" r="7"/>
+      <circle id="타원_44" data-name="타원 44" class="cls-3" cx="7" cy="7" r="7" transform="translate(9)"/>
+    </g>
+  </g>
+</svg>

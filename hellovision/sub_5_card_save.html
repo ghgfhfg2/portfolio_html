@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=medium-dpi"
+      name="viewport"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/swiper_4.5.0.min.js"></script>
+    <script src="./js/common.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!--상단영역 -->
+      <header id="header">
+        <div class="gnb-wrap content-box">
+          <div class="logo-box">
+            <a href="#" class="top-logo">
+              <img
+                src="./img/logo_LGhellovision.png"
+                alt="LG HelloVision"
+                class="pc-img"
+              />
+              <img src="./img/logo_LGhellovision2x.png" class="mobile-img" />
+            </a>
+            <button type="button" class="btn-total-menu mo-el" onclick="addOn('.total-menu-box')">
+                <span class="line"></span>
+            </button>
+          </div>
+          <div id="gnb-box">
+            <ul class="gnb">
+              <li><a href="#">TV</a></li>
+              <li><a href="#">인터넷</a></li>
+              <li><a href="#">결합상품</a></li>
+              <li><a href="#">모바일결합</a></li>
+              <li><a href="#">제휴할인</a></li>
+              <li><a href="#">자주하는질문</a></li>
+              <li><a href="#">설치후기</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="total-menu-box">
+            <div class="top-box">
+                <a href="#" class="ic-home">HOME</a>
+                <button type="button" class="btn-close" onclick="removeOn('.total-menu-box')"></button>
+            </div>
+            <div class="mo-lnb">
+                <ul class="depth-1">
+                    <li>
+                        <a href="#" class="has-sub">TV</a>
+                        <ul class="depth-2">
+                            <li>
+                                <a href="#">TV상품</a>
+                            </li>
+                            <li>
+                                <a href="#">TV상품</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-sub">TV</a>
+                        <ul class="depth-2">
+                            <li>
+                                <a href="#">TV상품</a>
+                            </li>
+                            <li>
+                                <a href="#">TV상품</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </header>
+      <script>
+          var lnbDepth1 = document.querySelectorAll('.total-menu-box .depth-1 .has-sub');
+          for(var i=0; i<lnbDepth1.length; i++){
+              lnbDepth1[i].addEventListener('click', function(){
+                this.classList.toggle('on');
+              })
+          }
+      </script>
+      <!--//상단영역 -->
+      <!-- 오른쪽 고정배너 -->
+      <div class="right-fix-banner">
+        <ul>
+          <li>
+            <a href="#" class="ic1">
+              <span
+                >가입문의<br /><span class="fon-p-color">1666-4465</span></span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="#" class="ic2"
+              ><span>카카오톡<br />바로상담</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="ic3"
+              ><span>네이버톡톡<br />바로상담</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="ic4"
+              ><span>설치가능<br />지역정보</span></a
+            >
+          </li>
+        </ul>
+        <button type="button" class="btn-top"><span>TOP</span></button>
+      </div>
+      <!-- 오른쪽 고정배너 -->
+      <!-- 컨텐츠 영역 -->
+      <div id="container">
+        <div class="sub-content-box">
+            <h2 class="sub-h2">제휴카드할인</h2>
+            <div class="s5-box">
+                <h3 class="sub-h3">LG헬로비전 현대카드M Edition2 (청구할인형)</h3>
+                <div class="card-box">
+                    <div class="img-box">
+                        <img src="./img/img_hello_card01.png" alt="">
+                        <a href="https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardflag=RC&cardWcd=MCJHE2D" target="_blank" class="btn-view">자세히보기</a>
+                    </div>
+                    <div class="txt-box">
+                        <dl>
+                            <dt>혜택</dt>
+                            <dd>서비스 이용요금 <span class="fon-p-color">월 최대 2만원 청구할인</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>할인내용</dt>
+                            <dd>전월 이용 실적에 따라 할인 적용<br>
+                                - 30만원 이상 17,000원 할인<br>
+                                - 70만원 이상 20,000원 할인
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>발급신청</dt>
+                            <dd>모바일 신청 (현대카드 APP)</dd>
+                        </dl>
+                        <dl>
+                            <dt>신청방법</dt>
+                            <dd>
+                                1. Google Play 또는 App Store 접속<br>
+                                2. 현대카드 App설치<br>
+                                3. 카드신청 및 제휴 탭 클릭<br>
+                                4. LG헬로비전 현대카드M Edition2 발급신청
+                            </dd>
+                        </dl>
+                        <p>※ 전월 사용 금액 30만원 이상 시 17,000원 / 70만원 이상 시 20,000원 할인 혜택은 1~36개월간 적용되며 
+                            37개월 부터는 30만원 이상 시 6,000원 할인 적용</p>
+                    </div>
+                </div>
+                <h3 class="sub-h3">LG헬로비전 롯데카드</h3>
+                <div class="card-box">
+                    <div class="img-box">
+                        <img src="./img/img_hello_card02.png" alt="">
+                        <a href="https://www.lottecard.co.kr/app/LPCDADB_V100.lc?vtCdKndC=P11708-A11708&bId=12264" target="_blank" class="btn-view">자세히보기</a>
+                    </div>
+                    <div class="txt-box">
+                        <dl>
+                            <dt>혜택</dt>
+                            <dd>LG헬로비전 이용요금 자동이체 시 <span class="fon-p-color">월 최대 2만원 결제일 할인</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>할인내용</dt>
+                            <dd>지난 달 기준 금액 이상 이용 시 LG헬로비전 이용요금 결제일 할인<br>
+                                - 30만원 이상 11,000원 할인<br>
+                                - 70만원 이상 15,000원 할인<br>
+                                - 100만원 이상 20,000원 할인
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>발급신청</dt>
+                            <dd>롯데카드 홈페이지에서 신청 가능</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- //컨텐츠 영역 -->
+      <!-- 하단 영역 -->
+      <footer id="footer">
+        <div class="content-box">
+          <ul class="footer-link">
+            <li>
+              <a href="#"><strong>개인정보처리방침</strong></a>
+            </li>
+            <li><a href="#">홈페이지이용약관</a></li>
+          </ul>
+          <div class="footer-box">
+            <div class="txt-box">
+              <div class="flex-box">
+                <div class="left">
+                  <dl>
+                    <dt>사업자명</dt>
+                    <dd>거산텔레콤(주)</dd>
+                  </dl>
+                  <dl>
+                    <dt>사업자등록번호</dt>
+                    <dd>605-81-85031</dd>
+                  </dl>
+                  <dl>
+                    <dt>대표자</dt>
+                    <dd>문상철</dd>
+                  </dl>
+                  <dl>
+                    <dt>개인정보책임자</dt>
+                    <dd>김성훈</dd>
+                  </dl>
+                </div>
+                <div class="right">
+                  <dl>
+                    <dt>주소</dt>
+                    <dd>경상남도 김해시 전하로 161번길 10, 601호(홍동)</dd>
+                  </dl>
+                  <dl>
+                    <dt>통신판매번호</dt>
+                    <dd>제 2017-경남김해-0162호</dd>
+                  </dl>
+                  <dl>
+                    <dt>대표번호</dt>
+                    <dd>1666-4465</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="cs-center-box">
+              <img
+                class="foot-logo"
+                src="./img/logo_LGhellovision.svg"
+                alt=""
+              />
+              <div class="cs-center">
+                <h3>CS CENTER</h3>
+                <p>1666-4465</p>
+              </div>
+            </div>
+          </div>
+          <p class="copyright">
+            Copyright © 2020 LG HelloVision All rights reserved.
+          </p>
+        </div>
+        <!-- 상담신청 -->
+        <div class="foot-consulting">
+          <div class="content-box consulting-box">
+            <div class="call">
+              <h3>상담이 필요하세요?</h3>
+              <p>1666-4465</p>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="이름" />
+              <input type="text" placeholder="연락처"">
+              <input type="text" placeholder="상담가능시간" />
+              <input type="submit" value="상담신청" />
+            </div>
+            <div class="agree-box">
+              <input type="checkbox" id="agree-check" />
+              <label for="agree-check"></label>
+              <div class="view-box">
+                <span>개인정보 활용동의</span><br />
+                <button type="button" onclick="toggle('#agreeLayer')">
+                  [내용보기]
+                </button>
+                <div
+                  class="agree-info-layer"
+                  id="agreeLayer"
+                  style="display: none"
+                >
+                  <button type="button" onclick="hide('#agreeLayer')"></button>
+                  <h4>개인정보 활용동의</h4>
+                  <table class="tbl-basic no-bd td-left">
+                    <caption></caption>
+                    <colgroup>
+                      <col style="width: 50%" />
+                      <col />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="row">개인정보의 수집 및 이용목적</th>
+                        <td>렌탈 온라인 신청, 접수</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">수집하는 개인정보 항목</th>
+                        <td>성명, 연락처(휴대폰 번호)</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">개인정보 보유 및 이용기간</th>
+                        <td>
+                          개인정보 수집 및 이용목적이 달성된 후에는 예외없이
+                          해당 정보를 파기합니다.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //상담신청 -->
+      </footer>
+      <!-- //하단 영역 -->
+    </div>
+  </body>
+</html>

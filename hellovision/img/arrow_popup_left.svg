@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.304" height="36.826" viewBox="0 0 21.304 36.826">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #999;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <path id="arrow_popup_left" class="cls-1" d="M0,0,17,18.417,34,0" transform="translate(19.891 1.413) rotate(90)"/>
+</svg>

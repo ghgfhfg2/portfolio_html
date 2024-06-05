@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=medium-dpi"
+      name="viewport"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/swiper_4.5.0.min.js"></script>
+    <script src="./js/common.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!--상단영역 -->
+      <header id="header">
+        <div class="gnb-wrap content-box">
+          <div class="logo-box">
+            <a href="#" class="top-logo">
+              <img
+                src="./img/logo_LGhellovision.png"
+                alt="LG HelloVision"
+                class="pc-img"
+              />
+              <img src="./img/logo_LGhellovision2x.png" class="mobile-img" />
+            </a>
+            <button type="button" class="btn-total-menu mo-el" onclick="addOn('.total-menu-box')">
+                <span class="line"></span>
+            </button>
+          </div>
+          <div id="gnb-box">
+            <ul class="gnb">
+              <li><a href="#">TV</a></li>
+              <li><a href="#">인터넷</a></li>
+              <li><a href="#">결합상품</a></li>
+              <li><a href="#">모바일결합</a></li>
+              <li><a href="#">제휴할인</a></li>
+              <li><a href="#">자주하는질문</a></li>
+              <li><a href="#">설치후기</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="total-menu-box">
+            <div class="top-box">
+                <a href="#" class="ic-home">HOME</a>
+                <button type="button" class="btn-close" onclick="removeOn('.total-menu-box')"></button>
+            </div>
+            <div class="mo-lnb">
+                <ul class="depth-1">
+                    <li>
+                        <a href="#" class="has-sub">TV</a>
+                        <ul class="depth-2">
+                            <li>
+                                <a href="#">TV상품</a>
+                            </li>
+                            <li>
+                                <a href="#">TV상품</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-sub">TV</a>
+                        <ul class="depth-2">
+                            <li>
+                                <a href="#">TV상품</a>
+                            </li>
+                            <li>
+                                <a href="#">TV상품</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </header>
+      <script>
+          var lnbDepth1 = document.querySelectorAll('.total-menu-box .depth-1 .has-sub');
+          for(var i=0; i<lnbDepth1.length; i++){
+              lnbDepth1[i].addEventListener('click', function(){
+                this.classList.toggle('on');
+              })
+          }
+      </script>
+      <!--//상단영역 -->
+      <!-- 오른쪽 고정배너 -->
+      <div class="right-fix-banner">
+        <ul>
+          <li>
+            <a href="#" class="ic1">
+              <span
+                >가입문의<br /><span class="fon-p-color">1666-4465</span></span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="#" class="ic2"
+              ><span>카카오톡<br />바로상담</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="ic3"
+              ><span>네이버톡톡<br />바로상담</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="ic4"
+              ><span>설치가능<br />지역정보</span></a
+            >
+          </li>
+        </ul>
+        <button type="button" class="btn-top"><span>TOP</span></button>
+      </div>
+      <!-- 오른쪽 고정배너 -->
+      <!-- 컨텐츠 영역 -->
+      <div id="container">
+        <div class="sub-visual-box s-4-1">
+            <span>모바일결합</span>
+        </div>
+        <div class="sub-content-box s4-1-box">
+            <div class="com-tab-box tab-style-1">
+                <ul class="tab-list">
+                  <li>
+                    <button type="button">LGU+</button>
+                  </li>
+                  <li>
+                    <button type="button">SKT</button>
+                  </li>
+                  <li>
+                    <button type="button" class="on">KT</button>
+                  </li>
+                </ul>
+            </div>
+            <h3 class="big-h3">
+              KT 케이블 총액 결합할인
+            </h3>
+            <table class="tbl-basic">
+                <caption></caption>
+                <colgroup>
+                    <col style="width: 140px;">
+                    <col >
+                    <col >
+                    <col >
+                    <col >
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th rowspan="2" scope="col">헬로인터넷<br>
+                            상품</th>
+                        <th colspan="4" scope="col">KT 휴대폰 요금제 총액 (최대 5회선)</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">월 64,900원 이상</th>
+                        <th scope="col">월 108,900원 이상</th>
+                        <th scope="col">월 141,900원 이상</th>
+                        <th scope="col">월 174,900원 이상</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">광랜라이트</th>
+                        <td>3,300원 할인</td>
+                        <td>14,300원 할인</td>
+                        <td>18,700원 할인</td>
+                        <td>23,100원 할인</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">광랜</th>
+                        <td>3,300원 할인</td>
+                        <td>14,300원 할인</td>
+                        <td>18,700원 할인</td>
+                        <td>23,100원 할인</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">기가라이트</th>
+                        <td>5,500원 할인</td>
+                        <td>16,610원 할인</td>
+                        <td>22,110원 할인</td>
+                        <td>27,610원 할인</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">플래티넘기가</th>
+                        <td>5,500원 할인</td>
+                        <td>16,610원 할인</td>
+                        <td>22,110원 할인</td>
+                        <td>27,610원 할인</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul class="li-style1 fon16">
+                <li>
+                    최대 5회선까지 결합 가능합니다.
+                </li>
+                <li>
+                    상기 할인액은 부가세 포함된금액입니다.
+                </li>
+                <li>
+                  월 정액 요금제 기여도별 할인되는 금액입니다.
+                </li>
+                <li>
+                  헬로인터넷 명의자 기준으로 가족중 KT 모바일 1회선만 있어도 결합 가능합니다.
+                </li>
+                <li>
+                  월정액을 납부하는 일반적인 요금제만 결합가능합니다 (데이터 전용, M2M 등의 요금제 제외)
+                </li>
+                <li>
+                  가구 내 이용하는 모바일 (LTE, 3G) 월정액을 모두 합한 총액 산정 시 단말기 대금, 추가 통화료, 데이터 이용료, 부가서비스 금액 등은 미포함 됩니다
+                </li>
+                <li>KT 모바일 할인액은 KT 모바일 기여도에 따른 배분 또는 KT 지정회선에 몰아서 할인 중 선택할 수 있습니다.</li>
+                <li>약정기간 내 해지 시 헬로인터넷을 포함한 일반 유선 상품에 대한 약정할인/유선결합할인 할인 반환금이 발생할 수 있습니다.</li>
+            </ul>
+            <h3 class="big-h3">
+              헬로 인터넷 + KT 모바일 결합할인
+            </h3>
+            <table class="tbl-basic">
+                <caption></caption>
+                <colgroup>
+                    <col style="width:33.33%">
+                    <col >
+                    <col style="width:33.33%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">헬로인터넷 상품</th>
+                        <th scope="col">할인율</th>
+                        <th scope="col">3년약정 할인요금</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>광랜라이트</td>
+                        <td rowspan="4"><span class="sale">20%</span></td>
+                        <td>12,170원</td>
+                    </tr>
+                    <tr>
+                        <td>광랜</td>
+                        <td>14,880원</td>
+                    </tr>
+                    <tr>
+                        <td>기가라이트</td>
+                        <td>17,130원</td>
+                    </tr>
+                    <tr>
+                        <td>플래티넘기가</td>
+                        <td>18,040원</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+      <!-- //컨텐츠 영역 -->
+      <!-- 하단 영역 -->
+      <footer id="footer">
+        <div class="content-box">
+          <ul class="footer-link">
+            <li>
+              <a href="#"><strong>개인정보처리방침</strong></a>
+            </li>
+            <li><a href="#">홈페이지이용약관</a></li>
+          </ul>
+          <div class="footer-box">
+            <div class="txt-box">
+              <div class="flex-box">
+                <div class="left">
+                  <dl>
+                    <dt>사업자명</dt>
+                    <dd>거산텔레콤(주)</dd>
+                  </dl>
+                  <dl>
+                    <dt>사업자등록번호</dt>
+                    <dd>605-81-85031</dd>
+                  </dl>
+                  <dl>
+                    <dt>대표자</dt>
+                    <dd>문상철</dd>
+                  </dl>
+                  <dl>
+                    <dt>개인정보책임자</dt>
+                    <dd>김성훈</dd>
+                  </dl>
+                </div>
+                <div class="right">
+                  <dl>
+                    <dt>주소</dt>
+                    <dd>경상남도 김해시 전하로 161번길 10, 601호(홍동)</dd>
+                  </dl>
+                  <dl>
+                    <dt>통신판매번호</dt>
+                    <dd>제 2017-경남김해-0162호</dd>
+                  </dl>
+                  <dl>
+                    <dt>대표번호</dt>
+                    <dd>1666-4465</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="cs-center-box">
+              <img
+                class="foot-logo"
+                src="./img/logo_LGhellovision.svg"
+                alt=""
+              />
+              <div class="cs-center">
+                <h3>CS CENTER</h3>
+                <p>1666-4465</p>
+              </div>
+            </div>
+          </div>
+          <p class="copyright">
+            Copyright © 2020 LG HelloVision All rights reserved.
+          </p>
+        </div>
+        <!-- 상담신청 -->
+        <div class="foot-consulting">
+          <div class="content-box consulting-box">
+            <div class="call">
+              <h3>상담이 필요하세요?</h3>
+              <p>1666-4465</p>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="이름" />
+              <input type="text" placeholder="연락처"">
+              <input type="text" placeholder="상담가능시간" />
+              <input type="submit" value="상담신청" />
+            </div>
+            <div class="agree-box">
+              <input type="checkbox" id="agree-check" />
+              <label for="agree-check"></label>
+              <div class="view-box">
+                <span>개인정보 활용동의</span><br />
+                <button type="button" onclick="toggle('#agreeLayer')">
+                  [내용보기]
+                </button>
+                <div
+                  class="agree-info-layer"
+                  id="agreeLayer"
+                  style="display: none"
+                >
+                  <button type="button" onclick="hide('#agreeLayer')"></button>
+                  <h4>개인정보 활용동의</h4>
+                  <table class="tbl-basic no-bd td-left">
+                    <caption></caption>
+                    <colgroup>
+                      <col style="width: 50%" />
+                      <col />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="row">개인정보의 수집 및 이용목적</th>
+                        <td>렌탈 온라인 신청, 접수</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">수집하는 개인정보 항목</th>
+                        <td>성명, 연락처(휴대폰 번호)</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">개인정보 보유 및 이용기간</th>
+                        <td>
+                          개인정보 수집 및 이용목적이 달성된 후에는 예외없이
+                          해당 정보를 파기합니다.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //상담신청 -->
+      </footer>
+      <!-- //하단 영역 -->
+    </div>
+  </body>
+</html>

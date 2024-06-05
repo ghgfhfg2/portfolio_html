@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="52" viewBox="0 0 60 52">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+        stroke: #000;
+        stroke-width: 2px;
+      }
+
+      .cls-1 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        fill: #ed174d;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="icon_biz_05" transform="translate(-688 -1280.641)">
+    <g id="사각형_293" data-name="사각형 293" class="cls-1" transform="translate(694.783 1291.662)">
+      <path class="cls-4" d="M0,0H46.433a0,0,0,0,1,0,0V17.762A23.216,23.216,0,0,1,23.216,40.978h0A23.216,23.216,0,0,1,0,17.762V0A0,0,0,0,1,0,0Z"/>
+      <path class="cls-5" d="M1.854,1H44.578a.854.854,0,0,1,.854.854V17.762A22.216,22.216,0,0,1,23.216,39.978h0A22.216,22.216,0,0,1,1,17.762V1.854A.854.854,0,0,1,1.854,1Z"/>
+    </g>
+    <g id="사각형_292" data-name="사각형 292" class="cls-1" transform="translate(688 1280.641)">
+      <rect class="cls-4" width="60" height="13.924" rx="4"/>
+      <rect class="cls-5" x="1" y="1" width="58" height="11.924" rx="3"/>
+    </g>
+    <g id="그룹_240" data-name="그룹 240" transform="translate(705.443 1299.036)">
+      <g id="타원_49" data-name="타원 49" class="cls-2" transform="translate(0)">
+        <ellipse class="cls-4" cx="12.598" cy="13.026" rx="12.598" ry="13.026"/>
+        <ellipse class="cls-5" cx="12.598" cy="13.026" rx="11.598" ry="12.026"/>
+      </g>
+      <g id="타원_50" data-name="타원 50" class="cls-2" transform="translate(5.814 6.012)">
+        <ellipse class="cls-4" cx="6.784" cy="7.014" rx="6.784" ry="7.014"/>
+        <ellipse class="cls-5" cx="6.784" cy="7.014" rx="5.784" ry="6.014"/>
+      </g>
+    </g>
+    <ellipse id="타원_51" data-name="타원 51" class="cls-3" cx="1.938" cy="2.004" rx="1.938" ry="2.004" transform="translate(732.577 1298.035)"/>
+  </g>
+</svg>

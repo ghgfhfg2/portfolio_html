@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-1,.cls-3{stroke:#000;stroke-linejoin:round;stroke-width:2px}.cls-1{stroke-linecap:round}.cls-3,.cls-6{fill:none}.cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="icon_step_schedule" transform="translate(-83.835 -308.486)">
+        <g id="사각형_133" class="cls-1" transform="translate(83.835 317.156)">
+            <rect width="65.996" height="56.06" class="cls-5" rx="3.2"/>
+            <rect width="63.996" height="54.06" x="1" y="1" class="cls-6" rx="2.2"/>
+        </g>
+        <path id="선_94" fill="none" stroke="#000" stroke-linecap="square" stroke-linejoin="round" stroke-width="2px" d="M0 0L61.607 0" transform="translate(85.844 328.796)"/>
+        <path id="선_95" d="M0 8.67L0 0" class="cls-3" transform="translate(96.005 308.486)"/>
+        <path id="선_96" d="M0 8.67L0 0" class="cls-3" transform="translate(137.369 308.664)"/>
+        <g id="그룹_137" transform="translate(94.93 342.469)">
+            <path id="사각형_134" d="M0 0H10.565V3.118H0z"/>
+            <path id="사각형_135" d="M0 0H10.565V3.118H0z" transform="translate(34.023)"/>
+            <path id="사각형_136" d="M0 0H10.565V3.118H0z" transform="translate(17.011)"/>
+            <path id="사각형_137" d="M0 0H10.565V3.118H0z" transform="translate(0 12.471)"/>
+            <path id="사각형_138" d="M0 0H10.565V3.118H0z" transform="translate(34.023 12.471)"/>
+            <path id="사각형_139" d="M0 0H10.565V3.118H0z" transform="translate(17.011 12.471)"/>
+        </g>
+        <g id="그룹_138" transform="translate(134.005 358.781)">
+            <g id="타원_33" class="cls-1">
+                <ellipse cx="12.415" cy="12.352" class="cls-5" rx="12.415" ry="12.352"/>
+                <ellipse cx="12.415" cy="12.352" class="cls-6" rx="11.415" ry="11.352"/>
+            </g>
+            <path id="패스_100" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2px" d="M138.657 369.025l4.313 4.291 6.327-6.295" transform="translate(-131.562 -357.817)"/>
+        </g>
+    </g>
+</svg>

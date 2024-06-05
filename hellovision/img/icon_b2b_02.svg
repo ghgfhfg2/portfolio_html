@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="54" viewBox="0 0 44 54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #ed174d;
+      }
+
+      .cls-3 {
+        fill: #80a7ff;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="icon_b2b_02" transform="translate(-79.258 -0.157)">
+    <g id="사각형_267" data-name="사각형 267" class="cls-1" transform="translate(79.258 25.157)">
+      <rect class="cls-4" width="9" height="20" rx="2"/>
+      <rect class="cls-5" x="1" y="1" width="7" height="18" rx="1"/>
+    </g>
+    <g id="사각형_268" data-name="사각형 268" class="cls-1" transform="translate(85.258 0.157)">
+      <rect class="cls-4" width="38" height="54" rx="5"/>
+      <rect class="cls-5" x="1" y="1" width="36" height="52" rx="4"/>
+    </g>
+    <path id="패스_183" data-name="패스 183" d="M172.679,448h-7.154a1.139,1.139,0,1,0,0,2.275h7.154a1.139,1.139,0,1,0,0-2.275Z" transform="translate(-70.636 -400.207)"/>
+    <path id="패스_184" data-name="패스 184" d="M270.679,448h-7.154a1.139,1.139,0,1,0,0,2.275h7.154a1.139,1.139,0,1,0,0-2.275Z" transform="translate(-157.682 -400.207)"/>
+    <rect id="사각형_269" data-name="사각형 269" width="37.169" height="1.762" transform="translate(85.62 43.226)"/>
+    <rect id="사각형_274" data-name="사각형 274" width="37.169" height="1.762" transform="translate(85.62 7.115)"/>
+    <rect id="사각형_270" data-name="사각형 270" class="cls-2" width="13" height="9" rx="2" transform="translate(90.258 16.157)"/>
+    <rect id="사각형_273" data-name="사각형 273" class="cls-3" width="13" height="9" rx="2" transform="translate(97.258 27.157)"/>
+    <rect id="사각형_271" data-name="사각형 271" class="cls-3" width="13" height="9" rx="2" transform="translate(105.258 16.157)"/>
+    <path id="사각형_272" data-name="사각형 272" class="cls-2" d="M2,0H9A0,0,0,0,1,9,0V9A0,0,0,0,1,9,9H2A2,2,0,0,1,0,7V2A2,2,0,0,1,2,0Z" transform="translate(112.258 27.157)"/>
+  </g>
+</svg>

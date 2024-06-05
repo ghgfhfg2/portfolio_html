@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e2e2e2;
+      }
+
+      .cls-2 {
+        font-size: 17px;
+        font-family: NotoSansCJKkr-Bold, Noto Sans CJK KR;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="icon_tv_economy" transform="translate(0 0)">
+    <circle id="타원_21" data-name="타원 21" class="cls-1" cx="17.5" cy="17.5" r="17.5" transform="translate(0 0)"/>
+    <text id="E" class="cls-2" transform="translate(11 24)"><tspan x="0" y="0">E</tspan></text>
+  </g>
+</svg>

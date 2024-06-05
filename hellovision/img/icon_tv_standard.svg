@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="94" height="35" viewBox="0 0 94 35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e2e2e2;
+      }
+
+      .cls-2 {
+        font-size: 17px;
+        font-family: NotoSansCJKkr-Bold, Noto Sans CJK KR;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #ffd5e5;
+      }
+
+      .cls-4 {
+        fill: #c4e8b5;
+      }
+    </style>
+  </defs>
+  <g id="icon_tv_standard" transform="translate(0.274 0)">
+    <g id="그룹_112" data-name="그룹 112">
+      <ellipse id="타원_21" data-name="타원 21" class="cls-1" cx="18" cy="17.5" rx="18" ry="17.5" transform="translate(-0.274 0)"/>
+      <text id="E" class="cls-2" transform="translate(11.726 24)"><tspan x="0" y="0">E</tspan></text>
+    </g>
+    <g id="그룹_115" data-name="그룹 115" transform="translate(28.202)">
+      <ellipse id="타원_21-2" data-name="타원 21" class="cls-3" cx="18" cy="17.5" rx="18" ry="17.5" transform="translate(-0.476 0)"/>
+      <text id="B" class="cls-2" transform="translate(11.524 24)"><tspan x="0" y="0">B</tspan></text>
+    </g>
+    <g id="그룹_117" data-name="그룹 117" transform="translate(58.166)">
+      <ellipse id="타원_21-3" data-name="타원 21" class="cls-4" cx="18" cy="17.5" rx="18" ry="17.5" transform="translate(-0.441 0)"/>
+      <text id="S" class="cls-2" transform="translate(11.559 24)"><tspan x="0" y="0">S</tspan></text>
+    </g>
+  </g>
+</svg>

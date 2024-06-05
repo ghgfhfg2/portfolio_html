@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=medium-dpi"
+      name="viewport"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/board.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/swiper_4.5.0.min.js"></script>
+    <script src="./js/common.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!--상단영역 -->
+      <header id="header">
+        <div class="gnb-wrap content-box">
+          <div class="logo-box">
+            <a href="#" class="top-logo">
+              <img
+                src="./img/logo_LGhellovision.png"
+                alt="LG HelloVision"
+                class="pc-img"
+              />
+              <img src="./img/logo_LGhellovision2x.png" class="mobile-img" />
+            </a>
+            <button type="button" class="btn-total-menu mo-el" onclick="addOn('.total-menu-box')">
+                <span class="line"></span>
+            </button>
+          </div>
+          <div id="gnb-box">
+            <ul class="gnb">
+              <li><a href="#">TV</a></li>
+              <li><a href="#">인터넷</a></li>
+              <li><a href="#">결합상품</a></li>
+              <li><a href="#">모바일결합</a></li>
+              <li><a href="#">제휴할인</a></li>
+              <li><a href="#">자주하는질문</a></li>
+              <li><a href="#">설치후기</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="total-menu-box">
+            <div class="top-box">
+                <a href="#" class="ic-home">HOME</a>
+                <button type="button" class="btn-close" onclick="removeOn('.total-menu-box')"></button>
+            </div>
+            <div class="mo-lnb">
+                <ul class="depth-1">
+                    <li>
+                        <a href="#" class="has-sub">TV</a>
+                        <ul class="depth-2">
+                            <li>
+                                <a href="#">TV상품</a>
+                            </li>
+                            <li>
+                                <a href="#">TV상품</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-sub">TV</a>
+                        <ul class="depth-2">
+                            <li>
+                                <a href="#">TV상품</a>
+                            </li>
+                            <li>
+                                <a href="#">TV상품</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </header>
+      <script>
+          var lnbDepth1 = document.querySelectorAll('.total-menu-box .depth-1 .has-sub');
+          for(var i=0; i<lnbDepth1.length; i++){
+              lnbDepth1[i].addEventListener('click', function(){
+                this.classList.toggle('on');
+              })
+          }
+      </script>
+      <!--//상단영역 -->
+      <!-- 오른쪽 고정배너 -->
+      <div class="right-fix-banner">
+        <ul>
+          <li>
+            <a href="#" class="ic1">
+              <span
+                >가입문의<br /><span class="fon-p-color">1666-4465</span></span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="#" class="ic2"
+              ><span>카카오톡<br />바로상담</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="ic3"
+              ><span>네이버톡톡<br />바로상담</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="ic4"
+              ><span>설치가능<br />지역정보</span></a
+            >
+          </li>
+        </ul>
+        <button type="button" class="btn-top"><span>TOP</span></button>
+      </div>
+      <!-- 오른쪽 고정배너 -->
+      <!-- 컨텐츠 영역 -->
+      <div id="container">
+        <div class="sub-biz-visual">
+            <div class="content-box">
+                <div class="txt-box">
+                    <h2 class="sub-h2">성공적인 비즈니스를 위한<br>
+                        사업자전용 <span class="fon-p-color">LG헬로비전 Biz</span></h2>
+                    <p>
+                        LG헬로비전은 인터넷, 방송, 가전제품, CCTV, 관제솔루션 등의 상품을<br>
+모든 사업장에 맞춤으로 상담 후 서비스를 제공합니다.
+                    </p>
+                    <button type="button" class="btn-basic big3">상담신청하기</button>
+                </div>
+            </div>
+        </div>
+        <div class="s9-section">
+            <div class="sub-h2-box">
+                <span class="h2-num">1</span>
+                <h2 class="sub-h2">
+                    LG헬로비전 <span class="fon-p-color">기업상품</span>
+                </h2>
+                <p>사업장에 따라 필요한 통신, 기타장비 서비스를 컨설팅부터 설치까지<br>
+                    더 빠르고 편리하게 이용하실 수 있습니다.</p>
+            </div>
+            <div class="s9-box1">
+                <div class="sub-content-box">
+                    <ul>
+                        <li class="ic1">인터넷</li>
+                        <li class="ic2">네트워크공사</li>
+                        <li class="ic3">TV방송</li>
+                        <li class="ic4">주차관제</li>
+                        <li class="ic5">CCTV</li>
+                        <li class="ic6">IP 센트릭스</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="s9-section bg">
+            <div class="sub-h2-box">
+                <span class="h2-num">2</span>
+                <h2 class="sub-h2">
+                    헬로비전 <span class="fon-p-color">사업자렌탈</span>
+                </h2>
+                <p>LG헬로비전은 네트워크 뿐만 아니라 사업장에 필요한 모든 가전의 렌탈까지<br>
+                    올인원으로 맞춤 제공해 드립니다.</p>
+            </div>
+            <div class="s9-box-2">
+                <div class="sub-content-box">
+                    <ul>
+                        <li class="ic1">
+                            <h3>36/48/60개월 장기렌탈로<br> 
+                                <span class="fon-p-color">초기비용 부담의 절감</span></h3>
+                            <p>렌탈로 휴대폰요금 내듯이<br>
+                                부담없이 이용할 수 있습니다.</p>
+                        </li>
+                        <li class="ic2">
+                            <h3>소규모 사업장의<br>
+                                <span class="fon-p-color">인건비 문제해결</span></h3>
+                            <p>음식점, 카페 등 무인결제 키오스크를 
+                                <br>렌탈로 이용 가능합니다.</p>
+                        </li>
+                        <li class="ic3">
+                            <h3>고객님의 선호에 따른 <br>
+                                <span class="fon-p-color">
+                                    다양한 제품 및 브랜드 선택</span>
+                            </h3>
+                            <p>삼성, LG, 위니아 등 트렌디한 
+                                <br>제품 라인업을 제공합니다.</p>
+                        </li>
+                        <li class="ic4">
+                            <h3>사업장 <br>
+                                <span class="fon-p-color">부가세 환급</span>
+                            </h3>
+                            <p>렌탈비용은 운영경비로 인정되어 
+                                 <br>부가세환금 및 소득세,법인세가 절감됩니다.</p>
+                        </li>
+                        <li class="ic5">
+                            <h3>제휴카드 납부시 
+                                <br>
+                                <span class="fon-p-color">추가 청구할인 혜택</span>
+                            </h3>
+                            <p>렌탈전용 제휴카드로 납부하시면 
+                                <br>카드사 청구할인을 받으실 수 있습니다.</p>
+                        </li>
+                        <li class="ic6">
+                            <h3>3無 서비스, 약정 종료시 
+                                <br>
+                                <span class="fon-p-color">별도의 비용없이 고객소유</span>
+                            </h3>
+                            <p>설치비, 양도금, 폐가전수거비용 0원 
+                                <br>따로 돈 들 일이 없습니다.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="s9-section">
+            <div class="sub-h2-box">
+                <h2 class="sub-h2">
+                    설치 가능한 사업장
+                </h2>
+                <p class="col_333">1인 소규모 사업장부터 대규모 사업장까지 
+                    <br>
+                    사업자전용 맞춤 컨설팅으로 적용이 가능하십니다.</p>
+            </div>
+            <div class="s9-box-3 pc-el">
+                <ul>
+                    <li>
+                        <img src="./img/img_biz_01.png" alt="">
+                        <span>호텔, 모텔, 펜션</span>
+                    </li>
+                    <li>
+                        <img src="./img/img_biz_02.png" alt="">
+                        <span>원룸, 오피스텔</span>
+                    </li>
+                    <li>
+                        <img src="./img/img_biz_03.png" alt="">
+                        <span>학원, 사무실</span>
+                    </li>
+                    <li>
+                        <img src="./img/img_biz_04.png" alt="">
+                        <span>병원, 요양병원</span>
+                    </li>                    
+                </ul>
+            </div>
+            <div class="s9-box-3-1 mo-el swiper-container">
+                <div class="page-box"></div>
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <img src="./img/img_biz_01.png" alt="">
+                        <span>호텔, 모텔, 펜션</span>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./img/img_biz_02.png" alt="">
+                        <span>원룸, 오피스텔</span>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./img/img_biz_03.png" alt="">
+                        <span>학원, 사무실</span>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./img/img_biz_04.png" alt="">
+                        <span>병원, 요양병원</span>
+                    </li>                    
+                </ul>                
+            </div>
+            <script>
+                new Swiper(".s9-box-3-1", {
+                    loop: true,                    
+                    pagination: {
+                        el: ".page-box",
+                        clickable: true,
+                    },
+                    autoplay: {
+                        delay: 5000,
+                    },
+                    a11y: false,
+                });
+            </script>
+        </div>
+        <div class="s9-section no-pt">
+            <div class="s9-bot-box">
+                <h2>LG헬로비전 사업자전용 상품으로<br>
+                    부담없이 필요한 서비스를 이용해보세요.</h2>
+                <button type="button" class="btn-basic big3 p-color">사업자상품 상담신청하기</button>
+            </div>
+        </div>
+      </div>
+      <!-- //컨텐츠 영역 -->
+      <!-- 하단 영역 -->
+      <footer id="footer">
+        <div class="content-box">
+          <ul class="footer-link">
+            <li>
+              <a href="#"><strong>개인정보처리방침</strong></a>
+            </li>
+            <li><a href="#">홈페이지이용약관</a></li>
+          </ul>
+          <div class="footer-box">
+            <div class="txt-box">
+              <div class="flex-box">
+                <div class="left">
+                  <dl>
+                    <dt>사업자명</dt>
+                    <dd>거산텔레콤(주)</dd>
+                  </dl>
+                  <dl>
+                    <dt>사업자등록번호</dt>
+                    <dd>605-81-85031</dd>
+                  </dl>
+                  <dl>
+                    <dt>대표자</dt>
+                    <dd>문상철</dd>
+                  </dl>
+                  <dl>
+                    <dt>개인정보책임자</dt>
+                    <dd>김성훈</dd>
+                  </dl>
+                </div>
+                <div class="right">
+                  <dl>
+                    <dt>주소</dt>
+                    <dd>경상남도 김해시 전하로 161번길 10, 601호(홍동)</dd>
+                  </dl>
+                  <dl>
+                    <dt>통신판매번호</dt>
+                    <dd>제 2017-경남김해-0162호</dd>
+                  </dl>
+                  <dl>
+                    <dt>대표번호</dt>
+                    <dd>1666-4465</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="cs-center-box">
+              <img
+                class="foot-logo"
+                src="./img/logo_LGhellovision.svg"
+                alt=""
+              />
+              <div class="cs-center">
+                <h3>CS CENTER</h3>
+                <p>1666-4465</p>
+              </div>
+            </div>
+          </div>
+          <p class="copyright">
+            Copyright © 2020 LG HelloVision All rights reserved.
+          </p>
+        </div>
+        <!-- 상담신청 -->
+        <div class="foot-consulting">
+          <div class="content-box consulting-box">
+            <div class="call">
+              <h3>상담이 필요하세요?</h3>
+              <p>1666-4465</p>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="이름" />
+              <input type="text" placeholder="연락처"">
+              <input type="text" placeholder="상담가능시간" />
+              <input type="submit" value="상담신청" />
+            </div>
+            <div class="agree-box">
+              <input type="checkbox" id="agree-check" />
+              <label for="agree-check"></label>
+              <div class="view-box">
+                <span>개인정보 활용동의</span><br />
+                <button type="button" onclick="toggle('#agreeLayer')">
+                  [내용보기]
+                </button>
+                <div
+                  class="agree-info-layer"
+                  id="agreeLayer"
+                  style="display: none"
+                >
+                  <button type="button" onclick="hide('#agreeLayer')"></button>
+                  <h4>개인정보 활용동의</h4>
+                  <table class="tbl-basic no-bd td-left">
+                    <caption></caption>
+                    <colgroup>
+                      <col style="width: 50%" />
+                      <col />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="row">개인정보의 수집 및 이용목적</th>
+                        <td>렌탈 온라인 신청, 접수</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">수집하는 개인정보 항목</th>
+                        <td>성명, 연락처(휴대폰 번호)</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">개인정보 보유 및 이용기간</th>
+                        <td>
+                          개인정보 수집 및 이용목적이 달성된 후에는 예외없이
+                          해당 정보를 파기합니다.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //상담신청 -->
+      </footer>
+      <!-- //하단 영역 -->
+    </div>
+  </body>
+</html>

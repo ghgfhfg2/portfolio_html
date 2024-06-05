@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="82" height="59.278" viewBox="0 0 82 59.278">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #000;
+        stroke-linecap: round;
+      }
+
+      .cls-1 {
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke: #ed174d;
+      }
+
+      .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="icon_biz_04" transform="translate(-1003 -1225.311)">
+    <rect id="사각형_291" data-name="사각형 291" width="82" height="2" transform="translate(1003 1275.052)"/>
+    <g id="그룹_236" data-name="그룹 236" transform="translate(1008 1251.693)">
+      <g id="사각형_287" data-name="사각형 287" class="cls-1">
+        <path class="cls-4" d="M5,0h6.915a5,5,0,0,1,5,5V32.9a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z"/>
+        <path class="cls-5" d="M5,1h6.915a4,4,0,0,1,4,4V30.9a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V5A4,4,0,0,1,5,1Z"/>
+      </g>
+      <g id="사각형_288" data-name="사각형 288" class="cls-1" transform="translate(5 6.36)">
+        <rect class="cls-4" width="7" height="7"/>
+        <rect class="cls-5" x="1" y="1" width="5" height="5"/>
+      </g>
+    </g>
+    <g id="그룹_239" data-name="그룹 239" transform="translate(1053 1241.693)">
+      <g id="사각형_289" data-name="사각형 289" class="cls-1">
+        <path class="cls-4" d="M13.957,0h0A13.957,13.957,0,0,1,27.915,13.957V42.9a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V13.957A13.957,13.957,0,0,1,13.957,0Z"/>
+        <path class="cls-5" d="M13.957,1h0A12.957,12.957,0,0,1,26.915,13.957V40.971a.926.926,0,0,1-.926.926H1.926A.926.926,0,0,1,1,40.971V13.957A12.957,12.957,0,0,1,13.957,1Z"/>
+      </g>
+      <g id="타원_48" data-name="타원 48" class="cls-2" transform="translate(9 18.36)">
+        <circle class="cls-4" cx="5" cy="5" r="5"/>
+        <circle class="cls-5" cx="5" cy="5" r="4"/>
+      </g>
+    </g>
+    <g id="그룹_238" data-name="그룹 238" transform="matrix(0.996, -0.087, 0.087, 0.996, 1010.063, 1225.69)">
+      <g id="사각형_290" data-name="사각형 290" class="cls-1" transform="translate(0 7.847) rotate(-61)">
+        <rect class="cls-4" width="8.972" height="62.347" rx="3"/>
+        <rect class="cls-5" x="1" y="1" width="6.972" height="60.347" rx="2"/>
+      </g>
+      <line id="선_118" data-name="선 118" class="cls-3" y1="2.715" x2="8.144" transform="translate(5.498 6.74)"/>
+      <line id="선_119" data-name="선 119" class="cls-3" y1="2.715" x2="8.144" transform="translate(15.453 12.169)"/>
+      <line id="선_120" data-name="선 120" class="cls-3" y1="2.715" x2="8.144" transform="translate(25.407 17.599)"/>
+      <line id="선_121" data-name="선 121" class="cls-3" y1="2.715" x2="8.144" transform="translate(34.456 23.029)"/>
+      <line id="선_122" data-name="선 122" class="cls-3" y1="2.715" x2="8.144" transform="translate(44.41 28.458)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.414" height="14.414" viewBox="0 0 14.414 14.414">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #999;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="icon_search_s" transform="translate(-1068 -729)">
+    <line id="선_29" data-name="선 29" class="cls-1" x2="7" y2="7" transform="translate(1074 735)"/>
+    <g id="타원_16" data-name="타원 16" class="cls-2" transform="translate(1068 729)">
+      <circle class="cls-3" cx="5.891" cy="5.891" r="5.891"/>
+      <circle class="cls-4" cx="5.891" cy="5.891" r="4.891"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=medium-dpi"
+      name="viewport"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/swiper_4.5.0.min.js"></script>
+    <script src="./js/common.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!--상단영역 -->
+      <header id="header">
+        <div class="gnb-wrap content-box">
+          <div class="logo-box">
+            <a href="#" class="top-logo">
+              <img
+                src="./img/logo_LGhellovision.png"
+                alt="LG HelloVision"
+                class="pc-img"
+              />
+              <img src="./img/logo_LGhellovision2x.png" class="mobile-img" />
+            </a>
+            <button
+              type="button"
+              class="btn-total-menu mo-el"
+              onclick="addOn('.total-menu-box')"
+            >
+              <span class="line"></span>
+            </button>
+          </div>
+          <div id="gnb-box">
+            <ul class="gnb">
+              <li><a href="#">TV</a></li>
+              <li><a href="#">인터넷</a></li>
+              <li><a href="#">결합상품</a></li>
+              <li><a href="#">모바일결합</a></li>
+              <li><a href="#">제휴할인</a></li>
+              <li><a href="#">자주하는질문</a></li>
+              <li><a href="#">설치후기</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="total-menu-box">
+          <div class="top-box">
+            <a href="#" class="ic-home">HOME</a>
+            <button
+              type="button"
+              class="btn-close"
+              onclick="removeOn('.total-menu-box')"
+            ></button>
+          </div>
+          <div class="mo-lnb">
+            <ul class="depth-1">
+              <li>
+                <a href="#" class="has-sub">TV</a>
+                <ul class="depth-2">
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="has-sub">TV</a>
+                <ul class="depth-2">
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <script>
+        var lnbDepth1 = document.querySelectorAll(
+          ".total-menu-box .depth-1 .has-sub"
+        );
+        for (var i = 0; i < lnbDepth1.length; i++) {
+          lnbDepth1[i].addEventListener("click", function () {
+            this.classList.toggle("on");
+          });
+        }
+      </script>
+      <!--//상단영역 -->
+      <!-- 오른쪽 고정배너 -->
+      <div class="right-fix-banner">
+        <ul>
+          <li>
+            <a href="#" class="ic1">
+              <span
+                >가입문의<br /><span class="fon-p-color">1666-4465</span></span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="#" class="ic2"
+              ><span>카카오톡<br />바로상담</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="ic3"
+              ><span>네이버톡톡<br />바로상담</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="ic4"
+              ><span>설치가능<br />지역정보</span></a
+            >
+          </li>
+        </ul>
+        <button type="button" class="btn-top"><span>TOP</span></button>
+      </div>
+      <!-- 오른쪽 고정배너 -->
+      <!-- 컨텐츠 영역 -->
+      <div id="container">
+        <div class="sub-visual-box s-3-1">
+          <span>결합상품</span>
+        </div>
+        <div class="sub-content-box">
+          <div class="pc-el">
+            <a href="#" class="btn-basic prev-arrow"><span>전체리스트</span></a>
+          </div>
+          <div class="mo-el">
+            <ul class="detaile-location">
+              <li><a href="#">TV+인터넷+렌탈</a></li>
+              <li><a href="#">냉장고</a></li>
+            </ul>
+          </div>
+          <div class="detaile-top-info">
+            <div class="img-box">
+              <div class="view-img">
+                <img src="./img/img_rf_lg_S631S32.png" alt="" />
+              </div>
+              <ul class="thumb-img">
+                <li>
+                  <img
+                    src="./img/img_rf_lg_S631S32.png"
+                    alt=""
+                    onclick="thumbImg(this,'.detaile-top-info .view-img img')"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./img/img_rf_lg_S631S32.png"
+                    onclick="thumbImg(this,'.detaile-top-info .view-img img')"
+                    alt=""
+                  />
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="share-box">
+                <button type="button" class="btn-basic ic-link">
+                  링크복사
+                </button>
+                <button type="button" class="btn-basic ic-share">
+                  공유하기
+                </button>
+              </div>
+            </div>
+            <div class="txt-info-box">
+              <div class="tit-box">
+                <h2>LG 세미빌트인 냉장고 636L</h2>
+                <p>S631S32</p>
+              </div>
+              <div class="prod-dl">
+                <dl class="row-dl">
+                    <dt>브랜드</dt>
+                    <dd>LG전자</dd>
+                </dl>
+                <dl class="row-dl">
+                    <dt>색상</dt>
+                    <dd>메탈실버</dd>
+                </dl>
+                </div>
+              <div class="bg-txt">
+                렌탈약정 기간이 종료되면 제품은 고객님께 소유권이 이전됩니다.
+              </div>
+              <dl class="col-dl">
+                <dt>렌탈약정기간</dt>
+                <dd>
+                  <input class="custom-radio" type="radio" name="rentalYear" id="year3" value="3년" />
+                  <label for="year3">3년</label>
+                  <input class="custom-radio" type="radio" name="rentalYear" id="year4" value="4년" />
+                  <label for="year4">4년</label>
+                  <input class="custom-radio" type="radio" name="rentalYear" id="year5" value="5년" checked />
+                  <label for="year5">5년</label>
+                </dd>
+              </dl>
+              <div class="prod-info">
+                <dl>
+                  <dt>
+                    TV상품 - 베이직UHD<br />
+                    인터넷상품 - 기가라이트
+                  </dt>
+                  <dd>
+                    3년약정
+                    <span class="price">월<span> 33,000원</span></span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>LG 세미빌트인 냉장고 636L</dt>
+                  <dd>
+                    5년약정
+                    <span class="price">월<span> 39,000원</span></span>
+                  </dd>
+                </dl>
+              </div>
+              <button type="button" class="btn-basic big p-color">바로상담신청</button>
+            </div>
+          </div>
+          <div class="detail-content">
+            <div class="com-tab-box tab-style-3 detail-tab">
+                <ul class="tab-list">
+                  <li>
+                    <button type="button" class="on" data-tab="#tab1">제품특징</button>
+                  </li>
+                  <li>
+                    <button type="button" data-tab="#tab2">유의사항</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="tab1" style="display: block">
+                  <div class="txt_center">
+                    <img src="./img/S631S32_01.png" alt="" class="pc-img">
+                    <img src="./img/S631S32_01.png" alt="" class="mobile-img">
+                  </div>
+                </div>
+                <div class="tab-content" id="tab2">
+                  <div class="txt_center">
+                    <img src="./img/img_banner_plusrental.png" alt="" class="pc-img">
+                    <img src="./img/m_img_banner_plusrental.png" alt="" class="mobile-img">
+                  </div>
+                  <h3 class="big-h3 txt_center">렌탈 신청절차</h3>
+                  <div class="detail-rental-step">
+                    <div class="step-box">
+                      <span class="num">1</span>
+                      <img class="step1" src="./img/icon_step_select.svg" alt="">
+                      <span class="tit">상품선택하기</span>
+                    </div>
+                    <div class="step-box">
+                      <span class="num">2</span>
+                      <img class="step2" src="./img/icon step apply.svg" alt="">
+                      <span class="tit">렌탈문의 / 신청</span>
+                    </div>
+                    <div class="step-box">
+                      <span class="num">3</span>
+                      <img class="step3" src="./img/icon_step_call.svg" alt="">
+                      <span class="tit">해피콜통화</span>
+                    </div>
+                    <div class="step-box">
+                      <span class="num">4</span>
+                      <img class="step4" src="./img/icon_step_delivery.svg" alt="">
+                      <span class="tit">배송 및 설치완료</span>
+                    </div>
+                    <div class="step-box">
+                      <span class="num">5</span>
+                      <img class="step5" src="./img/icon step gift.svg" alt="">
+                      <span class="tit">사은품증정</span>
+                    </div>
+                  </div>
+                  <ul class="li-style1 col_999">                
+                    <li>
+                      렌탈은 홈쇼핑처럼 해피콜을 통해 계약을 체결하고 새 가전제품을 받아서 렌탈요금을 월 납부하며<br>
+                      사용 후 약정기간이 종료되면 본인소유가 되는 구매방식입니다.
+                    </li>
+                    <li>
+                      단기렌탈 또는 중간에 제품반납은 불가합니다. 단, 잔여금을 일시납부시 제품은 본인소유가 됩니다.
+                    </li>
+                    <li>
+                      자동이체 및 신용카드 납부만 가능하며, 신용등급에 따라 신용카드 납부만 가능 할 수도 있습니다.
+                    </li>
+                    <li>
+                      당사 가입 규정에 따라 가입이 제한 될 수 있으며, 브랜드 사정에 의해 동일한 사양의 제품의 모델명 이 변경 될 수 있습니다.
+                    </li>
+                    <li>
+                      렌탈상품은 고객 주소지로 제조사 물류 직원이 직접 방문하여 설치 또는 택배로 배송됩니다.
+                    </li>
+                    <li>
+                      렌탈상품의 공급 및 설치를 위하여 포장박스를 개봉한 후는 당사의 렌탈서비스가 개시된 것이며, 이후 어떠한 경우에도 품목변경은 불가능합니다.
+                    </li>
+                    <li>
+                      렌탈상품은 각 제조사의 AS정책을 따릅니다. 무상 AS기간 동안 제조사를 통하여 AS를 받으실 수 있습니다.<br>
+                      단, 고객 과실시 유상수리로 처리 될 수 있습니다.
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <script>
+                comTab(".detail-tab");
+            </script>
+          </div>
+        </div>
+        <section class="main-section card-benefit-section sub">
+          <div class="content-box">
+            <h2 class="main-h2">제휴카드 혜택</h2>
+            <div class="card-benefit-wrap">
+              <div class="card-box">
+                <img src="./img/benefit_card_1.png" alt="">
+                <div class="txt-box">
+                  <h3>LG헬로비전 현대카드M Edition2</h3>
+                  <p>월 최대 <span class="fon-p-color">2만원</span> 청구할인</p>
+                  <table class="tbl-style1">
+                    <colgroup>
+                      <col style="width: 155px">
+                      <col style="width: 111px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">전월실적</th>
+                        <th scope="col" class="p-color-bg">할인금액</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">30만원 ~ 70만원 미만</th>
+                        <td class="fon-p-color">17,000원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">70만원 이상</th>
+                        <td class="fon-p-color">20,000원</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="card-box">
+                <img src="./img/benefit_card_2.png" alt="">
+                <div class="txt-box">
+                  <h3>LG헬로비전 롯데카드</h3>
+                  <p>월 최대 <span class="fon-p-color">2만원</span> 할인</p>
+                  <table class="tbl-style1">
+                    <colgroup>
+                      <col style="width: 155px">
+                      <col style="width: 111px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">전월실적</th>
+                        <th scope="col" class="p-color-bg">할인금액</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">30만원 이상</th>
+                        <td class="fon-p-color">11,000원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">70만원 이상</th>
+                        <td class="fon-p-color">15,000원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">100만원 이상</th>
+                        <td class="fon-p-color">20,000원</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- //컨텐츠 영역 -->
+      <!-- 하단 영역 -->
+      <footer id="footer">
+        <div class="content-box">
+          <ul class="footer-link">
+            <li>
+              <a href="#"><strong>개인정보처리방침</strong></a>
+            </li>
+            <li><a href="#">홈페이지이용약관</a></li>
+          </ul>
+          <div class="footer-box">
+            <div class="txt-box">
+              <div class="flex-box">
+                <div class="left">
+                  <dl>
+                    <dt>사업자명</dt>
+                    <dd>거산텔레콤(주)</dd>
+                  </dl>
+                  <dl>
+                    <dt>사업자등록번호</dt>
+                    <dd>605-81-85031</dd>
+                  </dl>
+                  <dl>
+                    <dt>대표자</dt>
+                    <dd>문상철</dd>
+                  </dl>
+                  <dl>
+                    <dt>개인정보책임자</dt>
+                    <dd>김성훈</dd>
+                  </dl>
+                </div>
+                <div class="right">
+                  <dl>
+                    <dt>주소</dt>
+                    <dd>경상남도 김해시 전하로 161번길 10, 601호(홍동)</dd>
+                  </dl>
+                  <dl>
+                    <dt>통신판매번호</dt>
+                    <dd>제 2017-경남김해-0162호</dd>
+                  </dl>
+                  <dl>
+                    <dt>대표번호</dt>
+                    <dd>1666-4465</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="cs-center-box">
+              <img
+                class="foot-logo"
+                src="./img/logo_LGhellovision.svg"
+                alt=""
+              />
+              <div class="cs-center">
+                <h3>CS CENTER</h3>
+                <p>1666-4465</p>
+              </div>
+            </div>
+          </div>
+          <p class="copyright">
+            Copyright © 2020 LG HelloVision All rights reserved.
+          </p>
+        </div>
+        <!-- 상담신청 -->
+        <div class="foot-consulting">
+          <div class="content-box consulting-box">
+            <div class="call">
+              <h3>상담이 필요하세요?</h3>
+              <p>1666-4465</p>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="이름" />
+              <input type="text" placeholder="연락처"">
+              <input type="text" placeholder="상담가능시간" />
+              <input type="submit" value="상담신청" />
+            </div>
+            <div class="agree-box">
+              <input type="checkbox" id="agree-check" />
+              <label for="agree-check"></label>
+              <div class="view-box">
+                <span>개인정보 활용동의</span><br />
+                <button type="button" onclick="toggle('#agreeLayer')">
+                  [내용보기]
+                </button>
+                <div
+                  class="agree-info-layer"
+                  id="agreeLayer"
+                  style="display: none"
+                >
+                  <button type="button" onclick="hide('#agreeLayer')"></button>
+                  <h4>개인정보 활용동의</h4>
+                  <table class="tbl-basic no-bd td-left">
+                    <caption></caption>
+                    <colgroup>
+                      <col style="width: 50%" />
+                      <col />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="row">개인정보의 수집 및 이용목적</th>
+                        <td>렌탈 온라인 신청, 접수</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">수집하는 개인정보 항목</th>
+                        <td>성명, 연락처(휴대폰 번호)</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">개인정보 보유 및 이용기간</th>
+                        <td>
+                          개인정보 수집 및 이용목적이 달성된 후에는 예외없이
+                          해당 정보를 파기합니다.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //상담신청 -->
+      </footer>
+      <!-- //하단 영역 -->
+    </div>
+  </body>
+</html>

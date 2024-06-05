@@ -1,0 +1,569 @@
+@charset "UTF-8";
+/*
+=========================================================================
+/* Name: 헬로비전
+/* PART: COMMON STYLE 
+/* Version: 1.0 / day: 2020-11 
+=========================================================================
+*/
+
+@import "sass-common.scss";
+
+body.fix {
+  overflow: hidden;
+}
+
+.mobile-img,
+.mo-el,
+.mo-flex {
+  display: none !important;
+}
+
+@media all and (max-width: 640px) {
+  .pc-img,
+  .pc-el {
+    display: none !important;
+  }
+  .mobile-img {
+    display: inline-block !important;
+  }
+  .mo-el {
+    display: block !important;
+  }
+  .mo-flex{
+    display: flex !important;
+  }
+}
+.fon-p-color {
+  color: $p-color !important;
+}
+.font-w-mid{
+  font-weight: 600;
+}
+h2.sub-h2 {
+  @include font($s: 40px, $w: bold, $c: #000);
+  margin-top: 90px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+h3.sub-h3 {
+  @include font($s: 24px, $w: bold, $c: #000);
+  margin-top: 60px;
+  margin-bottom: 20px;
+  @include mobile(){
+    margin-top: 40px;text-align: center;
+  }
+}
+h3.big-h3 {
+  @include font($s: 30px, $w: bold, $c: #000);
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+
+.com-layer-bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+}
+
+/* 리스트 스타일 */
+.li-style1 {
+  &.margin {
+    margin: 60px 0;
+    @include mobile() {
+      margin: 20px 0;
+    }
+  }
+  li {
+    padding-left: 11px;
+    position: relative;
+    @include lastMb0(7px);
+    &::before {
+      @include before(5px, 5px);
+      left: 0;
+      top: 9px;
+      background-color: #d5d5d5;
+    }
+  }
+  &.fon16{
+    font-size: 16px;
+    color: #999;
+    li::before{
+      top: 11px;
+    }
+    @include mobile(){
+      font-size: 14px;
+    }
+  }
+}
+
+p.line-30 {
+  margin: 7px 0;
+}
+
+/* 탭스타일 */
+.tab-style-1 {
+  .tab-list {
+    @include flex($j: center);
+    margin-bottom: 50px;
+    li {
+      width: 260px;
+      @include lastMr0(10px);
+      button {
+        @include font($s: 22px, $c: #999);
+        padding-bottom: 45px;
+        position: relative;
+        width: 100%;
+        &.on {
+          color: $p-color;
+          font-weight: bold;
+        }
+        &::before {
+          @include before(100%, 12px);
+          left: 0;
+          bottom: 14px;
+          border-radius: 7px;
+          background-color: #d5d5d5;
+        }
+        &.on::before {
+          background-color: $p-color;
+        }
+        &.on::after {
+          @include after(0, 0);
+          left: 50%;
+          bottom: 0;
+          margin-left: -12px;
+          border-left: 12px solid transparent;
+          border-right: 12px solid transparent;
+          border-top: 14px solid $p-color;
+        }
+      }
+    }
+  }
+}
+.tab-style-2 {
+  .tab-list {
+    margin-top: 80px;
+    margin-bottom: 70px;
+    margin-left: 1px;
+    @include flex();
+    @include mobile() {
+      flex-wrap: wrap;
+    }
+    li {
+      @include mobile() {
+        width: 33.33%;
+        flex: auto;
+        margin-top: -1px;
+      }
+      flex: 1;
+      margin-left: -1px;
+      a {
+        height: 68px;
+        @include flex($j: center);
+        @include font($s: 18px, $c: #666);
+        border: 1px solid #e2e2e2;
+        background-color: #fff;
+        &.on {
+          background-color: $p-color;
+          color: #fff;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+.tab-style-3{
+  .tab-list {
+    @include flex();
+    li{
+      flex: 1;
+      button{
+        width:100%;padding-bottom: 20px;border-bottom: 4px solid #d5d5d5;
+        @include font($s:18px,$w:bold,$c:#d5d5d5);text-align:center;
+        &.on{
+          color: #333;
+          border-bottom-color: #333;
+        }
+      }
+    }
+  }
+  @include mobile(){
+    padding-bottom: 15px;    
+  }
+}
+
+/* 버튼 */
+.btn-basic {
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  padding: 7px 20px;
+  color: $fon-color;
+  background-color: #fff;
+  &.big {
+    display: inline-block;
+    @include font($s: 18px, $w: bold, $c: #000);
+    padding: 15px 30px;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 1px solid #333;
+    &.arrow span {
+      display: inline-block;
+      padding-right: 37px;
+      background: url(../img/arrow_btn.svg) right center no-repeat;
+      background-size: 11px 17px;
+    }
+  }
+  &.big2 {
+    display: inline-block;
+    min-width: 200px;
+    padding: 15px 30px;
+    @include font($s: 18px, $w: bold, $c: #999);
+    border-radius: 5px;
+    border: 1px solid #999;
+  }
+  &.big3 {
+    display: inline-block;
+    min-width: 200px;
+    padding: 15px 30px;
+    @include font($s: 18px, $w: bold, $c: $p-color);
+    border-radius: 5px;
+    border:none;
+    box-shadow: 5px 6px 8px 0 rgba(0, 0, 0, 0.08);;
+  }
+  &.p-color {
+    border-color: $p-color;
+    background-color: $p-color;
+    color: #fff;
+  }
+  &.prev-arrow {
+    padding: 14px 20px;
+    span {
+      display: inline-block;
+      padding-left: 38px;
+      background: url(../img/arrow_btn_back.svg) left center no-repeat;
+      background-size: 9px 17px;
+    }
+  }
+  &.ic-link {
+    padding-left: 39px;
+    background: url(../img/icon_link.svg) 10px center no-repeat;
+    background-size: 19px auto;
+  }
+  &.ic-share {
+    padding-left: 39px;
+    background: url(../img/icon_share.svg) 10px center no-repeat;
+    background-size: 19px auto;
+  }
+}
+
+/* 기본 테이블 */
+.th-left tbody th {
+  text-align: left;
+}
+.td-left tbody td {
+  text-align: left;
+}
+.td-center tbody td,
+.th-center tbody th {
+  text-align: center;
+}
+.td-left2 tbody th + td,
+.td-left2 tbody tr td:first-child {
+  text-align: left;
+} /* th 다음에 오는 td만 왼쪽정렬 */
+.td-left2 tbody td[rowspan] + td {
+  text-align: left;
+}
+.td-left3 tbody tr td:first-child + td {
+  text-align: left;
+}
+.td-right tbody td,
+.td-right tfoot td {
+  text-align: right;
+}
+.tbl-basic th,
+.tbl-basic td {
+  border: 0;padding: 18px 10px;
+  @include font($s:16px,$w:normal,$c:#666);
+  @include mobile(){
+    font-size: 14px;
+  }
+}
+.tbl-basic td{
+  color: #333;
+}
+.tbl-basic {
+  width: 100%;
+  border-spacing: 0;
+  border-left: 0;
+  border-right: 0;
+  border-collapse: collapse;
+  border-top:1px solid #666;  
+}
+.tbl-basic tr {
+  text-align: center;
+}
+.tbl-basic thead th {
+  background: #f8f9fb;
+  border-bottom: 1px solid #d5d5d5;
+  border-left: 1px solid #d5d5d5;
+}
+.tbl-basic thead th:first-child {
+  border-left: 0;
+}
+.tbl-basic thead tr th.fnone {
+  border-left: 0 !important;
+}
+.tbl-basic thead th[colspan] {
+  border-bottom: 1px solid #d5d5d5;
+} /* th가 두줄이상으로 합쳐질때 border-bottom 값 */
+.tbl-basic thead th[rowspan] {
+  border-right: 1px solid #d5d5d5;
+} /* th가 두줄이상으로 합쳐질때 border-right 값 */
+.tbl-basic thead th[rowspan]:last-child {
+  border-right: 0;
+}
+.tbl-basic thead th.none {
+  border-bottom: 1px solid #d5d5d5;
+} /* th가 한줄일때 class추가 */
+.tbl-basic tbody th {
+  background: #fafafa;
+  border-left: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+}
+.tbl-basic tbody th:first-child {
+  border-left: 0;
+}
+.tbl-basic tbody th[rowspan] {
+  border-right: 1px solid #d5d5d5;
+}
+.tbl-basic tbody tr:first-child th,
+.tbl-basic tbody tr:first-child td {
+  border-top: 1px solid #d5d5d5;
+}
+.tbl-basic tbody td {
+  background: #fff;
+  border-left: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+}
+.tbl-basic tbody td:first-child {
+  border-left: 0;
+}
+.tbl-basic tbody td[rowspan] {
+  border-right: 1px solid #d5d5d5;
+}
+.tbl-basic tbody td[rowspan]:last-child {
+  border-right: 0;
+}
+.tbl-basic tbody td + th {
+  border-left: 1px solid #d5d5d5;
+}
+.tbl-basic tfoot th {
+  background: #fafafa;
+  border-right: 1px solid #d5d5d5;
+}
+.tbl-basic tfoot td {
+  border-left: 1px solid #d5d5d5;
+}
+.tbl-basic tfoot td[colspan] {
+  border-left: 0;
+}
+.tbl-basic tbody th.line,
+.tbl-basic tbody td.line,
+.tbl-basic tbody tr.line td,
+.tbl-basic tbody tr.line th {
+  border-bottom: 1px dashed #d5d5d5;
+}
+.tbl-basic thead tr th.h-line,
+.tbl-basic tbody th.h-line {
+  border-left: 1px solid #d5d5d5;
+}
+.tbl-basic tr.bg th,
+.tbl-basic tr.bg td,
+.tbl-basic th.bg,
+.tbl-basic td.bg {
+  background: #f6f6f6 !important;
+}
+.thead-bg thead th {
+  background: #fafafa;
+}
+
+@mixin tbl-no-bd {
+  tbody,
+  thead {
+    td,
+    th {
+      border-left: none;
+      border-right: none;
+    }
+  }
+}
+.tbl-basic.no-bd {
+  @include tbl-no-bd();
+}
+
+.tbl-style1 {
+  td,
+  th {
+    border: 0;
+    height: 30px;
+    text-align: center;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  thead {
+    th {
+      color: #333;
+    }
+    .p-color-bg {
+      background-color: $p-color;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+  tbody {
+    th {
+      font-weight: normal;
+    }
+    th,
+    td {
+      border-bottom: 1px solid #e2e2e2;
+    }
+  }
+}
+
+.tbl-basic.tbl-style2 {
+  @include tbl-no-bd();
+  border: 2px solid #000;
+  border-width: 2px 0;
+  font-size: 18px;
+  color: #333;
+  td,
+  th {
+    padding: 20px 30px;
+  }
+  td {
+    .big {
+      font-size: 24px;
+      font-weight: bold;
+      @include mobile() {
+        font-size: 20px;
+      }
+    }
+  }
+  th {
+    background-color: #f8f9fb;
+  }
+}
+
+/* 인풋 커스텀 */
+input {
+  &[type="text"],
+  &[type="number"] {
+    @include input-text();
+  }
+  &[type="checkbox"] {
+    @include input-check();
+  }
+  @include mobile() {
+    width: 100%;
+  }
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.custom-select {
+  width: 320px;
+  position: relative;
+  @include mobile() {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+    @include input-text();
+    padding-right: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  &::after {
+    @include after(0, 0);
+    top: 50%;
+    right: 20px;
+    margin-top: -4px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 8px solid #333;
+  }
+}
+.custom-radio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  & + label {
+    padding: 0 20px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  &:checked + label {
+    border: 3px solid $p-color;
+    color: $p-color;
+    font-weight: bold;
+  }
+}
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  height: 120px;
+  padding: 20px 30px;
+  resize: none;
+  border: 1px solid #d5d5d5;
+  &::placeholder {
+    font-size: 16px;
+    color: #999;
+  }
+}
+.custom-file{
+  position: absolute;width:0;height:0;
+  &+label{
+    display: inline-block;width:140px;height: 40px;line-height: 40px;
+    text-align: center;border-radius: 5px;background-color: #e2e2e2;
+  }
+}
+.custom-file-btn{
+  display: inline-block;width:140px;height: 40px;line-height: 40px;
+    text-align: center;border-radius: 5px;background-color: #e2e2e2;
+    @include font($s:16px,$c:#666);
+}
+.hidden-file{position: absolute;width: 0;height: 0;}
+
+@media all and (max-width: 640px) {
+  h2.sub-h2 {
+    margin: 35px 0;font-size: 30px;margin-bottom: 20px;
+  }
+  h3.big-h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .tab-style-1 {
+    .tab-list {
+      margin-bottom: 35px;
+      li button {
+        font-size: 16px;
+        padding-bottom: 32px;
+      }
+    }
+  }
+}

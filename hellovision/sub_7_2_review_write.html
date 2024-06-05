@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=medium-dpi"
+      name="viewport"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/board.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/swiper_4.5.0.min.js"></script>
+    <script src="./js/common.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!--상단영역 -->
+      <header id="header">
+        <div class="gnb-wrap content-box">
+          <div class="logo-box">
+            <a href="#" class="top-logo">
+              <img
+                src="./img/logo_LGhellovision.png"
+                alt="LG HelloVision"
+                class="pc-img"
+              />
+              <img src="./img/logo_LGhellovision2x.png" class="mobile-img" />
+            </a>
+            <button
+              type="button"
+              class="btn-total-menu mo-el"
+              onclick="addOn('.total-menu-box')"
+            >
+              <span class="line"></span>
+            </button>
+          </div>
+          <div id="gnb-box">
+            <ul class="gnb">
+              <li><a href="#">TV</a></li>
+              <li><a href="#">인터넷</a></li>
+              <li><a href="#">결합상품</a></li>
+              <li><a href="#">모바일결합</a></li>
+              <li><a href="#">제휴할인</a></li>
+              <li><a href="#">자주하는질문</a></li>
+              <li><a href="#">설치후기</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="total-menu-box">
+          <div class="top-box">
+            <a href="#" class="ic-home">HOME</a>
+            <button
+              type="button"
+              class="btn-close"
+              onclick="removeOn('.total-menu-box')"
+            ></button>
+          </div>
+          <div class="mo-lnb">
+            <ul class="depth-1">
+              <li>
+                <a href="#" class="has-sub">TV</a>
+                <ul class="depth-2">
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="has-sub">TV</a>
+                <ul class="depth-2">
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <script>
+        var lnbDepth1 = document.querySelectorAll(
+          ".total-menu-box .depth-1 .has-sub"
+        );
+        for (var i = 0; i < lnbDepth1.length; i++) {
+          lnbDepth1[i].addEventListener("click", function () {
+            this.classList.toggle("on");
+          });
+        }
+      </script>
+      <!--//상단영역 -->
+      <!-- 오른쪽 고정배너 -->
+      <div class="right-fix-banner">
+        <ul>
+          <li>
+            <a href="#" class="ic1">
+              <span
+                >가입문의<br /><span class="fon-p-color">1666-4465</span></span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="#" class="ic2"
+              ><span>카카오톡<br />바로상담</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="ic3"
+              ><span>네이버톡톡<br />바로상담</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="ic4"
+              ><span>설치가능<br />지역정보</span></a
+            >
+          </li>
+        </ul>
+        <button type="button" class="btn-top"><span>TOP</span></button>
+      </div>
+      <!-- 오른쪽 고정배너 -->
+      <!-- 컨텐츠 영역 -->
+      <div id="container">
+        <h2 class="sub-h2">설치후기</h2>
+        <div class="sub-content-box">
+          <div class="event-banner">
+            <img src="./img/m_img_banner_event.png" alt="" />
+          </div>
+          <div class="review-write com-input-box com-write-box">
+            <dl>
+              <dt>작성자 이름</dt>
+              <dd>
+                <input type="text" class="name" />
+              </dd>
+            </dl>
+            <dl>
+              <dt>휴대폰 번호</dt>
+              <dd>
+                <input type="number" />
+              </dd>
+            </dl>
+            <dl>
+              <dt>제목</dt>
+              <dd>
+                <input type="text" class="subject" />
+              </dd>
+            </dl>
+            <dl class="mo-col">
+              <dt>내용</dt>
+              <dd>
+                <textarea
+                  onkeyup="textCounter(this,'.counter')"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="최소 30자 이상으로 작성"
+                ></textarea>
+              </dd>
+            </dl>
+            <p class="counter-box"><span class="counter">0</span>자</p>
+            <dl class="upload">
+              <dt>사진첨부</dt>
+              <dd>
+                <input type="file" class="hidden-file" id="upload_1" />
+                <input type="file" class="hidden-file" id="upload_2" />
+                <input type="file" class="hidden-file" id="upload_3" />
+                <input type="file" class="hidden-file" id="upload_4" />
+                <input type="file" class="hidden-file" id="upload_5" />
+                <button
+                  type="button"
+                  class="custom-file-btn"
+                  onclick="uploadFile()"
+                >
+                  사진파일첨부
+                </button>
+                <span class="info-txt"
+                  >설치셋톱박스, 렌탈상품 사진 등
+                  <span class="col_black">사진 1장 이상 필수로 등록</span></span
+                >
+              </dd>
+            </dl>
+            <div class="upload_preview"></div>
+            <script>
+              /* 첨부파일 */
+              var count = 0;
+              function uploadFile() {
+                var file = document.querySelectorAll(".hidden-file");
+                if (count == file.length) {
+                  alert("첨부파일은 " + file.length + "개 까지 가능합니다.");
+                  return;
+                }
+                for (var i = 0; i < file.length; i++) {
+                  if (!file[i].value) {
+                    file[i].click();
+                    count++;
+                    return;
+                  }
+                }
+              }
+              (function () {
+                var file = document.querySelectorAll(".hidden-file");
+                var preview = document.querySelector(".upload_preview");
+                for (var i = 0; i < file.length; i++) {
+                  file[i].addEventListener("change", function (e) {
+                    var num = e.target.id.split("_")[1];
+                    var box = "";
+                    box += '<div class="preview-box">';
+                    box += '<div class="img-box">';
+                    box += '<img src="" id="upImg_' + num + '">';
+                    box += "</div>";
+                    box +=
+                      '<button type="button" onclick="delPreview(this)">삭제</button></div>';
+                    preview.innerHTML += box;
+                    var get_file = e.target.files;
+                    var pImg = preview.querySelector("#upImg_" + num);
+                    var reader = new FileReader();
+                    reader.onload = (function (aImg) {
+                      return function (e) {
+                        aImg.src = e.target.result;
+                      };
+                    })(pImg);
+                    if (get_file) {
+                      reader.readAsDataURL(get_file[0]);
+                    }
+                  });
+                }
+              })();
+              function delPreview(e) {
+                var file = document.querySelectorAll(".hidden-file");
+                var prev = e.previousSibling
+                  .querySelector("img")
+                  .getAttribute("id")
+                  .split("_");
+                var el = e;
+                file[prev[1] - 1].value = "";
+                el.parentElement.remove();
+                count--;
+              }
+            </script>
+            <dl>
+              <dt>자동등록방지</dt>
+              <dd>
+                <input type="text" />
+                <span class="info-txt"
+                  >왼쪽 보이는 글자를 입력해주세요.(대소문자 구분)</span
+                >
+              </dd>
+            </dl>
+            <dl>
+              <dt>비밀번호</dt>
+              <dd>
+                <input type="text" placeholder="4자리 숫자입력" />
+                <span class="info-txt">글 수정 및 삭제시 필요</span>
+              </dd>
+            </dl>
+            <div class="agree-box">
+              <div class="agree-tit">
+                <h3>개인정보 활용동의 안내</h3>
+                <div class="check-box">
+                  <input type="checkbox" id="agree" />
+                  <label for="agree"></label>
+                  <span>개인정보수집 이용에 동의합니다.</span>
+                </div>
+              </div>
+              <div class="txt-box">
+                - 개인정보의 수집 및 이용목적 : 렌탈 온라인 신청, 접수<br />
+                - 수집하는 개인정보 항목 : 성명, 연락처(휴대폰번호)<br />
+                - 개인정보 보유 및 이용기간 : 개인정보 수집 및 이용목적이 달성된
+                후에는 예외없이 해당 정보를 파기합니다.
+              </div>
+            </div>
+          </div>
+          <div class="com-btn-box">
+            <button type="button" class="btn-basic big2">취소</button>
+            <button type="button" class="btn-basic big2 p-color">
+              등록하기
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- //컨텐츠 영역 -->
+      <!-- 하단 영역 -->
+      <footer id="footer">
+        <div class="content-box">
+          <ul class="footer-link">
+            <li>
+              <a href="#"><strong>개인정보처리방침</strong></a>
+            </li>
+            <li><a href="#">홈페이지이용약관</a></li>
+          </ul>
+          <div class="footer-box">
+            <div class="txt-box">
+              <div class="flex-box">
+                <div class="left">
+                  <dl>
+                    <dt>사업자명</dt>
+                    <dd>거산텔레콤(주)</dd>
+                  </dl>
+                  <dl>
+                    <dt>사업자등록번호</dt>
+                    <dd>605-81-85031</dd>
+                  </dl>
+                  <dl>
+                    <dt>대표자</dt>
+                    <dd>문상철</dd>
+                  </dl>
+                  <dl>
+                    <dt>개인정보책임자</dt>
+                    <dd>김성훈</dd>
+                  </dl>
+                </div>
+                <div class="right">
+                  <dl>
+                    <dt>주소</dt>
+                    <dd>경상남도 김해시 전하로 161번길 10, 601호(홍동)</dd>
+                  </dl>
+                  <dl>
+                    <dt>통신판매번호</dt>
+                    <dd>제 2017-경남김해-0162호</dd>
+                  </dl>
+                  <dl>
+                    <dt>대표번호</dt>
+                    <dd>1666-4465</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="cs-center-box">
+              <img
+                class="foot-logo"
+                src="./img/logo_LGhellovision.svg"
+                alt=""
+              />
+              <div class="cs-center">
+                <h3>CS CENTER</h3>
+                <p>1666-4465</p>
+              </div>
+            </div>
+          </div>
+          <p class="copyright">
+            Copyright © 2020 LG HelloVision All rights reserved.
+          </p>
+        </div>
+        <!-- 상담신청 -->
+        <div class="foot-consulting">
+          <div class="content-box consulting-box">
+            <div class="call">
+              <h3>상담이 필요하세요?</h3>
+              <p>1666-4465</p>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="이름" />
+              <input type="text" placeholder="연락처"">
+              <input type="text" placeholder="상담가능시간" />
+              <input type="submit" value="상담신청" />
+            </div>
+            <div class="agree-box">
+              <input type="checkbox" id="agree-check" />
+              <label for="agree-check"></label>
+              <div class="view-box">
+                <span>개인정보 활용동의</span><br />
+                <button type="button" onclick="toggle('#agreeLayer')">
+                  [내용보기]
+                </button>
+                <div
+                  class="agree-info-layer"
+                  id="agreeLayer"
+                  style="display: none"
+                >
+                  <button type="button" onclick="hide('#agreeLayer')"></button>
+                  <h4>개인정보 활용동의</h4>
+                  <table class="tbl-basic no-bd td-left">
+                    <caption></caption>
+                    <colgroup>
+                      <col style="width: 50%" />
+                      <col />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="row">개인정보의 수집 및 이용목적</th>
+                        <td>렌탈 온라인 신청, 접수</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">수집하는 개인정보 항목</th>
+                        <td>성명, 연락처(휴대폰 번호)</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">개인정보 보유 및 이용기간</th>
+                        <td>
+                          개인정보 수집 및 이용목적이 달성된 후에는 예외없이
+                          해당 정보를 파기합니다.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //상담신청 -->
+      </footer>
+      <!-- //하단 영역 -->
+    </div>
+  </body>
+</html>

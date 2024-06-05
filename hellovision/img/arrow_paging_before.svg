@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10.415" height="18.828" viewBox="0 0 10.415 18.828">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #999;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <path id="arrow_paging_before" class="cls-1" d="M11999.609,5879l-8,8,8,8" transform="translate(-11990.608 -5877.586)"/>
+</svg>

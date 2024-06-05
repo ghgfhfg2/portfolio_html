@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75.533" height="76.507" viewBox="0 0 75.533 76.507">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="img_step_call" transform="translate(-516.878 -116.679)">
+    <path id="패스_69" data-name="패스 69" class="cls-1" d="M579.486,169.057s2.092,17.478-14.857,18.514"/>
+    <path id="사각형_94" data-name="사각형 94" class="cls-2" d="M9.686,0h3.591a3.438,3.438,0,0,1,3.438,3.438V19.752a3.22,3.22,0,0,1-3.22,3.22H9.686A9.686,9.686,0,0,1,0,13.286v-3.6A9.686,9.686,0,0,1,9.686,0Z" transform="translate(518.378 147.571)"/>
+    <path id="사각형_95" data-name="사각형 95" class="cls-2" d="M9.686,0h3.809a3.22,3.22,0,0,1,3.22,3.22V19.534a3.438,3.438,0,0,1-3.438,3.438H9.686A9.686,9.686,0,0,1,0,13.286v-3.6A9.686,9.686,0,0,1,9.686,0Z" transform="translate(590.911 170.543) rotate(180)"/>
+    <path id="패스_70" data-name="패스 70" d="M554.91,116.679h-.582a26.615,26.615,0,0,0-26.585,26.585v4.8h3v-4.8a23.612,23.612,0,0,1,23.585-23.585h.582a23.612,23.612,0,0,1,23.585,23.585v4.8h3v-4.8A26.615,26.615,0,0,0,554.91,116.679Z"/>
+    <rect id="사각형_96" data-name="사각형 96" class="cls-2" width="15.543" height="8.343" rx="4.171" transform="translate(551.714 183.343)"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="117.801" height="24.356" viewBox="0 0 117.801 24.356">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #ed174d;
+        stroke-width: 1.5px;
+      }
+
+      .cls-1 {
+        stroke-linecap: square;
+      }
+    </style>
+  </defs>
+  <g id="img_price_down" transform="translate(-716.75 -1070.75)">
+    <line id="선_126" data-name="선 126" class="cls-1" x2="112.693" transform="translate(717.5 1071.5)"/>
+    <g id="그룹_274" data-name="그룹 274" transform="translate(826.36 1072.4)">
+      <line id="선_127" data-name="선 127" class="cls-1" y1="20.593" transform="translate(3.833)"/>
+      <path id="패스_226" data-name="패스 226" class="cls-2" d="M831.539,1083.367l3.82,4.14,3.82-4.14" transform="translate(-831.539 -1065.907)"/>
+    </g>
+  </g>
+</svg>

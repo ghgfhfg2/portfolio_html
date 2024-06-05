@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="61" height="52" viewBox="0 0 61 52">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke:#000;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round}.cls-5{stroke:none}.cls-6{fill:none}
+        </style>
+    </defs>
+    <g id="icon_main_mobile" transform="translate(-985 -554)">
+        <g id="레이어_2" transform="translate(986 554)">
+            <g id="그룹_27" transform="translate(-1058 -595)">
+                <g id="사각형_25" class="cls-1" transform="translate(1057 595)">
+                    <rect width="37" height="52" class="cls-5" rx="5"/>
+                    <rect width="35" height="50" x="1" y="1" class="cls-6" rx="4"/>
+                </g>
+                <g id="사각형_26" class="cls-1" transform="translate(1062 600)">
+                    <rect width="27" height="35" class="cls-5" rx="5"/>
+                    <rect width="25" height="33" x="1" y="1" class="cls-6" rx="4"/>
+                </g>
+                <g id="타원_13" fill="#fff" stroke="#000" stroke-width="2px" transform="translate(1072 636)">
+                    <circle cx="4" cy="4" r="4" class="cls-5"/>
+                    <circle cx="4" cy="4" r="3" class="cls-6"/>
+                </g>
+            </g>
+        </g>
+        <g id="그룹_29" transform="translate(-32 -19)">
+            <circle id="타원_12" cx="9.5" cy="9.5" r="9.5" fill="#ff9595" transform="translate(1059 590)"/>
+            <path id="합치기_12" fill="#fff" d="M12877.626-4681.874v-1.752h-1.752a.873.873 0 0 1-.873-.873.874.874 0 0 1 .873-.876h1.752v-1.749a.874.874 0 0 1 .873-.876.875.875 0 0 1 .876.876v1.749h1.749a.875.875 0 0 1 .876.876.874.874 0 0 1-.876.873h-1.749v1.752a.874.874 0 0 1-.876.873.873.873 0 0 1-.873-.873z" transform="translate(-11810.001 5283.999)"/>
+        </g>
+    </g>
+</svg>
