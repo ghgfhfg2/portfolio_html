@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>캐쳐스</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" name="viewport">
+		<!--[if lt IE 9]> 
+		<script src="../js/html5.js"></script>
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<![endif]-->
+		<link href="css/base.css" rel="stylesheet" type="text/css" >
+		<link href="css/board.css" rel="stylesheet" type="text/css" >
+		<link href="css/common.css" rel="stylesheet" type="text/css" >
+		<link href="css/style.css" rel="stylesheet" type="text/css" >
+		<link href="css/layout.css" rel="stylesheet" type="text/css" >
+		<link href="css/content.css" rel="stylesheet" type="text/css" >
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/respond.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>  
+	</head>
+
+	<body>
+		<ul id="skip_navi">
+			<li><a href="#content">본문 바로가기</a></li>
+			<li><a href="#gnb">메인메뉴 바로가기</a></li>
+		</ul>
+		<div id="wrapper">
+			<div id="header">
+				<div class="gnbWrap">
+					<h1>
+						<a class="logo" href="#">
+							<img src="./img/common/topLogo.jpg" alt="캐처스">
+						</a>
+					</h1>
+					<!-- 상단메뉴 -->
+					<div id="gnbArea">
+						<nav id="gnb">
+							<ul class="gnb_menu">
+								<li id="menu_1"><a href="#">회사소개</a>
+									<div class="gnbsingle">
+										<div class="gnb_txt">
+											<h2>회사소개</h2>
+											<p>About Catchers</p>
+										</div>
+										<ul>
+											<li><a href="#">CEO 인사말</a>
+											</li>
+											<li><a href="#">연혁</a>
+											</li>
+											<li><a href="#">조직 및 업무</a>
+											</li>
+											<li><a href="#">찾아오시는 길</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li id="menu_2"><a href="#">주요사업분야</a>
+									<div class="gnbsingle">
+										<div class="gnb_txt">
+											<h2>주요사업분야</h2>
+											<p>Main business areas</p>
+										</div>
+										<ul>
+											<li><a href="#">방제사업부</a>
+												<ul>
+													<li><a href="#">소개</a></li>
+													<li><a href="#">주요시스템</a></li>
+													<li><a href="#">열풍방제</a></li>
+													<li><a href="#">주요 고객사</a></li>
+													<li><a href="#">무료 견적요청</a></li>
+												</ul>
+											</li>
+											<li><a href="#">특수크리닝사업부</a>
+												<ul>
+													<li><a href="#">현황 및 주요 고객사</a></li>
+													<li><a href="#">Silo 청소</a></li>
+													<li><a href="#">외부 및 공장설비 청소</a></li>
+													<li><a href="#">실내환경 개선사업(에어컨 및 덕트 청소)</a></li>
+												</ul>
+											</li>
+											<li><a href="#">세탁사업부</a>
+												<ul>
+													<li><a href="#">소개</a></li>
+													<li><a href="#">주요시스템</a></li>
+													<li><a href="#">주요 고객사</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li id="menu_3"><a href="#">기업부설연구소</a>
+									<div class="gnbsingle">
+										<div class="gnb_txt">
+											<h2>기업부설연구소</h2>
+											<p>R&amp;D Center</p>
+										</div>
+										<ul>
+											<li><a href="#">방제사업부</a>
+												<ul>
+													<li><a href="#">소개</a></li>
+													<li><a href="#">주요시스템</a></li>
+													<li><a href="#">열풍방제</a></li>
+													<li><a href="#">주요 고객사</a></li>
+													<li><a href="#">무료 견적요청</a></li>
+												</ul>
+											</li>
+											<li><a href="#">특수크리닝사업부</a>
+												<ul>
+													<li><a href="#">현황 및 주요 고객사</a></li>
+													<li><a href="#">Silo 청소</a></li>
+													<li><a href="#">외부 및 공장설비 청소</a></li>
+													<li><a href="#">실내환경 개선사업(에어컨 및 덕트 청소)</a></li>
+												</ul>
+											</li>
+											<li><a href="#">세탁사업부</a>
+												<ul>
+													<li><a href="#">소개</a></li>
+													<li><a href="#">주요시스템</a></li>
+													<li><a href="#">주요 고객사</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li id="menu_4"><a href="#">고객센터</a>
+									<div class="gnbsingle">
+										<div class="gnb_txt">
+											<h2>고객센터</h2>
+											<p>Customer Center</p>
+										</div>
+										<ul>
+											<li><a href="#">방제사업부</a>
+												<ul>
+													<li><a href="#">소개</a></li>
+													<li><a href="#">주요시스템</a></li>
+													<li><a href="#">열풍방제</a></li>
+													<li><a href="#">주요 고객사</a></li>
+													<li><a href="#">무료 견적요청</a></li>
+												</ul>
+											</li>
+											<li><a href="#">특수크리닝사업부</a>
+												<ul>
+													<li><a href="#">현황 및 주요 고객사</a></li>
+													<li><a href="#">Silo 청소</a></li>
+													<li><a href="#">외부 및 공장설비 청소</a></li>
+													<li><a href="#">실내환경 개선사업(에어컨 및 덕트 청소)</a></li>
+												</ul>
+											</li>
+											<li><a href="#">세탁사업부</a>
+												<ul>
+													<li><a href="#">소개</a></li>
+													<li><a href="#">주요시스템</a></li>
+													<li><a href="#">주요 고객사</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li id="menu_5"><a href="#">채용정보</a>
+									<div class="gnbsingle">
+										<div class="gnb_txt">
+											<h2>채용정보</h2>
+											<p>Recruit</p>
+										</div>
+										<ul>
+											<li><a href="#">방제사업부</a>
+												<ul>
+													<li><a href="#">소개</a></li>
+													<li><a href="#">주요시스템</a></li>
+													<li><a href="#">열풍방제</a></li>
+													<li><a href="#">주요 고객사</a></li>
+													<li><a href="#">무료 견적요청</a></li>
+												</ul>
+											</li>
+											<li><a href="#">특수크리닝사업부</a>
+												<ul>
+													<li><a href="#">현황 및 주요 고객사</a></li>
+													<li><a href="#">Silo 청소</a></li>
+													<li><a href="#">외부 및 공장설비 청소</a></li>
+													<li><a href="#">실내환경 개선사업(에어컨 및 덕트 청소)</a></li>
+												</ul>
+											</li>
+											<li><a href="#">세탁사업부</a>
+												<ul>
+													<li><a href="#">소개</a></li>
+													<li><a href="#">주요시스템</a></li>
+													<li><a href="#">주요 고객사</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li id="menu_6"><a href="#">쇼핑</a>
+									<div class="gnbsingle">
+										<div class="gnb_txt">
+											<h2>쇼핑</h2>
+											<p>Shopping</p>
+										</div>
+										<ul>
+											<li><a href="#">방제사업부</a>
+												<ul>
+													<li><a href="#">소개</a></li>
+													<li><a href="#">주요시스템</a></li>
+													<li><a href="#">열풍방제</a></li>
+													<li><a href="#">주요 고객사</a></li>
+													<li><a href="#">무료 견적요청</a></li>
+												</ul>
+											</li>
+											<li><a href="#">특수크리닝사업부</a>
+												<ul>
+													<li><a href="#">현황 및 주요 고객사</a></li>
+													<li><a href="#">Silo 청소</a></li>
+													<li><a href="#">외부 및 공장설비 청소</a></li>
+													<li><a href="#">실내환경 개선사업(에어컨 및 덕트 청소)</a></li>
+												</ul>
+											</li>
+											<li><a href="#">세탁사업부</a>
+												<ul>
+													<li><a href="#">소개</a></li>
+													<li><a href="#">주요시스템</a></li>
+													<li><a href="#">주요 고객사</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<a class="sitemap" href="/sub/sitemap.php"><img src="./img/common/btn_total_menu.png" alt="사이트맵"></a>
+						<a class="btn_total_menu" href="#"><img src="./img/common/btn_total_menu.png" alt="전체메뉴"></a>
+					</div>
+					<!-- //상단메뉴 -->
+				<!-- //gnbWrap -->
+
+				<script type="text/javascript">
+					<!--
+					//메뉴활성화(모바일메뉴, 왼쪽메뉴 포함)
+					var $navi = '1_0_0_0';
+					-->
+				</script>										
+			</div>		
+			<div class="gnb_Bg"></div>
+			<div class="fix_bg"></div>	
+			</div>
+			<!-- //header -->
+				<!--전체메뉴-->
+				<div id="total_m_lay">
+					<div class="mbTopLink">
+						<a href="#" class="btn_home">HOME</a>
+					</div>
+					<div class="total_m">
+						<ul>
+							<li class="has-sub"><a href="#">회사소개</a><button type="button">열기</button>
+								<ul>
+									<li><a href="#">CEO인사말</a></li>
+									<li><a href="#">연혁</a></li>
+									<li><a href="#">조직 및 업무</a></li>
+									<li><a href="#">찾아오시는 길</a></li>									
+								</ul>
+							</li>	
+							<li class="has-sub"><a href="#">주요사업분야</a><button type="button">열기</button>
+								<ul>
+									<li class="has-sub"><a href="#">방제사업부</a><button type="button">열기</button>
+										<ul>
+											<li><a href="#">소개</a></li>
+											<li><a href="#">주요시스템</a></li>
+											<li><a href="#">주요 고객사</a></li>
+										</ul>
+									</li>
+									<li class="has-sub"><a href="#">세탁사업부</a><button type="button">열기</button>
+										<ul>
+											<li><a href="#">소개</a></li>
+											<li><a href="#">주요시스템</a></li>
+											<li><a href="#">주요 고객사</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>	
+							<li class="has-sub"><a href="#">기업부설연구소</a><button type="button">열기</button>
+								<ul>
+									<li><a href="#">연구소 소개</a></li>
+									<li class="has-sub"><a href="#">주요연구업무</a><button type="button">열기</button>
+										<ul>
+											<li><a href="#">종합방제 시스템 연구</a></li>
+											<li><a href="#">방제공보 및 장비 개발</a></li>
+											<li><a href="#">시설 진단 컨설팅</a></li>
+											<li><a href="#">해충모니터링 및 분석</a></li>
+											<li><a href="#">방제약품 및 페로몬 개발</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>	
+							<li class="has-sub"><a href="#">쇼핑</a><button type="button">열기</button>
+								<ul>
+									<li><a href="#">제품 소개 및 구입</a></li>
+								</ul>
+							</li>	
+							<li class="has-sub"><a href="#">고객센터</a><button type="button">열기</button>
+								<ul>
+									<li class="has-sub"><a href="#">자료실</a><button type="button">열기</button>
+										<ul>
+											<li><a href="#">해충정보</a></li>
+											<li><a href="#">실제현장에선?</a></li>
+										</ul>
+									</li>
+									<li><a href="#">공지사항</a></li>
+									<li><a href="#">Q&amp;A</a></li>
+									<li><a href="#">온라인 견적&#47;상담</a></li>
+								</ul>
+							</li>	
+							<li class="has-sub"><a href="#">고객센터</a><button type="button">열기</button>
+								<ul>
+									<li><a href="#">인사제도</a></li>
+									<li><a href="#">직무소개</a></li>
+									<li><a href="#">채용정보</a></li>
+								</ul>
+							</li>									
+						</ul>
+						<button class="btnClose" type="button">닫기</button>
+					</div>
+				</div>
+				<!-- //전체메뉴 -->				
+			<div class="totalM_on_bg"></div>
+			<div id="Container">
+				<!-- 메인비주얼 -->
+				<div class="mainVisual">
+					<ul class="bgSlide">
+              <li class="bg1 bg_ani"></li>
+              <li class="bg2 bg_ani"></li>
+              <li class="bg3 bg_ani"></li>
+          </ul>
+          <div class="visualTxt">
+          	<h2>ENVIRONMENT·SANITATION·SAFETY</h2>
+          	<p>건강한 사회는 환경, 위생 그리고 안전이 보장되어야 합니다. 각종 위해 요소로부터 해방되는 것,<br>모든 이의 꿈이고 희망입니다. 안심하고 살 수 있는 세상, 캐처스가 함께합니다.</p>
+          	<a href="#" class="btn_more">VIEW MORE</a>
+          </div>
+          <div class="control">
+              <button class="stop-slide" type="button">정지</button>
+              <button class="start-slide" type="button" style="display:none">시작</button>                                
+          </div>           
+				</div>
+				<!-- //메인비주얼 -->
+
+				<!-- 공지사항 -->
+				<div class="noticeWrap">
+					<div class="mNotice">
+						<h2>NOTICE</h2>
+						<ul class="noticeSlide">
+							<li><a href="#">캐처스의 홈페이지가 리뉴얼 오픈되었습니다.캐처스의 홈페이지가 리뉴얼 오픈되었습니다.</a></li>
+							<li><a href="#">캐처스 신규 카달로그 오픈</a></li>
+							<li><a href="#">캐처스의 홈페이지가 리뉴얼 오픈되었습니다2.</a></li>
+							<li><a href="#">캐처스 신규 카달로그 오픈2</a></li>
+						</ul>
+						<div class="control">
+							<a href="#"><span></span>공지사항 더보기</a>
+	            <button class="prev-slide" type="button">이전</button>
+	            <button class="next-slide" type="button">다음</button>                  
+	          </div> 
+					</div>
+				</div>
+				<!-- //공지사항 -->
+
+				<!-- 사업안내 -->
+				<div class="mConBox1">
+					<div class="contentBox">
+						<ul class="division">
+							<li class="bg01" tabindex="0">
+								<div class="bgBox"></div>
+								<div class="textBox">
+									<div class="tit">
+										<p>DEPARTMENT OF PEST MANAGEMENT</p>
+										<h3>방제사업부</h3>
+									</div>
+									<div class="infoTxt">
+										전체 고객사의 90% 이상이 식품위생관리<br>
+										(HACCP, ISO22000) 인증사로<br>
+										캐처스의 모든 방제 시스템과 관리 요원들은<br>
+										관련 기준을 숙지하고 상시 적용하고 있습니다
+									</div>
+									<a href="#" class="btn_more">자세히보기</a>
+								</div>
+							</li>
+							<li class="bg02" tabindex="0">
+								<div class="bgBox"></div>
+								<div class="textBox">
+									<div class="tit">
+										<p>DEPARTMENT OF LAUNDRY</p>
+										<h3>세탁사업부</h3>
+									</div>
+									<div class="infoTxt">
+										전자동 최신 컴퓨터 시스템으로 운용되고 있는<br>
+										첨단세탁장비를 통해 균일한 품질을 자랑하며<br>
+										대용량의 세탁물을 빠른 시간내에 완벽하게 처리합니다
+									</div>
+									<a href="#" class="btn_more">자세히보기</a>
+								</div>
+							</li>
+							<li class="bg03" tabindex="0">
+								<div class="bgBox"></div>
+								<div class="textBox">
+									<div class="tit">
+										<p>R&amp;D CENTER</p>
+										<h3>기업부설연구소</h3>
+									</div>
+									<div class="infoTxt">
+										기업부설연구소는 전문 연구 인력으로 구성되어<br>
+										끊임없는 연구와 새로운 해충 방제관리 시스템 개발을<br>
+										통해 고객사의 시설 외부로부터 침입하는 모든 해충을<br>
+										퇴치하여 위생적이고 쾌적한 환경을 만들어 나갑니다
+									</div>
+									<a href="#" class="btn_more">자세히보기</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- //사업안내 -->
+				<!-- mConBox2 -->
+				<div class="mConBox2">
+					<!-- 고객센터 -->
+					<div class="mConBox2_1" tabindex="0">
+						<div class="infoBox">
+							<div class="txtWrap">
+								<div class="textBox">
+									<h3>고객센터</h3>
+									<p>고객의 요구에 부응하는<br>
+									캐처스가 되겠습니다.</p>
+									<a class="btn_more" href="#">자세히보기</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //고객센터 -->
+					<!-- rightBox -->
+					<div class="rightBox">
+						<!-- 채용정보 -->
+						<div class="mConBox2_2" tabindex="0">
+							<div class="infoBox">
+								<div class="txtWrap">
+									<div class="textBox">
+										<h3>고객센터</h3>
+										<p>고객의 요구에 부응하는<br>
+										캐처스가 되겠습니다.</p>
+										<a class="btn_more" href="#">자세히보기</a>
+									</div>
+								</div>
+							</div>							
+						</div>
+						<!-- //채용정보 -->
+						<!-- 쇼핑 -->
+						<div class="mConBox2_3">
+							<h3>SHOPPING</h3>
+							<P>캐처스의 제품들을<br>구입할 수 있습니다.</P>
+							<div class="control">
+								<a href="#"><span></span>공지사항 더보기</a>
+		            <button class="prev-slide" type="button">이전</button>
+		            <button class="next-slide" type="button">다음</button>
+	            </div>
+							<ul class="shopSlide">
+								<li>
+									<a href="#">
+										<img src="./img/main/mShopSlide01.jpg" alt="">
+										<span>스미라브 0.5G (Sumilarv)</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="./img/main/mShopSlide02.jpg" alt="">
+										<span>페스트캅 DM 유제</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="./img/main/mShopSlide01.jpg" alt="">
+										<span>스미라브 0.5G (Sumilarv)</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="./img/main/mShopSlide02.jpg" alt="">
+										<span>페스트캅 DM 유제</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- //쇼핑 -->
+					</div>
+					<!-- //rightBox -->
+				</div>
+				<!-- //mConBox2 -->
+
+			</div>	
+			<!-- //Container -->	
+			<!-- 하단영역 -->
+			<div id="footer">
+				<div class="footeLink">
+					<div class="linkBox">
+						<ul>
+							<li><a href="#"><span>개인정보처리방침</span></a></li>
+							<li><a href="#">이용약관</a></li>
+							<li><a href="#">법적고지</a></li>
+							<li><a href="#">이메일주소무단수집거부</a></li>
+							<li><a href="#">찾아오시는길</a></li>
+							<li><a href="#">사이트맵</a></li>
+						</ul>
+						<a class="downLink" href="#">카달로그 다운로드</a>
+					</div>
+				</div>
+				<div class="footInfo">					
+					<div class="infoTxt">
+						<ul>
+							<li><span>회사명 : </span>(주)캐처스</li>
+							<li><span>대표자 : </span>김정달</li>
+							<li><span>주소 : </span>(50820) 경상남도 김해시 분성로557번길 8(어방동)</li>
+							<li><span>개인정보보호책임자 : </span>홍길동</li>
+							<li><span>사업자번호 : </span>000-00-00000</li>
+						</ul>						
+					</div>
+					<div>
+						<img src="./img/common/footLogo.jpg" alt="환경,위생&안전 지킴이 catchers" class="footLogo">
+					</div>
+					<div class="csInfo">
+						<strong>고객지원</strong>
+						<p>1588-4159</p>
+						온라인 견적·상담 Q&amp;A
+					</div>
+					<p class="copy">COPYRIGHT ⓒ 2017 CATCHERS. ALL RIGHTS RESERVED.</p>
+				</div>
+			</div>
+			<!-- //하단영역 -->
+		</div> 
+		<!-- //wapper -->
+	</body>
+</html>

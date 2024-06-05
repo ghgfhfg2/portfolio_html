@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>광안리 어방축제 Board Makeup Guide</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<link href="./css/base.css" rel="stylesheet" type="text/css" >
+		<link href="./css/board.css" rel="stylesheet" type="text/css" >
+		<link href="./css/common.css" rel="stylesheet" type="text/css" >
+		<link href="./css/style.css" rel="stylesheet" type="text/css" >
+		<!--<link href="./css/layout.css" rel="stylesheet" type="text/css" >
+		<link href="./css/content.css" rel="stylesheet" type="text/css" >-->
+		<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="./js/jquery.countdown.min.js"></script>
+		<script type="text/javascript" src="./js/common.js"></script>
+		<style type="text/css">
+		
+		body{margin-bottom:20px}
+		#header,#left,#footer{display:none}
+		hr{margin:20px 0;display:block;border:1px dotted #ccc}
+		#content{position:relative;margin:0 auto;width:1000px}
+		h1{margin:15px 0 35px 0;padding-bottom:30px;font-size:25px;text-align:center;letter-spacing:-1px;border-bottom:1px solid #e0e0e0;}
+		h2.guid{margin:50px 0 30px;padding-bottom:10px;font-size:18px;border-bottom:1px dashed #ccc}
+		
+		</style>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<!-- 콘텐츠 영역 -->
+			<div id="content">
+				<h1>일반스킨 MARKUP GUIDE</h1>
+				<h2 class="guid">게시판 목록</h2>
+
+			
+				<!-- 검색영역 -->
+				<div class="borad_search_wrap">
+					<div class="board_search">
+						<fieldset>
+						<legend>검색영역</legend>
+						<label class="hidden">선택</label>
+						<select name="key" title="항목선택">
+							<option value="strname">작성자</option>
+							<option value="strsubject">제목</option>
+							<option value="textcontent">내용</option>
+						</select>
+						<input type="text" value="" title="검색어입력" name="keyword" /> <input value="검색" type="submit" class="btnC btn_search" />
+						</fieldset>
+					</div>
+				</div>
+				<!-- //검색영역 -->
+				<!-- 게시판 목록 -->				
+				<table class="bbs_ltype" border="1" >
+					<caption>게시판 리스트</caption>
+					<colgroup>
+						<col style="width:10%">
+						<col >
+						<col style="width:100px">
+						<col style="width:100px">
+						<col style="width:80px">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">제목</th>
+							<th scope="col">작성자</th>
+							<th scope="col">작성일</th>
+							<th scope="col">조회</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td scope="row"><span class="ic_noti">[공지]</span></td>
+							<td class="subject"><a href="#">게시판 유형 1입니다.게시판 유형 1입니다.게시판 유형 1입니다.게시판 유형 1입니다.</a> <img src="./img/board/key.gif" alt="비공개"> <img src="./img/board/icon_new.gif" alt="new"></td>
+							<td>최고 관리자</td>
+							<td class="data">2015.06.17</td>
+							<td>147</td>
+						</tr>
+						<tr>
+							<td scope="row">2</td>
+							<td class="subject"><a href="#">게시판 유형 1입니다.게시판 유형 1입니다.게시판 유형 1입니다.게시판 유형 1입니다. 게시판 유형 1입니다.게시판 유형 1입니다. </a> 
+							<td>관리자</td>
+							<td class="data">2015.06.17</td>
+							<td>147</td>
+						</tr>
+						<tr>
+							<td scope="row">2</td>
+							<td class="subject"><a href="#">게시판 유형 1입니다.</a></td>
+							<td>관리자</td>
+							<td class="data">2015.06.17</td>
+							<td>147</td>
+						</tr>
+						<tr>
+							<td scope="row">3</td>
+							<td class="subject"><img src="./img/board/ic_reply.png" alt="답변글" > <a href="#">게시판 유형 1입니다.</a></td>
+							<td>관리자</td>
+							<td class="data">2015.06.17</td>
+							<td>147</td>
+						</tr>
+						<tr>
+							<td scope="row">4</td>
+							<td class="subject"><a href="#">게시판 유형 1입니다.</a></td>
+							<td>관리자</td>
+							<td class="data">2015.06.17</td>
+							<td>147</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- 페이지 내비게이션 -->
+				<div class="page">
+					<a href="#"><img src="./img/board/btn_first.png" alt="처음페이지"></a>
+					<a href="#"><img src="./img/board/btn_before.png" alt="이전"></a>
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#" class="on">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">6</a>
+					<a href="#">7</a>
+					<a href="#">8</a>
+					<a href="#">9</a>
+					<a href="#">10</a>
+					<a href="#"><img src="./img/board/btn_next.png" alt="다음"></a>
+					<a href="#"><img src="./img/board/btn_last.png" alt="끝페이지"></a>
+				</div>
+				<!-- //페이지 내비게이션 -->
+				<div class="btn_list">
+					<a class="btnC" href="#">글쓰기</a>
+				</div>
+				<!-- 검색영역 -->
+				<div class="borad_search_wrap">			
+					<div class="board_search">
+						<fieldset>
+						<legend>검색영역</legend>
+						<label class="hidden">선택</label>
+						<select name="key" title="항목선택">
+							<option value="strname">작성자</option>
+							<option value="strsubject">제목</option>
+							<option value="textcontent">내용</option>
+						</select>
+						<input type="text" value="" title="검색어입력" name="keyword" /> <input value="검색" type="submit" class="btnC btn_search" />
+						</fieldset>
+					</div>				
+					<p class="board_page">총게시물 : <strong>132</strong>건 / 페이지 : <strong>1</strong>/14</p>
+				</div>
+				<!-- //검색영역 -->
+				<!-- //게시판 목록 -->
+				<table class="bbs_ltype" border="1" >
+					<caption>게시판 리스트</caption>
+					<colgroup>
+						<col style="width:10%">
+						<col >
+						<col style="width:100px">
+						<col style="width:100px">
+						<col style="width:80px">
+						<col style="width:50px">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">제목</th>
+							<th scope="col">작성자</th>
+							<th scope="col">작성일</th>
+							<th scope="col">조회</th>
+							<th scope="col">파일</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+				<div class="no_data">등록된 게시물이 없습니다.</div>
+				<hr>
+				<h2 class="guid">게시판 글보기</h2>
+				<!-- 게시판 글보기 -->
+				<table class="bbs_vtype" border="1">
+					<caption>게시판의 이름, 이메일, 조회, 게시기간, 전화번호, 게시글 표입니다.</caption>
+					<colgroup>
+						<col style="width:10%">
+						<col style="width:23%">
+						<col style="width:10%">
+						<col style="width:23%">
+						<col style="width:10%">
+						<col style="width:23%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" colspan="6">가족 친화포럼 (일,가정얄립을 위한 가족친화 직장문화조성).</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">작성자</th>
+							<td>홍길동</td>
+							<th scope="row">작성일</th>
+							<td>2012.06.23</td>
+							<th scope="row">조회수</th>
+							<td>182</td>
+						</tr>
+						<tr>
+							<th scope="row">첨부파일</th>
+							<td colspan="5"><a href="#" class="ic_file">참가신청서.hwp (45.5KB)(10)</a><br> <a href="#" class="ic_file">참가신청서.hwp (45.5KB)(10)</a> <br><a href="#" class="ic_file">참가신청서.hwp (45.5KB)(10)</a> <br><a href="#" class="ic_file">참가신청서.hwp (45.5KB)(10)</a></td>
+						</tr>
+						<tr>
+							<td colspan="6" class="contents">●  2009년 부산광역시에서 채용 공고한 청년인턴쉽 합격자 명단을         별첨과 같이 공지 합니다.     ● 합격자는 아래 유의사항을 숙지해 주시기 바랍니다.    ★  합격자 유의사항  ★       ▷  합격자 오리엔테이션 ◁          - 일 시 : ''09.1.12(월) 10:00 부산시청 1층 대강당         - 대상 : 합격자 전원(330명), 구군담당자         - 참석대상자는 당일 09:30분까지 교육등록         - 오리엔테이션 불참자는 불합격 처리되오니 유의바랍니다.    ★ 근무부서는 오리엔테이션 당일 공지 예정입니다. 별첨 : 합격자 명단 1부.끝.   ●  2009년 부산광역시에서 채용 공고한 청년인턴쉽 합격자 명단을         별첨과 같이 공지 합니다.     ● 합격자는 아래 유의사항을 숙지해 주시기 바랍니다.    ★  합격자 유의사항  ★       ▷  합격자 오리엔테이션 ◁          - 일 시 : ''09.1.12(월) 10:00 부산시청 1층 대강당         - 대상 : 합격자 전원(330명), 구군담당자         - 참석대상자는 당일 09:30분까지 교육등록         - 오리엔테이션 불참자는 불합격 처리되오니 유의바랍니다.    ★ 근무부서는 오리엔테이션 당일 공지 예정입니다. 별첨 : 합격자 명단 1부.끝.   ●  2009년 부산광역시에서 채용 공고한 청년인턴쉽 합격자 명단을         별첨과 같이 공지 합니다.     ● 합격자는 아래 유의사항을 숙지해 주시기 바랍니다.    ★  합격자 유의사항  ★       ▷  합격자 오리엔테이션 ◁          - 일 시 : ''09.1.12(월) 10:00 부산시청 1층 대강당         - 대상 : 합격자 전원(330명), 구군담당자         - 참석대상자는 당일 09:30분까지 교육등록         - 오리엔테이션 불참자는 불합격 처리되오니 유의바랍니다.    ★ 근무부서는 오리엔테이션 당일 공지 예정입니다. 별첨 : 합격자 명단 1부.끝.   ●  2009년 부산광역시에서 채용 공고한 청년인턴쉽 합격자 명단을         별첨과 같이 공지 합니다.     ● 합격자는 아래 유의사항을 숙지해 주시기 바랍니다.    ★  합격자 유의사항  ★       ▷  합격자 오리엔테이션 ◁          - 일 시 : ''09.1.12(월) 10:00 부산시청 1층 대강당         - 대상 : 합격자 전원(330명), 구군담당자         - 참석대상자는 당일 09:30분까지 교육등록         - 오리엔테이션 불참자는 불합격 처리되오니 유의바랍니다.    ★ 근무부서는 오리엔테이션 당일 공지 예정입니다. 별첨 : 합격자 명단 1부.끝.   ●  2009년 부산광역시에서 채용 공고한 청년인턴쉽 합격자 명단을         별첨과 같이 공지 합니다.     ● 합격자는 아래 유의사항을 숙지해 주시기 바랍니다.    ★  합격자 유의사항  ★       ▷  합격자 오리엔테이션 ◁          - 일 시 : ''09.1.12(월) 10:00 부산시청 1층 대강당         - 대상 : 합격자 전원(330명), 구군담당자         - 참석대상자는 당일 09:30분까지 교육등록         - 오리엔테이션 불참자는 불합격 처리되오니 유의바랍니다.    ★ 근무부서는 오리엔테이션 당일 공지 예정입니다. 별첨 : 합격자 명단 1부.끝.   ●  2009년 부산광역시에서 채용 공고한 청년인턴쉽 합격자 명단을         별첨과 같이 공지 합니다.     ● 합격자는 아래 유의사항을 숙지해 주시기 바랍니다.    ★  합격자 유의사항  ★       ▷  합격자 오리엔테이션 ◁          - 일 시 : ''09.1.12(월) 10:00 부산시청 1층 대강당         - 대상 : 합격자 전원(330명), 구군담당자         - 참석대상자는 당일 09:30분까지 교육등록         - 오리엔테이션 불참자는 불합격 처리되오니 유의바랍니다.    ★ 근무부서는 오리엔테이션 당일 공지 예정입니다. 별첨 : 합격자 명단 1부.끝. </td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- 이전글 다음글 -->
+				<ul class="view_list">
+					<li class="before"><span>이전글</span> <a href="#">제16회 부산국제영화제 전야제</a></li>
+					<li class="next"><span>다음글</span> 이전글이 없습니다.</li>
+				</ul>
+				<!-- //이전글 다음글 -->
+				<div class="btn_list2">
+					<a href="#" class="btnC">목록</a> 
+					<div class="btn_right"><a href="#" class="btnC">수정</a> <a href="#" class="btnC btn_del">삭제</a></div>
+				</div>
+				<!-- //게시판 글보기 -->
+				<hr>
+				<h2 class="guid">게시판 글쓰기</h2>
+				<!-- 게시판 글쓰기 -->
+				<fieldset>
+				<legend>글쓰기 영역</legend>
+				<table class="bbs_wtype" border="1">
+					<caption>게시판의 제목, 이름, 이메일, 게시기간, 전화번호 입력표입니다.</caption>
+					<colgroup>
+						<col style="width:90px">
+						<col>
+						<col style="width:90px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="b_write">작성자</label></th>
+							<td><input type="text" name="" value=""  style="width:99%" id="b_write" ></td>
+							<th scope="row"><label for="b_paw">비밀번호</label></th>
+							<td><input type="text" name="" value=""  style="width:99%" id="b_paw" ></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="b_email">E-mail</label></th>
+							<td><input type="text" name="" value=""  style="width:99%" id="b_email" ></td>
+							<th scope="row"><label for="b_tel">전화번호</label></th>
+							<td><input type="text" name="" value=""  style="width:99%" id="b_tel" ></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="b_subject">제목</label></th>
+							<td colspan="3"><input type="text" name="" value="" style="width:99.5%" id="b_subject" ></td>
+						</tr>
+						<tr>
+							<th scope="row">첨부파일</th>
+							<td colspan="3">
+								<span class="btn03 ic_plus"><a href="#">첨부파일 추가</a></span><span class="btn03 ic_min"><a href="#">첨부파일 삭제</a></span><br>
+								<input type="file" name="" value="" title="첨부파일 첫번째 등록" ><br>
+								<input type="file" name="" value="" title="첨부파일 두번째 등록" >
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">내용</th>
+							<td colspan="3"><textarea name="content" style="width:99.5%;" rows="10" title="글내용"></textarea></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn_list2">
+					<a href="#" class="btnC">목록</a> 
+					<div class="btn_right"><a href="#" class="btnC">확인</a> <a href="#" class="btnC btn_cancel">취소</a></div>
+				</div>
+				</fieldset>
+				<!-- //게시판 글쓰기 -->
+
+				<hr>
+				<h2 class="guid">포토갤러리 목록</h2>	
+				<!-- 겔러리 목록 -->
+				<!-- 검색영역 -->
+
+				<div class="borad_search_wrap">			
+					<div class="board_search">
+						<fieldset>
+						<legend>검색영역</legend>
+						<label class="hidden">선택</label>
+						<select name="key" title="항목선택">
+							<option value="strname">작성자</option>
+							<option value="strsubject">제목</option>
+							<option value="textcontent">내용</option>
+						</select>
+						<input type="text" value="" title="검색어입력" name="keyword" /> <input value="검색" type="submit" class="btnC btn_search" />
+						</fieldset>
+					</div>				
+					<p class="board_page">총게시물 : <strong>132</strong>건 / 페이지 : <strong>1</strong>/14</p>
+				</div>
+				<!-- //검색영역 -->
+				<div class="bbs_gallery">
+					<ul>
+						<li>
+							<a href="#">
+								<span class="more"></span>								
+								<img src="./img/sub/s5_1_1_img05.jpg" alt="">
+							</a>
+							<div class="tit_box">
+								<a href="#" class="tit">25-1 장부봉(입선)-풍작을 위해25-1 장부봉(입선)-풍작을 위해</a>
+								<span class="data">2016-07-27</span>							
+							</div>						
+						</li>
+						<li>
+							<a href="#">
+								<span class="more"></span>								
+								<img src="./img/board/sample1.jpg" alt="">
+							</a>
+							<div class="tit_box">
+								<a href="#" class="tit">25-1 장부봉(입선)-풍작을 위해25-1 장부봉(입선)-풍작을 위해</a>
+								<span class="data">2016-07-27</span>							
+							</div>						
+						</li>
+						<li>
+							<a href="#">
+								<span class="more"></span>								
+								<img src="./img/board/sample1.jpg" alt="">
+							</a>
+							<div class="tit_box">
+								<a href="#" class="tit">25-1 장부봉(입선)-풍작을 위해25-1 장부봉(입선)-풍작을 위해</a>
+								<span class="data">2016-07-27</span>							
+							</div>						
+						</li>
+						<li>
+							<a href="#">
+								<span class="more"></span>								
+								<img src="./img/board/sample1.jpg" alt="">
+							</a>
+							<div class="tit_box">
+								<a href="#" class="tit">25-1 장부봉(입선)-풍작을 위해25-1 장부봉(입선)-풍작을 위해</a>
+								<span class="data">2016-07-27</span>							
+							</div>						
+						</li>
+						<li>
+							<a href="#">
+								<span class="more"></span>								
+								<img src="./img/board/sample1.jpg" alt="">
+							</a>
+							<div class="tit_box">
+								<a href="#" class="tit">25-1 장부봉(입선)-풍작을 위해25-1 장부봉(입선)-풍작을 위해</a>
+								<span class="data">2016-07-27</span>							
+							</div>						
+						</li>
+						<li>
+							<a href="#">
+								<span class="more"></span>								
+								<img src="./img/board/sample1.jpg" alt="">
+							</a>
+							<div class="tit_box">
+								<a href="#" class="tit">25-1 장부봉(입선)-풍작을 위해25-1 장부봉(입선)-풍작을 위해</a>
+								<span class="data">2016-07-27</span>							
+							</div>						
+						</li>
+						
+					</ul>
+				</div>
+				<!-- 페이지 내비게이션 -->
+				<div class="page">
+					<a href="#"><img src="./img/board/btn_first.png" alt="처음페이지"></a>
+					<a href="#"><img src="./img/board/btn_before.png" alt="이전"></a>
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#" class="on">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">6</a>
+					<a href="#">7</a>
+					<a href="#">8</a>
+					<a href="#">9</a>
+					<a href="#">10</a>
+					<a href="#"><img src="./img/board/btn_next.png" alt="다음"></a>
+					<a href="#"><img src="./img/board/btn_last.png" alt="끝페이지"></a>
+				</div>
+				<!-- //페이지 내비게이션 -->
+				<!-- //겔러리 목록 -->	
+
+				<hr>
+				<h2 class="guid">개인정보 제공 동의</h2>
+
+				<!-- 개인정보 제공 동의 -->			
+				<h2 class="title">개인정보 제공 동의</h2>
+				<div class="private_txt">
+					<div class="scroll_txt">
+						1. 개인정보의 수집 및 이용 목적(개인정보보호법 제15조)<br><br>
+
+						국민신문고는 관계법령 등에서 정하는 소관 업무의 수행을 위하여 다음과 같이 개인정보를 수집 및 이용합니다. 수집된 개인정보는 정해진 목적 이외의 용도로는 이용되지 않으며 수집 목적이 변경될 경우 사전에 알리고 동의를 받을 예정입니다.
+						※ 관계법령 등 : 민원사무 처리에 관한 법률 및 동법 시행령, 부패방지 및 국민권익위원회의 설치와 운영에 관한 법률, 전자정부법 및 동법 시행령, 온라인 국민참여포털의 운영에 관한 규정 등<br><br>
+
+						가. 예산낭비신고 접수·처리·사후관리 서비스 제공<br>
+						예산낭비신고 신청서에 포함된 개인정보는 예산낭비신고의 접수·처리 등 소관 업무 수행을 위해 행정·공공기관에서 가. 예산낭비신고 접수·처리·사후관리 서비스 제공<br>
+						예산낭비신고 신청서에 포함된 개인정보는 예산낭비신고의 접수·처리 등 소관 업무 수행을 위해 행정·공공기관에서 
+
+					</div>
+					<div class="agree_check">
+						<span class="check_box"><input type="checkbox" name="checkbox" id="agree_c"> <label for="agree_c"><strong>동의</strong></label></span>
+					</div>
+				</div>
+				<!-- // 개인정보 제공 동의 -->	
+				<!-- 게시판 글쓰기 -->
+				<fieldset>
+				<legend>글쓰기 영역</legend>
+				<table class="bbs_wtype" border="1">
+					<caption>제목, 작성자, 비밀번호, 첨부파일의 ○○○게시판 입력표입니다.</caption>
+					<colgroup>
+						<col style="width:100px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="b_subject">제목</label></th>
+							<td><input type="text" name="" value="" style="width:100%" id="b_subject" ></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="b_write">작성자</label></th>
+							<td><input type="text" name="" value=""  style="width:150px" id="b_write" > <span class="col_red dis_inbl">작성자는 필수 입력사항입니다.</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="b_pass">비밀번호</label></th>
+							<td><input type="password" name="" value=""  style="width:150px" id="b_pass" > <span class="col_red dis_inbl">4자리 이상 입력해주세요.</span></td>
+						</tr>
+						<tr>
+							<th scope="row">첨부파일</th>
+							<td>
+								<span class="btn03 ic_plus"><a href="#">첨부파일 추가</a></span><span class="btn03 ic_min"><a href="#">첨부파일 삭제</a></span><br>
+								<input type="file" name="" value="" title="첨부파일 첫번째 등록" ><br>
+								<input type="file" name="" value="" title="첨부파일 두번째 등록" >
+							</td>
+						</tr>						
+						<tr>
+							<th scope="row">내용</th>
+							<td><textarea name="content" style="width:100%;" rows="10" title="글내용"></textarea></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn_list"><input class="btnC mr5" type="submit" value="저장"><a class="btnC mr5" href="#">취소</a><a class="btnC" href="#">목록</a></div>
+				</fieldset>
+				<!-- //게시판 글쓰기 -->		
+
+				<hr>
+				<!-- 비밀번호 입력 -->
+				<h2 class="title">비밀번호 입력 폼</h2>
+				<div class="passw_form">
+					<h3>비밀번호 입력</h3>											
+					<p>다음단계로 진행하기 위해서 비밀번호를 입력해 주시기 바랍니다.</p>
+					<fieldset>
+					<legend>비밀번호 입력영역</legend>
+					<input type="password" name="" value="" title="비밀번호" placeholder="비밀번호">
+					<input type="submit" class="btnC btn_large" value="입력" ></span>
+					</fieldset>						
+				</div>
+				<!-- //비밀번호 입력 -->
+				<hr>
+				<!-- 본인인증방식 -->
+				<h2 class="title">본인인증방식 선택</h2>
+				<div class="certify_con">
+					<div class="certify_left">
+						<div class="tit">
+							<h2>안심본인인증 방식</h2>
+							<p>본인이 소지하고 계신 본인인증 수단(휴대폰, 범용공인인증서) 중 한가지를 통해 본인인증을 하실 수 있습니다.</p>
+						</div>
+						<a href="#" class="btnC btn_large" title="새창열림">안심본인인증하기</a>
+					</div>
+					<div class="certify_right">
+						<div class="tit">
+							<h2>G-PIN인증 방식</h2>
+							<p>사상구청 홈페이지 회원가입 시 주민등록번호 대체 서비스인 공공 I-PIN 서비스 이용이 가능합니다. <br>
+							서비스 신청은 공공 I-PIN 센터(http://g-pin.go.kr)에서 가능합니다.</p>
+						</div>
+						<a href="#" class="btnC btn_large" title="새창열림">G-PIN인증받기</a>
+					</div>
+				</div>
+				<!-- //본인인증방식 -->
+				<hr>
+				<!-- 본인인증방식 -->							
+
+			</div>
+			<!-- //콘텐츠 영역 -->
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,345 @@
+@charset "euc-kr";
+/****************************************/
+/* Name: 광안리 어방축제
+/* PART: STYLE 
+/* Version: 1.0 / day: 2017-03-02
+/* Author: imtec 
+/****************************************/
+
+html, body, #wrapper{width: 100%; height: 100%;}
+
+#header{width:100%; position: absolute; z-index: 200;}
+
+#header .glob_wrap{width: 100%; height: 40px; background:#fff; border-bottom: 1px solid #ccc;}
+#header .glob_wrap .glob_box{width: 1000px; margin:0 auto;}
+#header .glob_wrap .glob_box .suyeong_home{	
+	width:120px; height: 40px;
+	float:left;
+	font-weight: bold;	
+	border:1px solid #ccc; border-width: 0 1px;
+}
+#header .glob_wrap .glob_box .suyeong_home a{	
+	display: block; box-sizing: border-box;
+	width:120px; height: 40px; line-height: 40px;
+	padding-left:50px; 
+	background:url('../img/common/ic_suyeong.png') 20px 8px no-repeat;
+}
+
+#header .glob_wrap .glob_box .glob_menu{
+	height: 40px;  line-height: 40px;
+	float:right; 
+}
+#header .glob_wrap .glob_box .glob_menu li{
+	float:left; margin-right: 27px;
+}
+#header .glob_wrap .glob_box .glob_menu li:last-child{
+	margin-right: 0;
+}
+#google_translate_element{
+	height:40px; overflow:hidden;
+}
+#google_translate_element .goog-te-gadget-simple{
+	border:none; background:#017bc1; width:93px; text-align:center; padding:0;
+}
+#google_translate_element .goog-te-gadget-simple > img{
+	display:none;
+}
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value{
+	color:#fff;
+}
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value img{
+	display:none;
+}
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span:first-child,
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span:last-child,
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span:nth-child(3)
+{
+	display:none;
+}
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value:after{
+	display:block; position:relative; width:100%;
+	content:"Language"; font-size:14px; line-height:40px;
+	cursor:pointer; font-family:'Nanum Gothic';
+}
+
+/*
+#header .glob_wrap .glob_box .glob_menu .language{
+	width: 110px;
+	position: relative;
+	margin-right: 0; text-align: center;
+	background: #017bc1; color: #fff;
+}
+#header .glob_wrap .glob_box .glob_menu .language .lang_list{
+	display: none;
+	width:100%;
+	position: absolute; top: 40px; left: 0; z-index: 50;
+	padding:10px 0 10px 17px;
+	background:#259add;
+}
+#header .glob_wrap .glob_box .glob_menu .language .lang_list li{
+	line-height: 24px;
+}
+*/
+
+
+
+/*
+================================================================================
+상단메뉴
+================================================================================
+*/
+
+.gnb_wrap{
+	width: 100%; height: 90px; background:rgba(0,0,0,0.4);
+	position:absolute; top: 40px; transition: all 0.5s;
+} 
+.gnb_wrap.on{
+	animation-name: topMenu;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-out;
+}
+@keyframes topMenu{
+	0% {
+    -webkit-transform: translateY(-90px);
+    -ms-transform: translateY(-90px);
+    transform: translateY(-90px);
+  }
+	60% {
+    -webkit-transform: translateY(7px);
+    -ms-transform: translateY(7px);
+    transform: translateY(7px);
+  }
+
+	100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.gnb_wrap .gnb_box{
+	width:1000px; height: 100%; margin: 0 auto; 
+}
+.gnb_wrap .gnb_box .logo{margin-top: 19px; float: left; position: relative; z-index: 20; }
+
+#gnb{position:relative; height: 100%;} 
+#gnb > ul{width: 100%;  padding-left: 340px; }
+#gnb ul:after{display:block;clear:both;content:''}
+#gnb ul li{float:left;font-weight:bold;}
+#gnb ul li:first-child{margin-left:20px}
+#gnb ul li h2{font-size:18px;font-weight:bold; letter-spacing:-1px;height: 100%;} 
+#gnb ul li h2 a{
+	 display: block; line-height: 90px;
+	padding-right:50px;  text-decoration:none; color:#fff}
+#gnb ul li:last-child a{padding-right: 0;}	
+#gnb ul li a.active{color:#fec56e;}
+#gnb ul li .gnbsingle{display:block;position:absolute;top:90px;left:0;width:100%;z-index:20}
+#gnb ul li .gnb_s li{margin:0 20px 0 0;float:left;font-size:15px;height:55px;font-weight:normal}
+#gnb ul li .gnb_s li:last-child{margin: 0;}
+#gnb ul li .gnb_s li a{padding:0; color: #444; line-height: 55px;}
+#gnb ul li .gnb_s li a:hover{color:#fec56e;font-weight:bold}
+
+.sgm_1{margin-left:350px}
+.sgm_2{margin-left:280px}
+.sgm_3{margin-left:410px}
+.sgm_4{margin-left:620px}
+.sgm_5{margin-left:828px}
+
+#gnb_bottom_line{position: absolute;top: 86px;left: 0;border-top: 4px solid #fec56e;}
+#gnb_Bg{
+	display:none;
+	width:100%;
+	position:absolute;top:90px; z-index:10; left:0;
+	background:#fff;border-bottom:1px solid #ddd;}
+
+
+#clock{
+	float: left; color: #fff; padding: 26px 0 0 15px;
+}
+#clock span{display: inline-block;}
+#clock .day{
+	font-size: 26px; font-weight: bold; margin-bottom: 3px;
+}
+#clock .time{
+	font-size: 14px;
+}
+/*
+================================================================================
+메인 레이아웃
+================================================================================
+*/
+
+
+#container{width: 100%; height: 100%; position: relative;}
+
+/* footer */
+#container + #footer{
+	width: 100%; height: 120px;
+	padding: 20px 0;
+	background: #444; color: #bbb; font-size: 12px;
+	position:fixed;left:0;bottom:-120px;z-index:10;
+	transition: all 0.5s ease;
+}
+#container + #footer .footer_box{
+	width: 1000px; 
+	margin: 0 auto; overflow: hidden;
+	}
+#container + #footer .footer_box > div{float: left;}
+#container + #footer .footer_box .footer_logo{
+	margin-top: 15px;
+}
+#container + #footer .footer_box .copyright{
+	margin-left: 40px;
+}
+#container + #footer .footer_box .copyright a{
+	display: block; margin-bottom: 10px;
+	font-size: 13px; color: #ccc; font-weight: bold;
+}
+#container + #footer.on{bottom:0}
+
+
+
+/*
+================================================================================
+서브 레이아웃
+================================================================================
+*/
+
+/* 서브비주얼 */
+#subContainer{padding-top: 40px;}
+#subContainer #sub_visual{
+	width: 100%; height: 267px; 	
+	position: relative; text-align: center;
+	color: #fff;
+	background:url('../img/sub/sub_visual.jpg') center bottom no-repeat;
+}
+.subVi_ani{
+	animation-name: subVi_ani;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+}
+
+@keyframes subVi_ani{
+	from{
+		background-position: center bottom;
+	}
+	50%{
+		background-position: center top;
+	}
+	to{
+		background-position: center bottom;
+	}
+}
+#subContainer #sub_visual .msk{
+	width: 100%; height: 100%;
+	position: absolute;
+	background: rgba(0,0,0,0.45);
+}
+#subContainer #sub_visual .sub_nav_wrap{
+	position: relative; z-index: 10;
+	overflow: hidden;
+}
+#subContainer #sub_visual .sub_nav_wrap h1.title{
+	padding-top: 120px; position: relative;
+	font-size: 29px; font-weight: bold;
+	margin-bottom: 40px;
+}
+#subContainer #sub_visual .sub_nav_wrap h1.title:before{
+	content: ""; width: 30px; height: 1px; display: inline-block;
+	position: absolute; left: 50%; bottom:-20px; margin-left: -15px;
+	background: #fff; 
+}
+#subContainer #sub_visual .sub_nav_wrap .location{
+	overflow: hidden; display: inline-block;
+}
+#subContainer #sub_visual .sub_nav_wrap .location li{
+	float: left; margin-right: 25px; position: relative;
+}
+#subContainer #sub_visual .sub_nav_wrap .location li:before{
+	content: ">"; display: inline-block; 
+	position: absolute;  right: -17px;
+}
+#subContainer #sub_visual .sub_nav_wrap .location li:last-child{
+	margin-right: 0;
+}
+#subContainer #sub_visual .sub_nav_wrap .location li:last-child:before{
+	display: none;
+}
+#subContainer #sub_visual .sub_nav_wrap .location li .ic_home{
+	margin-top: -2px;
+}
+
+#subContainer #sub_visual .sub_nav_wrap .sub_nav ul{
+	margin-top: 18px;
+	position: relative; display: inline-block; 
+}
+#subContainer #sub_visual .sub_nav_wrap .sub_nav ul li{
+	float: left; 
+}
+#subContainer #sub_visual .sub_nav_wrap .sub_nav ul li a{
+	padding:11px 30px; display: inline-block;
+	border:1px solid #fff; margin-left: -1px;
+	font-size: 16px; transition: all 0.3s;
+}
+#subContainer #sub_visual .sub_nav_wrap .sub_nav ul li a.on,
+#subContainer #sub_visual .sub_nav_wrap .sub_nav ul li a:hover,
+#subContainer #sub_visual .sub_nav_wrap .sub_nav ul li a:focus{
+	background: #fff; color: #017bc1; font-weight: bold;
+}
+
+
+/* 서브컨텐츠 */
+
+#subContainer #content{
+	width: 1000px; position: relative;
+	margin:0 auto; padding: 50px 0;
+	overflow: hidden;
+}
+#subContainer #content .btn_top{
+	width: 45px; height: 45px;
+	display: inline-block;
+	display: none;
+	text-indent: -9999px;
+	position: fixed;
+	bottom: 30px; left: 50%; margin-left: 530px;
+	background: url('../img/sub/btn_top.png') no-repeat;
+}
+
+/* 페이지만족도 */
+#change{position:relative;margin:70px 0 20px;font-size:13px;border:1px solid #d4d4d4}
+#change .page_infor{position:relative;padding:10px;overflow:hidden;background:#245571;border-bottom:1px solid #d4d4d4}
+#change .page_infor ul{line-height:13px;}
+#change .page_infor ul::after{display:block;clear:both;content:''}
+#change .page_infor ul li{float:left;margin:5px 20px 5px 0;color:#fff;}
+#change .ch_check{padding:20px;height:100%;overflow:hidden;}
+#change .ch_check dt{float:left;margin:0 10px 15px 0;padding-left:15px;font-size:13px;color:#2a56a9;line-height:13px;background:url('../img/common/ic_re.gif') no-repeat}
+#change .ch_check dd{float:left;margin-bottom:15px;color:#7f7f7f;line-height:13px}
+#change .ch_check dd ul::after{display:block;clear:both;content:''}
+#change .ch_check dd ul li{float:left;margin-right:10px}
+#change .ch_check dd input[type="radio"]{background:none}
+#change .ch_check dd.wri_bx{position:relative;clear:left;padding-right:80px;width:100%;box-sizing:border-box;}
+#change .ch_check dd .input_stat{margin:0;padding:10px 0 0 10px;width:100%;height:40px;font-size:13px;color:#7d7d7d;border:1px solid #d4d4d4}
+#change .ch_check dd span{display:block;padding:5px 0;}
+#change .ch_check dd .w_btn{position:absolute;top:0;right:0;}
+#change .ch_check dd.wri_bx p{margin-top:13px; margin-left: 4px}
+
+
+/* footer */
+#subContainer + #footer{
+	width: 100%; 
+	padding: 25px 0;
+	background: #444; color: #bbb; font-size: 12px;
+}
+#subContainer + #footer .footer_box{
+	width: 1000px; display: table;
+	margin: 0 auto; overflow: hidden;
+	}
+#subContainer + #footer .footer_box > div{}
+#subContainer + #footer .footer_box .footer_logo{
+	display: table-cell; vertical-align: middle;
+	width: 250px;
+}
+#subContainer + #footer .footer_box .copyright a{
+	display: block; 
+	margin-bottom: 10px; 
+	font-size: 13px; color: #ccc; font-weight: bold;
+}

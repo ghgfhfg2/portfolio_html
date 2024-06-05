@@ -1,0 +1,194 @@
+@charset "euc-kr";
+/****************************************/
+/* Name: 광안리 어방축제
+/* PART: COMMON STYLE 
+/* Version: 1.0 / day: 2017-02-28
+/* Author: imtec 
+/****************************************/ 
+
+/* 공통정의 */
+h2.title{margin:30px 0 16px 0;padding-top:20px;font-size:20px;color:#017bc1;line-height:24px;font-weight:700;background:url('../img/common/h2_dot.png') no-repeat 0 0px}
+h3.title{margin:20px 0 16px 5px;padding:0 0 0 27px;font-size:17px;color:#333;line-height:22px;background:url('../img/common/h3_dot.png') no-repeat 0 2px;}
+h4.title{margin:20px 0 10px 10px;padding:1px 0 0 21px;font-size:16px;line-height:22px;background:url('../img/common/h4_dot.png') no-repeat 0 5px;}
+
+h1.title+h2.title{margin-top:0}
+h2.title+h3.title{margin-top:16px}/* h2.title에 인접해있는 h3 title만 적용 */
+h3.title+h4.title{margin-top:16px}/* h3.title에 인접해있는 h4 title만 적용 */
+.guide_txt .content h3.title:first-child,.guide_txt .content h4.title:first-child{margin-top:5px}/* guide_txt에 오는 첫 h3.title, h4.title만 적용 */
+
+/* dl 타이틀 */
+.dl_title{margin-top:15px}
+.dl_title dt{font-weight:bold}
+.dl_title dd{margin:5px 0 15px 10px}
+
+/* h2뒤에 오는 li*/
+.h_li{margin-bottom:10px}
+.h_li li{position:relative;margin:0 0 5px 15px;padding-left:12px;background:url('../img/common/li_p_dot1.png') no-repeat 0 8px}
+.h_li li ul,.h_li li ol{margin:3px 0 10px 0;}
+.h_li li li{margin:0 0 0 0;padding-left:9px;background:url('../img/common/li_p_dot2.png') no-repeat 0 8px}
+.h_li li li li{background:url('../img/common/li_p_dot3.png') no-repeat 0 10px}
+.h_li li li li li{background:url('../img/common/li_p_dot4.png') no-repeat 0 10px}
+
+
+/* 기본 li아이콘 #1 */
+.li_dot1{margin-bottom:10px}
+.li_dot1 li{position:relative;margin-bottom:5px;padding-left:12px;background:url('../img/common/li_p_dot1.png') no-repeat 0 8px}
+.li_dot1 li ul,.li_dot1 li ol{margin:3px 0 10px 0;}
+.li_dot1 li li{margin:0 0 0 0;padding-left:9px;background:url('../img/common/li_p_dot2.png') no-repeat 0 8px}
+.li_dot1 li li li{background:url('../img/common/li_p_dot3.png') no-repeat 0 10px}
+.li_dot1 li li li li{background:url('../img/common/li_p_dot4.png') no-repeat 0 10px}
+
+/* 기본 li아이콘 #2 */
+.li_dot2{margin-bottom:10px}
+.li_dot2 li{position:relative;margin-bottom:5px;padding-left:9px;background:url('../img/common/li_p_dot2.png') no-repeat 0 8px}
+.li_dot2 li ul,.li_dot2 li ol{margin:3px 0 10px 0;}
+.li_dot2 li li{background:url('../img/common/li_p_dot3.png') no-repeat 0 10px}
+
+/* 기본 li아이콘 #3 */
+.li_dot3{margin-bottom:10px}
+.li_dot3 li{position:relative;margin-bottom:5px;padding-left:9px;background:url('../img/common/li_p_dot3.png') no-repeat 0 10px}
+.li_dot3 li ul,.li_dot3 li ol{margin:3px 0 10px 0;}
+.li_dot3 li li{background:url('../img/common/li_p_dot4.png') no-repeat 0 10px}
+
+/* 기본 li아이콘 #4 */
+.li_dot4{margin-bottom:10px}
+.li_dot4 li{position:relative;margin-bottom:4px;padding:1px 0 0 21px;background:url('../img/common/h4_dot.png') no-repeat 0 5px}
+.li_dot4 li ul,.li_dot4 li ol{margin:3px 0 10px 0;}
+.li_dot4 li li{margin-bottom:0;padding-left:12px;background:url('../img/common/li_p_dot1.png') no-repeat 0 10px}
+
+/* dot 없는 li */
+.li_none li{position:relative;margin:0 0 5px 0 !important;padding:0 !important;background:none !important;}
+.li_none li ul,.li_none li ol{margin:3px 0 10px 9px !important;}
+.li_bold li{font-weight:bold;}
+
+/* 숫자가 있는 li */
+.li_num li{position:relative;margin-left:20px !important;margin-bottom:5px !important;padding-left:0 !important;list-style-type:decimal;background:none !important}
+
+/* 숫자가 있는 li2 */
+.li_num2 li{position:relative;margin-bottom:5px;padding-left:25px}
+.li_num2 li .num{position:absolute;top:3px;left:0;width:17px;height:17px;font-size:11px;color:#fff;text-align:center;line-height:16px;background:url('../img/common/li_num.png') no-repeat}
+
+
+/* 기본아이콘 col나누기 */
+.dli2::after,.dli3::after,.dli4::after{display:block;clear:both;content:''}
+ul.dli2 li,ol.dli2 li{float:left;width:46%;}/* 2칸 */
+ul.dli3 li,ol.dli3 li{float:left;width:29%;}/* 3칸 */
+ul.dli4 li,ol.dli4 li{float:left;width:21%;}/* 4칸 */
+
+
+/* h뒤에 오는 p */
+.h2_p{margin:0 0 10px 0;}/* h2뒤에 오는 p */
+.h3_p{margin:0 0 10px 5px;}/* h3뒤에 오는 p */
+.h4_p{margin:0 0 10px 10px;}/* h3뒤에 오는 p */
+.h5_p{margin:0 0 10px 20px;}/* h5뒤에 오는 p */
+
+/* h뒤에 오는 p dot */
+.h_dot{margin:0 0 0 15px;padding-left:12px;background:url('../img/common/li_p_dot1.png') no-repeat 0 9px}
+
+/* 기본 dot 아이콘 */
+.dot0{padding-left:21px;background:url('../img/common/h4_dot.png') no-repeat 0 4px}
+.dot1{padding-left:9px;background:url('../img/common/li_p_dot1.png') no-repeat 0 9px}
+.dot2{padding-left:9px;background:url('../img/common/li_p_dot2.png') no-repeat 0 10px}
+.dot3{padding-left:9px;background:url('../img/common/li_p_dot3.png') no-repeat 0 10px}
+.dot4{padding-left:9px;background:url('../img/common/li_p_dot4.png') no-repeat 0 11px}
+.dot5{padding-left:9px;background:url('../img/common/li_p_dot5.png') no-repeat 0 8px}
+
+/* 새창아이콘 */
+.blank{padding:0 22px 2px 0;background:url('../img/common/blank.gif') no-repeat center right}
+
+/* 상단안내글 #1 */
+.guide_txt{position:relative;margin-bottom:20px;padding:20px 30px;background-color:#f6f6f6;border:1px solid #e1e1e1;line-height:20px;}
+.guide_txt.ic{border-left: 5px solid #017bc1}
+
+/* 작은 버튼 */
+.btn03{display:inline-block;margin:1px 2px 1px 0;font-size:12px;vertical-align:middle;line-height:26px;background:#fff;border:1px solid #2769cc}
+.btn03 a{display:block;padding:0 13px;height:26px;color:#2769cc !important;text-decoration:none}
+.btn03.ic_down a{padding-left:27px;background:#fff url('../img/common/ic_down2.png') no-repeat 11px center}
+.btn03.ic_down2{border:1px solid #3b8b00}
+.btn03.ic_down2 a{color:#3b8b00 !important;padding-left:27px;background:#fff url('../img/common/ic_down3.png') no-repeat 11px center}
+.btn03.ic_down3{border:1px solid #db771e}
+.btn03.ic_down3 a{color:#e7730c !important;padding-left:27px;background:url('../img/common/ic_down4.png') no-repeat 11px center}
+.btn03.ic_view a{padding-left:27px;background:#fff url('../img/common/ic_view.png') no-repeat 11px center}
+.btn03.ic_dot a{padding-right:23px;background:#fff url('../img/common/btn_dot2.png') no-repeat right center}
+.btn03.ic_plus a{padding-left:23px;background:#fff url('../img/common/ic_plus.png') no-repeat 10px center}
+.btn03.ic_min a{padding-left:23px;background:#fff url('../img/common/ic_minus.png') no-repeat 10px center}
+
+
+/* 텍스트 탭메뉴 유형01 - 최대 7칸 */
+.tab_txt{margin-bottom:15px;}
+.tab_txt ul{display:inline-block;width:100%;}
+.tab_txt ul::after{display:block;clear:both;content:''}
+.tab_txt li{float:left;margin:0 0 5px 0;font-size:14px;line-height:15px;box-sizing:border-box;}
+.tab_txt li a{display:block;margin:0 5px 0 0;padding:14px 5px 14px 33px;text-decoration:none;letter-spacing:-1px;background:url('../img/common/tab_bg.png') no-repeat 10px center;border:1px solid #cbcbcb}
+.tab_txt li a.on,.tab_txt li a:hover,.tab_txt li a:focus{color:#fff;font-weight:bold;background-color:#017bc1;border:1px solid #2a76bb;
+background-image: url('../img/common/tab_bg_on.png');
+}
+
+/* 모바일 */
+.mb_tab .selet_txt{display:none}
+
+ul.li2 li,ol.li2 li{width:50%;}/* 2칸 */
+ul.li3 li,ol.li3 li{width:33.3%;}/* 3칸 */
+ul.li4 li,ol.li4 li{width:25%;}/* 4칸 */
+ul.li5 li,ol.li5 li{width:20%;}/* 5칸 */
+ul.li6 li,ol.li6 li{width:16.6%;}/* 6칸 */
+ul.li7 li,ol.li7 li{width:14.2%;}/* 7칸 */
+
+/* 이미지 탭 */
+.tab_img{height:100%;overflow:hidden}
+.tab_img li{float:left;margin:10px 0;width:50%;line-height:18px;text-align:center}
+.tab_img li p{text-align:center}
+.tab_img.li_3 li{width:33% !important}
+.tab_img.li_1 li{width:100% !important}
+
+
+/* 테이블공통 */
+.t_typel,
+.t_typel th,
+.t_typel td{border:0}
+.tbl_txt{margin-top:-20px;font-size:13px;text-align:right;}
+.tbl_txt2{margin-top:-15px;font-size:13px;text-align:right;}/* li안에 사용시 */
+.th_left tbody th{text-align:left}
+.td_left tbody td{text-align:left}
+.td_left2 tbody th+td,.td_left2 tbody tr td:first-child{text-align:left}/* th 다음에 오는 td만 왼쪽정렬 */
+.td_left2 tbody td[rowspan]+td{text-align:left}
+.td_left3 tbody tr td:first-child + td{text-align:left}
+.td_right tbody td,.td_right tfoot td{text-align:right}
+.t_typel th,.t_typel td{border:0}
+.t_typel {width:100%;border-spacing:0;border-top:2px solid #017bc1;border-bottom:1px solid #ddd;border-collapse: collapse}
+.t_typel tr { text-align: center; }
+.t_typel thead th{padding:12px 0;color:#333;line-height:18px;background:#ebf7ff;border-bottom:1px solid #ddd;border-left:1px solid #cadeff;}
+.t_typel thead th:first-child{border-left:0}
+.t_typel thead th[colspan]{border-bottom:1px solid #ddd;}/* th가 두줄이상으로 합쳐질때 border-bottom 값 */
+.t_typel thead th[rowspan]{border-right:1px solid #cadeff;}/* th가 두줄이상으로 합쳐질때 border-right 값 */
+.t_typel thead th[rowspan]:last-child{border-right:0}
+.t_typel thead th.none{border-bottom:1px solid #cadeff;}/* th가 한줄일때 class추가 */
+.t_typel tbody th{padding:10px;font-weight:bold;background:#fafdff;border-bottom:1px solid #ddd}
+.t_typel tbody th[rowspan]{border-right:1px solid #ddd}
+.t_typel tbody tr:first-child th,.t_typel tbody tr:first-child td{border-top:1px solid #a5a5a5}
+.t_typel tbody td{padding:8px 10px;color:#555;background:#fff;border-left:1px solid #ddd;border-bottom:1px solid #ddd}
+.t_typel tbody td:first-child{border-left:0}
+.t_typel tbody td[rowspan]{border-right:1px solid #ddd}
+.t_typel tbody td[rowspan]:last-child{border-right:0}
+.t_typel tbody td+th{border-left:1px solid #ddd}
+.t_typel tfoot th{padding:12px 5px;color:#264683;border-right:1px solid #ddd;}
+.t_typel tfoot td{padding:12px 5px;border-left:1px solid #ddd;}
+.t_typel tfoot td[colspan]{border-left:0}
+.t_typel tbody th.line,.t_typel tbody td.line,.t_typel tbody tr.line td,.t_typel tbody tr.line th{border-bottom:1px dashed #ddd}
+.t_typel thead tr th.h_line,.t_typel tbody th.h_line{border-left:1px solid #ddd}
+.t_typel tr.h_line th{border-left:1px solid #ddd}
+.t_typel tr.h_line th:first-child{border-left:0}
+.t_typel tr.bg th,.t_typel tr.bg td,.t_typel th.bg,.t_typel td.bg{background:#f6f6f6 !important}
+.thead_bg thead th{background:#f1f5fc}
+
+.img_left{float:left;margin:0 20px 20px 0}
+.img_right{float:right;margin:0 0 20px 20px}
+.img_right20{float:right;margin:0 20px 20px 20px}
+
+/* 이미지 왼쪽정렬 콘텐츠 */
+.ph_left_lay{width:100%}
+.ph_left_lay::after{display:block;clear:both;content:''}
+.ph_left_lay .content{float:right;}
+.ph_left_lay .content h2:first-child{margin-top:0}
+.ph_left_lay .content h3:first-child{margin-top:0}
+

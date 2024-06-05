@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>금정문화재단</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" name="viewport">
+		<!--[if lt IE 9]> 
+		<script src="../js/html5.js"></script>
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<![endif]-->
+		<link href="css/base.css" rel="stylesheet" type="text/css" >
+		<link href="css/board.css" rel="stylesheet" type="text/css" >
+		<link href="css/common.css" rel="stylesheet" type="text/css" >
+		<link href="css/style.css" rel="stylesheet" type="text/css" >
+		<link href="css/layout.css" rel="stylesheet" type="text/css" >
+		<link href="css/content.css" rel="stylesheet" type="text/css" >
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/respond.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+		<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="js/jquery.dotdotdot.min.js"></script>
+		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+
+	<body>
+		<ul id="skip_navi">
+			<li><a href="#content">본문 바로가기</a></li>
+			<li><a href="#gnb">메인메뉴 바로가기</a></li>
+		</ul>
+		<div id="wrapper">
+			<!-- 팝업레이어 -->
+			<div class="mConBox_pop">
+				<div class="popBox">
+					<ul class="popSlide">
+						<li>
+							<a href="#"><img src="img/main/pop_img01.jpg" alt=""></a>
+						</li>	
+						<li>
+							<a href="#"><img src="img/main/pop_img02.jpg" alt=""></a>
+						</li>								
+					</ul>
+					<div class="closeBox">
+						<input type="checkBox" id="popSlideClose">
+						<label for="popSlideClose">오늘하루 열지않음</label>
+						<a class="closeBtn" href="#">닫기</a>
+					</div>
+					<div class="control">
+						<button class="prev-slide" type="button">이전</button>
+						<button class="stop-slide" type="button">정지</button>
+						<button class="start-slide" type="button">시작</button>
+						<button class="next-slide" type="button">다음</button>
+					</div>
+				</div>
+			</div>		
+			<!--// 팝업레이어 -->
+			<!-- header -->
+			<header id="header">
+				<div class="head_box">
+					<h1 class="logo"><a href="main.html"><img src="img/common/logo.png" alt="금정문화재단"></a></h1>
+					<button type="button" class="btnMenu">메뉴</button>
+					<button type="button" class="btnSearch">검색</button>
+					<!-- 상단메뉴 -->
+					<nav id="gnb">
+						<div id="gnb_bottom_line"></div>
+						<ul class="gnb">
+							<li id="gm_1"><a href="#">문화예술정보</a>
+								<div class="gnbsingle">
+									<ul class="gnb_s " style="display:none">
+										<li class="gn1_ic1"><a href="#"><span></span>문화달력</a></li>
+										<li class="gn1_ic2"><a href="#"><span></span>축제</a>
+											<ul>
+												<li><a href="#">금정산성역사문화축제</a></li>
+												<li><a href="#">대학로거리축제</a></li>
+											</ul>
+										</li>
+										<li class="gn1_ic3"><a href="#"><span></span>지역 공연/전시/행사</a>
+											<ul>
+												<li><a href="#">행사안내</a></li>
+												<li><a href="#">공연안내</a></li>
+												<li><a href="#">전시안내</a></li>
+											</ul>
+										</li>
+										<li class="gn1_ic4"><a href="#"><span></span>문화예술단체</a>
+											<ul>
+												<li><a href="#">포트폴리오</a></li>
+												<li><a href="#">지역프로그램</a></li>
+											</ul>
+										</li>
+										<li class="gn1_ic5"><a href="#"><span></span>예술분야정보</a>
+											<ul>
+												<li><a href="#">ART人fo</a></li>
+												<li><a href="#">청년꿀팁</a></li>
+												<li><a href="#">관련사이트</a></li>
+											</ul>
+										</li>
+										<li class="gn1_ic6"><a href="#"><span></span>아카이브</a>
+											<ul>
+												<li><a href="#">영상 DB</a></li>
+												<li><a href="#">✲✲✲ 웹진</a></li>
+												<li><a href="#">사진 DB</a></li>
+												<li><a href="#">시설 / 단체 / 예술인</a></li>
+												<li><a href="#">금정문화지도</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li id="gm_2"><a href="#">대관신청</a>
+								<div class="gnbsingle">
+									<ul class="gnb_s " style="display:none">
+										<li class="gn2_ic1"><a href="#"><span></span>금정예술공연지원센터</a>
+											<ul>
+												<li><a href="#">공간안내</a></li>
+												<li><a href="#">다목적홀 예약</a></li>
+												<li><a href="#">세미나실 예약</a></li>
+												<li><a href="#">문화나눔터 예약</a></li>
+												<li><a href="#">온천천 어울마당</a></li>
+											</ul>
+										</li>
+										<li class="gn2_ic2"><a href="#"><span></span>서동예술창작공간</a>
+											<ul>
+												<li><a href="#">공간안내</a></li>
+												<li><a href="#">갤러리 예약</a></li>
+												<li><a href="#">다목적홀 예약</a></li>
+												<li><a href="#">강의실 예약</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li id="gm_3"><a href="#">열린광장</a>
+								<div class="gnbsingle">
+									<ul class="gnb_s " style="display:none">
+										<li class="gn3_ic1"><a href="#"><span></span>재단소식</a></li>
+										<li class="gn3_ic2"><a href="#"><span></span>사업공고 및 입찰</a></li>
+										<li class="gn3_ic3"><a href="#"><span></span>채용공고</a></li>
+										<li class="gn3_ic4"><a href="#"><span></span>보도자료</a></li>
+										<li class="gn3_ic5"><a href="#"><span></span>재단발간자료</a></li>
+										<li class="gn3_ic6"><a href="#"><span></span>정보공개</a>
+											<ul>
+												<li><a href="#">수의계약내역</a></li>
+												<li><a href="#">사전정보공개</a></li>
+												<li><a href="#">클린신고센터</a></li>
+											</ul>
+										</li>
+										<li class="gn3_ic7"><a href="#"><span></span>자유게시판</a></li>
+									</ul>
+								</div>
+							</li>
+							<li id="gm_4"><a href="#">문화시설</a>
+								<div class="gnbsingle">
+									<ul class="gnb_s " style="display:none">
+										<li class="gn4_ic1"><a href="#"><span></span>금정예술공연지원센터</a>
+											<ul>
+												<li><a href="#">금정예술공연지원센터는?</a></li>
+												<li><a href="#">공간안내</a></li>
+											</ul>
+										</li>
+										<li class="gn4_ic2"><a href="#"><span></span>서동예술창작공간</a>
+											<ul>
+												<li><a href="#">서동예술창작공간은?</a></li>
+												<li><a href="#">공간안내</a></li>
+												<li><a href="#">입주 상주현황</a></li>
+											</ul>
+										</li>
+										<li class="gn4_ic3"><a href="#"><span></span>섯골문화예술촌</a>
+											<ul>
+												<li><a href="#">섯골문화예술촌은?</a></li>
+												<li><a href="#">공간안내</a></li>
+												<li><a href="#">입주작가현황</a></li>
+											</ul>
+										</li>										
+									</ul>
+								</div>
+							</li>
+							<li id="gm_5"><a href="#">재단소개</a>
+								<div class="gnbsingle">
+									<ul class="gnb_s " style="display:none">
+										<li class="gn5_ic1"><a href="#"><span></span>인사말</a></li>
+										<li class="gn5_ic2"><a href="#"><span></span>금정문화재단 소개</a>
+											<ul>
+												<li><a href="#">재단소개 및 연혁</a></li>
+												<li><a href="#">비전과 목표</a></li>
+												<li><a href="#">주요과제</a></li>
+											</ul>
+										</li>
+										<li class="gn5_ic3"><a href="#"><span></span>조직 및 담당업무</a></li>
+										<li class="gn5_ic4"><a href="#"><span></span>CI소개</a></li>
+										<li class="gn5_ic5"><a href="#"><span></span>오시는 길</a></li>
+									</ul>
+								</div>
+							</li>
+							<li id="gm_6"><a href="#">주요사업</a>
+								<div class="gnbsingle">
+									<ul class="gnb_s " style="display:none">
+										<li class="gn6_ic1"><a href="#"><span></span>생활문화</a></li>
+										<li class="gn6_ic2"><a href="#"><span></span>청년문화</a></li>
+										<li class="gn6_ic3"><a href="#"><span></span>글로벌 세계시민교육</a></li>
+										<li class="gn6_ic4"><a href="#"><span></span>문화예술정책연구</a></li>
+										<li class="gn6_ic5"><a href="#"><span></span>재능마켓, 크라우드펀딩</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<!-- //상단메뉴 -->
+					<a href="#" class="btnTotalMenu">전체메뉴</a>
+					<a href="#" class="pc_btnSearch">통합검색</a>
+					<form name="searchform" method="get" action="/gjfac/search.php" target="_blank">
+					<div class="topSearch">
+						<div class="searBox">
+							<input type="text" name="skeyword" title="검색어입력" placeholder="검색어를 입력하세요">
+							<input type="submit" value="검색">
+						</div>
+					</div>
+					</form>					
+				</div>
+				<div id="gnb_Bg"></div>
+				<!-- 전체메뉴 -->
+				<div id="total_m_lay">
+					<ul class="mbTopLink">
+						<li><a href="#">HOME</a></li>
+						<li><a href="#">SITEMAP</a></li>
+					</ul>
+					<div class="total_m">
+						<ul>
+							<li class="has-sub"><a href="#">문화예술정보</a><button type="button">열기</button>
+								<ul>
+									<li><a href="#">문화달력</a></li>
+									<li class="has-sub"><a href="#">축제</a><button type="button">열기</button>
+										<ul>
+											<li><a href="#">금정산성역사문화축제</a></li>
+											<li><a href="#">대학로 거리축제</a></li>
+										</ul>
+									</li>
+									<li class="has-sub"><a href="#">공연/전시/행사</a><button type="button">열기</button>
+										<ul>
+											<li><a href="#">행사안내</a></li>
+											<li><a href="#">공연안내</a></li>
+											<li><a href="#">전시안내</a></li>
+										</ul>
+									</li>
+									<li class="has-sub"><a href="#">문화예술단체</a><button type="button">열기</button>
+										<ul>
+											<li><a href="#">포트폴리오</a></li>
+											<li><a href="#">지역프로그램</a></li>
+										</ul>
+									</li>
+									<li class="has-sub"><a href="#">예술분야정보</a><button type="button">열기</button>
+										<ul>
+											<li><a href="#">ART人fo</a></li>
+											<li><a href="#">청년꿀팁</a></li>
+											<li><a href="#">관련사이트</a></li>
+										</ul>
+									</li>
+									<li class="has-sub"><a href="#">아카이브</a><button type="button">열기</button>
+										<ul>
+											<li class="has-sub"><a href="#">영상 DB</a><button type="button">열기</button>
+												<ul>
+													<li><a href="#">문화행사</a></li>
+													<li><a href="#">강연/교육/다큐멘터리</a></li>
+												</ul>
+											</li>
+											<li class="has-sub"><a href="#">웹진</a><button type="button">열기</button>
+												<ul>
+													<li><a href="#">We Live in Busan(한글)</a></li>
+													<li><a href="#">이웃집 예술가</a></li>
+													<li><a href="#">박대리가 간다</a></li>
+												</ul>
+											</li>
+											<li class="has-sub"><a href="#">사진 DB</a><button type="button">열기</button>
+												<ul>
+													<li><a href="#">문화행사</a></li>
+												</ul>
+											</li>
+											<li class="has-sub"><a href="#">시설 / 단체 / 예술인</a><button type="button">열기</button>
+												<ul>
+													<li><a href="#">문화예술시설</a></li>
+													<li><a href="#">문화예술단체</a></li>
+													<li><a href="#">문화예술인</a></li>
+												</ul>
+											</li>
+											<li class="has-sub"><a href="#">금정문화지도</a><button type="button">열기</button>
+												<ul>
+													<li><a href="#">금정문화지도</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="has-sub"><a href="#">대관신청</a><button type="button">열기</button>
+								<ul>
+									<li><a href="#">공간안내</a></li>
+									<li class="has-sub"><a href="#">금정예술공연지원센터</a><button type="button">열기</button>
+										<ul>
+											<li><a href="#">공간안내</a></li>
+											<li><a href="#">다목적홀 예약</a></li>
+											<li><a href="#">세미나실 예약</a></li>
+											<li><a href="#">문화나눔터 예약</a></li>
+											<li><a href="#">온천천 어울마당</a></li>
+										</ul>
+									</li>
+									<li class="has-sub"><a href="#">서동예술창작공간</a><button type="button">열기</button>
+										<ul>
+											<li><a href="#">공간안내</a></li>
+											<li><a href="#">갤러리 예약</a></li>
+											<li><a href="#">다목적홀 예약</a></li>
+											<li><a href="#">강의실 예약</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="has-sub"><a href="#">열린광장</a><button type="button">열기</button>
+								<ul>
+									<li><a href="#">재단소식</a></li>
+									<li><a href="#">사업공고 및 입찰</a></li>
+									<li><a href="#">채용공고</a></li>
+									<li><a href="#">보도자료</a></li>
+									<li><a href="#">재단발간자료</a></li>
+									<li class="has-sub"><a href="#">정보공개</a><button type="button">열기</button>
+										<ul>
+											<li><a href="#">수의계약내역</a></li>
+											<li><a href="#">사전정보공개</a></li>
+											<li><a href="#">클린신고센터</a></li>
+										</ul>
+									</li>
+									<li><a href="#">자유게시판</a></li>
+								</ul>
+							</li>
+							<li class="has-sub"><a href="#">문화시설</a><button type="button">열기</button>
+								<ul>
+									<li class="has-sub"><a href="#">금정예술공연지원센터</a><button type="button">열기</button>
+										<ul>
+											<li><a href="#">금정예술공연지원센터는?</a></li>
+											<li><a href="#">공간안내</a></li>
+										</ul>
+									</li>
+									<li class="has-sub"><a href="#">서동예술창작공간</a><button type="button">열기</button>
+										<ul>
+											<li><a href="#">서동예술창작공간은?</a></li>
+											<li><a href="#">공간안내</a></li>
+											<li><a href="#">입주 상주현황</a></li>
+										</ul>
+									</li>
+									<li class="has-sub"><a href="#">섯골문화예술촌</a><button type="button">열기</button>
+										<ul>
+											<li><a href="#">섯골문화예술촌은?</a></li>
+											<li><a href="#">공간안내</a></li>
+											<li><a href="#">입주작가현황</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="has-sub"><a href="#">재단소개</a><button type="button">열기</button>
+								<ul>
+									<li><a href="#">인사말</a></li>
+									<li class="has-sub"><a href="#">금정문화재단 소개</a><button type="button">열기</button>
+										<ul>
+											<li><a href="#">재단소개 및 연혁</a></li>
+											<li><a href="#">비전과 목표</a></li>
+											<li><a href="#">주요과제</a></li>
+										</ul>
+									</li>
+									<li><a href="#">조직 및 담당업무</a></li>
+									<li><a href="#">CI소개</a></li>
+									<li><a href="#">오시는 길</a></li>
+								</ul>
+							</li>
+							<li class="has-sub"><a href="#">주요사업</a><button type="button">열기</button>
+								<ul>									
+									<li><a href="#">생활문화</a></li>
+									<li><a href="#">청년문화</a></li>
+									<li><a href="#">글로벌 세계시민교육</a></li>
+									<li><a href="#">문화예술정책연구</a></li>
+									<li><a href="#">재능마켓, 크라우드펀딩</a></li>
+								</ul>
+							</li>
+						</ul>
+						<button class="btnClose" type="button">닫기</button>
+					</div>
+				</div>
+				<!-- //전체메뉴 -->
+				<div class="fix_bg"></div>
+				<script type="text/javascript">
+					<!--
+					//메뉴활성화(모바일메뉴, 왼쪽메뉴 포함)
+					var $navi = '1_0_0_0';
+					-->
+				</script>
+			</header>
+			<!-- //header -->
+			<!-- container -->
+			<div id="Container">
+				<!-- 콘텐츠 영역 -->
+				<div id="content">
+
+					<div class="mLeftQuick">
+						<ul>
+							<li class="ic01">
+								<a href="#">	
+									<span class="TwoLine">문화예술<br>행사등록</span>	
+								</a>
+							</li>
+							<li class="ic02">
+								<a href="#">		
+									<span>대관신청</span>										
+								</a>
+							</li>
+							<li class="ic03">
+								<a href="#">	
+									<span>재단소식</span>											
+								</a>
+							</li>
+							<li class="ic04">
+								<a href="#">	
+									<span>UN동아리</span>											
+								</a>
+							</li>
+							<li class="ic05">
+								<a href="#">	
+									<span>아카이브</span>											
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="btnTop">TOP</a>
+					</div>
+					<ul class="mConMenu">
+						<li data-menuanchor="firstPage" class="active">
+							<a href="#section0">섹션01</a>
+						</li>
+						<li data-menuanchor="secondPage">
+							<a href="#section1">섹션02</a>
+						</li>
+						<li data-menuanchor="3rdPage">
+							<a href="#section2">섹션03</a>
+						</li>
+					</ul>		
+					<span class="section_mouse"></span>		
+					<div id="conFullPage">
+            <!-- 4단비주얼 -->
+            <div class="section section1" id="section0"> 
+							<div class="mConBox_1">
+								<div class="mSearchWrap">									
+									<div class="searchBox">
+										<form action="">
+										<input class="search" type="text" title="검색어입력" placeholder="검색어를 입력하세요">
+										<a href="#" class="search_btn">검색</a>
+										</form>
+									</div>
+									<div class="keyword">
+										<span>인기검색어</span>
+										<div class="searchCtr">
+											<a href="#" class="prevList">이전목록</a>	
+											<a href="#" class="nextList">다음목록</a>
+										</div>
+										<ul class="on">
+											<li><a href="#">UN 동아리1</a></li>
+											<li><a href="#">금정문화여지도</a></li>
+											<li><a href="#">문화향유리서치</a></li>
+										</ul>
+										<ul class="">
+											<li><a href="#">UN 동아리2</a></li>
+											<li><a href="#">금정문화여지도</a></li>
+											<li><a href="#">문화향유리서치</a></li>
+										</ul>
+									</div>
+								</div>
+								<ul class="mVisual_wrap">
+									<li class="bg01">	
+										<a href="#"></a>		
+										<div class="offBox">				
+											<dl>
+												<dt>문화로<br>피어나는 금정</dt>
+												<dd>주민의 일상에 보다<br>
+												가까이 문화의 향기를 전합니다.</dd>												
+											</dl>
+											<div class="titBox">
+												<span class="sTit">생활문화</span>
+												<h2>주민밀착형<br>문화예술</h2>		
+											</div>
+										</div>
+										<div class="onBox">
+											<span class="onTit">생활문화</span>
+											<p>
+												주민의 일상에 보다 가까이,<br>
+												문화의 향기를 전합니다.
+											</p>
+											
+											<ul class="icBox">
+												<li>
+													<i class="ic01"></i>
+													<span>
+														금정특화거리<br>
+														「금어나라」 빛축제 조성
+													</span>
+												</li>
+												<li>
+													<i class="ic02"></i>
+													<span>
+														금정구민공연단<br>
+														「금빛나래」
+													</span>
+												</li>
+												<li>
+													<i class="ic03"></i>
+													<span>
+														찾아가는<br>
+														문화공연
+													</span>
+												</li>
+											</ul>	
+											
+										</div>		
+									</li>
+									<li class="bg02">
+										<a href="#"></a>
+										<div class="offBox">
+											<div class="titBox">
+												<span class="sTit">청년 문화</span>
+												<h2>청년문화<br>활성화</h2>		
+											</div>	
+										</div>
+										<div class="onBox">
+											<span class="onTit">청년문화 활성화</span>
+											<p>												
+												청년문화가 자유롭게 꽃필 수 있도록<br>
+												미래문화인재들의 성장을 지원합니다.
+											</p>
+											
+											<ul class="icBox">
+												<li>
+													<i class="ic01"></i>
+													<span>
+														대학로 특화<br>
+														프로젝트 운영
+													</span>
+												</li>
+												<li>
+													<i class="ic02"></i>
+													<span>
+														청년문화<br>
+														네트워크 구축
+													</span>
+												</li>
+												<li>
+													<i class="ic03"></i>
+													<span>
+														Culture Designer<br>
+														운영
+													</span>
+												</li>
+											</ul>
+										</div>									
+									</li>
+									<li class="bg03">
+										<a href="#"></a>
+										<div class="offBox">
+											<dl>
+												<dt>문화로<br>앞서가는 금정</dt>
+												<dd>지역맞춤형 문화사업을 위해<br>
+												문화예술 정책연구를 추진하고 있습니다.</dd>
+											</dl>
+											<div class="titBox">
+												<span class="sTit">문화정책연구</span>
+												<h2>지역특화<br>정책연구</h2>		
+											</div>
+										</div>
+										<div class="onBox">
+											<span class="onTit">문화정책연구</span>
+											<p>												
+												금정구 문화환경에 대한 연구조사를 토대로<br>
+												문화예술의 정책적 대안을 제시하고자 합니다.											
+											</p>
+											
+											<ul class="icBox">
+												<li>
+													<i class="ic01"></i>
+													<span>
+														금정구 문화환경<br>
+														조사 및 비전수립
+													</span>
+												</li>
+												<li>
+													<i class="ic02"></i>
+													<span>
+														민관 거버넌스 구축 및<br>
+														타 재단 협력관계 모색
+													</span>
+												</li>
+												<li>
+													<i class="ic03"></i>
+													<span>
+														금정문화포럼<br>
+														개최
+													</span>
+												</li>
+											</ul>
+										</div>	
+									</li>
+									<li class="bg04">
+										<a href="#"></a>										
+										<div class="offBox">
+											<div class="titBox">
+												<span class="sTit">세계시민교육</span>
+												<h2>문화다양성<br>증진</h2>		
+											</div>
+										</div>	
+										<div class="onBox">
+											<span class="onTit">국제문화예술교육교류</span>
+											<p>												
+												유네스코 아태무형문화유산센터(ICHCAP)와 함께<br>
+												「유네스코 세계무형문화유산교실」 을 공동개발, 일선 학교에 보급하고 있습니다.
+											</p>		
+
+											<ul class="icBox">
+												<li>
+													<i class="ic01"></i>
+													<span>
+														「국제 문화예술교육<br>
+														콘텐츠」 연구개발
+													</span>
+												</li>
+												<li>
+													<i class="ic02"></i>
+													<span>
+														「유네스코 세계무형<br>
+														문화유산교실」 개발 및 보급
+													</span>
+												</li>
+												<li>
+													<i class="ic03"></i>
+													<span>
+														청소년 「UN 국제활동동아리」<br>
+														매뉴얼 개발 및 보급
+													</span>
+												</li>
+												<li>
+													<i class="ic04"></i>
+													<span>  
+														국제 NGO단체 ICLC와<br>
+														문화예술교육 협력
+													</span>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+								<!-- 핫뉴스 슬라이드 -->
+								<div class="hotNewsWrap">
+									<div class="hotNewsBox">
+										<h2>오늘의 핫뉴스</h2>
+										<ul class="hotSlide">
+											<li>
+												<span class="cate col_01">재단소식</span>
+												<a href="#" class="subject">
+													[금정산성 역사문화축제 2017] G樂펴락 청소년 댄스배틀대회 참가 모집
+													[금정산성 역사문화축제 2017] G樂펴락 청소년 댄스배틀대회 참가 모집
+													<span class="date">2017. 04. 13</span>
+												</a>
+											</li>
+											<li>
+												<span class="cate col_01">재단소식</span>
+												<a href="#" class="subject">
+													[금정산성 역사문화축제 2017] G樂펴락 청소년 댄스배틀대회 참가 모집
+													<span class="date">2017. 04. 13</span>
+												</a>
+											</li>
+											<li>
+												<span class="cate col_01">재단소식</span>
+												<a href="#" class="subject">
+													[금정산성 역사문화축제 2017] G樂펴락 청소년 댄스배틀대회 참가 모집
+													<span class="date">2017. 04. 13</span>
+												</a>
+											</li>
+										</ul>
+	                  <div class="control">
+	                      <button class="prev-slide" type="button">이전</button>
+	                      <button class="stop-slide" type="button">중지</button>
+	                      <button class="start-slide" type="button">시작</button>
+	                      <button class="next-slide" type="button">다음</button>
+	                  </div>   
+									</div>
+								</div>										
+							</div>
+            </div>
+            <div class="section section2" id="section1"> 
+							<div class="mConBox_2">
+								<!-- 공지사항 -->
+								<div class="mConBox_2_1">
+									<ul class="mNotice mtab">
+										<li class="on"><a class="ic1" href="#">재단소식</a>
+											<div class="mtabView">
+												<ul>
+													<li>
+														<span class="data"><span>13</span> 2016.11</span>
+														<a href="#">
+															<span class="tit dotdotdot"><span class="cate">[공지]</span>2016 하반한국예술인복지재단2016 하반한국예술인복지재단2016 하반한국예술인복지재단2016 하반한국예술인복지재단</span>
+														</a>
+													</li>
+													<li>
+														<span class="data"><span>13</span> 2016.11</span>
+														<a href="#">
+															<span class="tit dotdotdot"><span class="cate">[공지]</span>한국예술인복지재단 2016 하반 한국예술인복지재단 2016 하반한국예술인복지재단 2016 하반</span>
+														</a>
+													</li>
+													<li>
+														<span class="data"><span>13</span> 2016.11</span>
+														<a href="#">
+															<span class="tit dotdotdot"><span class="cate">[공지]</span>한국예술인복지재단 2016 하반한국예술인복지재단 2016 하반한국예술인복지재단 2016 하반</span>
+														</a>
+													</li>
+												</ul>										
+											</div>
+										</li>								
+										<li><a class="ic2" href="#">입찰공고</a>
+											<div class="mtabView" style="display:none">
+												<ul>
+													<li>
+														<span class="data"><span>13</span> 2016.11</span>
+														<a href="#">
+															<span class="tit dotdotdot"><span class="cate">[공지]</span>한국예술인복지재단 2016 하반..</span>
+														</a>
+													</li>
+													<li>
+														<span class="data"><span>13</span> 2016.11</span>
+														<a href="#">
+															<span class="tit dotdotdot"><span class="cate">[공지]</span>한국예술인복지재단 2016 하반..</span>
+														</a>
+													</li>
+													<li>
+														<span class="data"><span>13</span> 2016.11</span>
+														<a href="#">
+															<span class="tit dotdotdot"><span class="cate">[공지]</span>한국예술인복지재단 2016 하반..</span>
+														</a>
+													</li>
+												</ul>											
+											</div>
+										</li>
+										<li><a class="ic3" href="#">보도자료</a>
+											<div class="mtabView" style="display:none">
+												<ul>
+													<li>
+														<span class="data"><span>13</span> 2016.11</span>
+														<a href="#">
+															<span class="tit dotdotdot"><span class="cate">[공지]</span>한국예술인복지재단 2016 하반..</span>
+														</a>
+													</li>
+													<li>
+														<span class="data"><span>13</span> 2016.11</span>
+														<a href="#">
+															<span class="tit dotdotdot"><span class="cate">[공지]</span>한국예술인복지재단 2016 하반..</span>
+														</a>
+													</li>
+													<li>
+														<span class="data"><span>13</span> 2016.11</span>
+														<a href="#">
+															<span class="tit dotdotdot"><span class="cate">[공지]</span>한국예술인복지재단 2016 하반..</span>
+														</a>
+													</li>
+												</ul>										
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!-- //공지사항 -->	
+								<!-- 갤러리 -->
+								<div class="mConBox_2_2">
+									<ul class="gallerySlide">
+										<li>
+											<a href="#"><img src="img/main/pop1.jpg" alt=""></a>
+											<div class="hashtag">
+												<ul>
+													<li>
+														<a href="#">#금정산성역사</a>
+													</li>
+													<li>
+														<a href="#">#이화질실화냐</a>
+													</li>
+													<li>
+														<a href="#">#얼씨구나</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<a href="#"><img src="img/main/pop1.jpg" alt=""></a>
+											<div class="hashtag">
+												<ul>
+													<li>
+														<a href="#">#금정산성역사</a>
+													</li>
+													<li>
+														<a href="#">#이화질실화냐</a>
+													</li>
+													<li>
+														<a href="#">#얼씨구나</a>
+													</li>
+												</ul>
+											</div>
+										</li>										
+									</ul>
+									<div class="control">
+										<button class="prev-slide" type="button">이전</button>
+										<button class="next-slide" type="button">다음</button>
+									</div>
+								</div>
+								<!-- //갤러리 -->	
+								<!-- Facebook -->
+								<div class="mConBox_2_3">
+									<ul class="mtab">
+										<li class="on"><a class="ic1" href="#"><span class="ic"></span>문화재단<br><span class="mb_del">페이스북</span></a>
+											<div class="mtabView">
+												<img src="./img/main/facebook.jpg" alt="">
+											</div>
+										</li>
+										<li><a class="ic2" href="#"><span class="ic"></span>GAS<br><span class="mb_del">페이스북</span></a>
+											<div class="mtabView" style="display:none">
+												<img src="./img/main/facebook.jpg" alt="">
+											</div>
+										</li>
+										<li><a class="ic3" href="#"><span class="ic"></span>서동<br><span class="mb_del">페이스북</span></a>
+											<div class="mtabView" style="display:none">
+												<img src="./img/main/facebook.jpg" alt="">
+											</div>
+										</li>
+									</ul>
+								</div>                        
+								<!-- //Facebook -->	
+								<!-- 크라우드펀딩,재능마켓 -->
+								<div class="mConBox_2_4">
+									<dl class="infoBox">
+										<dt>크라우드펀딩 재능마켓이란?</dt>
+										<dd>
+											<span class="big">금정문화재단은</span>
+											<!--<span class="big2">예술나무</span>와 협력하여<br>-->
+											프로젝트 매칭목표액의 일부를<span class="unerline">선매칭지원</span>,<br>홍보를 통하여 <span class="unerline">예술가를 지원</span>하고 있습니다.
+										</dd>
+										<a href="#" class="btn_con">컨텐츠 등록</a>
+									</dl>
+									<ul class="listWrap">
+										<li>
+											<span class="cate cate01">
+												재능마켓
+											</span>
+											<img src="./img/main/cloudImg01.jpg" alt="">
+											<a href="#" class="msk msk2">
+												<span class="tit">나만의 악세사리를 만들어보아요!</span>
+												<span class="sort">악세사리 세공</span>
+												<span class="place">서동예술창작공간</span>
+											</a>
+											<div class="btnBox">
+												<div class="shareBox">
+													<a href="#" class="btnShare">
+														공유하기
+													</a>
+													<div class="btnSns">
+														<a href="#" class="ist">인스타그램</a>
+														<a href="#" class="kas">카카오스토리</a>
+														<a href="#" class="twt">트위터</a>
+														<a href="#" class="fcb">페이스북</a>
+													</div>
+												</div>
+												<a href="#" class="btnLike">좋아요</a>
+												<span class="likeCount">9</span>
+											</div>
+										</li>
+										<li>
+											<span class="cate cate02">
+												크라우드펀딩
+											</span>
+											<img src="./img/main/cloudImg02.jpg" alt="">
+											<a href="#" class="msk">
+												<span class="tit">나만의 악세사리를 만들어보아요!나만의 악세사리를 만들어보아요!</span>
+												<span class="sort">악세사리 세공</span>
+												<span class="place">서동예술창작공간</span>
+											</a>
+											<div class="percentBox">
+												<div>
+													<img src="./img/main/percent.jpg" alt="">
+													<span>30%달성</span>
+												</div>
+											</div>
+											<div class="btnBox">
+												<div class="shareBox">
+													<a href="#" class="btnShare">
+														공유하기
+													</a>
+													<div class="btnSns">
+														<a href="#" class="ist">인스타그램</a>
+														<a href="#" class="kas">카카오스토리</a>
+														<a href="#" class="twt">트위터</a>
+														<a href="#" class="fcb">페이스북</a>
+													</div>
+												</div>
+												<a href="#" class="btnLike">좋아요</a>
+												<span class="likeCount">99</span>
+											</div>
+										</li>
+										<li>
+											<span class="cate cate03">
+												지역행사
+											</span>
+											<img src="./img/main/cloudImg03.jpg" alt="">
+											<a href="#" class="msk msk2">
+												<span class="tit">나만의 악세사리를 만들어보아요!</span>
+												<span class="time">매주 (토)9:30~12:30</span>
+												<span class="place">서동예술창작공간</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- //크라우드펀딩,재능마켓 -->
+							</div>
+            </div>
+            <div class="section section3" id="section2"> 
+            	<div class="mConBox_3">
+            		<div class="titBox">
+            			<h2>예술人fo, 청년꿀팁</h2>
+            			<p>여기에 다 있다. 공모사업 및 지원정보 확인해보세요.</p>
+            		</div>
+	            	<div class="tipSlideBox">
+	            		<div class="slide_wrap">
+		            		<div class="tipSlide">
+		            			<div>  
+		            				<span class="imgBox">          				
+			          					<span class="cate cate01">예술人fo</span>
+			          					<a href="#">
+			          						<img src="./img/main/tipSlideImg01.jpg" alt="">
+			          					</a>
+			          					<a href="#" class="btnLike">좋아요</a>
+			          					<span class="likeCount">9</span>
+		          					</span>
+		            				<dl>
+		            					<dt><a href="#">2017 부산광역시 공공디자인 공모전</a></dt>
+		            					<dd>2017.03.22 ~ 2017.04.13</dd>
+		            				</dl>
+		            			</div>
+		            			<div>  
+		            				<span class="imgBox">          				
+			          					<span class="cate cate02">청년꿀팁</span>
+			          					<a href="#">
+			          						<img src="./img/main/tipSlideImg01.jpg" alt="">
+			          					</a>
+			          					<a href="#" class="btnLike">좋아요</a>
+			          					<span class="likeCount">9</span>
+		          					</span>
+		            				<dl>
+		            					<dt><a href="#">2017 부산광역시 공공디자인 공모전</a></dt>
+		            					<dd>2017.03.22 ~ 2017.04.13</dd>
+		            				</dl>
+		            			</div>
+		            			<div>  
+		            				<span class="imgBox">          				
+			          					<span class="cate cate01">예술人fo</span>
+			          					<a href="#">
+			          						<img src="./img/main/tipSlideImg01.jpg" alt="">
+			          					</a>
+			          					<a href="#" class="btnLike">좋아요</a>
+			          					<span class="likeCount">99</span>
+		          					</span>
+		            				<dl>
+		            					<dt><a href="#">2017 부산광역시 공공디자인 공모전</a></dt>
+		            					<dd>2017.03.22 ~ 2017.04.13</dd>
+		            				</dl>
+		            			</div>
+		            			<div>  
+		            				<span class="imgBox">          				
+			          					<span class="cate cate02">청년꿀팁</span>
+			          					<a href="#">
+			          						<img src="./img/main/tipSlideImg01.jpg" alt="">
+			          					</a>
+			          					<a href="#" class="btnLike">좋아요</a>
+			          					<span class="likeCount">999</span>
+		          					</span>
+		            				<dl>
+		            					<dt><a href="#">2017 부산광역시 공공디자인 공모전</a></dt>
+		            					<dd>2017.03.22 ~ 2017.04.13</dd>
+		            				</dl>
+		            			</div>
+		            			<div>  
+		            				<span class="imgBox">          				
+			          					<span class="cate cate01">청년꿀팁</span>
+			          					<a href="#">
+			          						<img src="./img/main/tipSlideImg01.jpg" alt="">
+			          					</a>
+			          					<a href="#" class="btnLike">좋아요</a>
+			          					<span class="likeCount">999</span>
+		          					</span>
+		            				<dl>
+		            					<dt><a href="#">2017 부산광역시 공공디자인 공모전</a></dt>
+		            					<dd>2017.03.22 ~ 2017.04.13</dd>
+		            				</dl>
+		            			</div>
+		            		</div>
+	            		</div>
+	            	</div>
+            	</div>
+            </div>
+
+            <div class="section section4 fp-auto-height" id="section3">
+              <div class="mConBox_4">
+                  <div class="mConBox_4_1">
+                  	<div class="mServiceBox">
+                  		<dl class="svc01">
+                  			<dt>주민서비스
+                  				<a href="#" class="more">주민서비스보기<i></i></a>
+                  			</dt>
+                  			<dd>
+                  				<ul>
+                  					<li><a href="#">금정문화달력</a></li>
+                  					<li><a href="#">금정문화재단 소개</a></li>
+                  					<li><a href="#">영상DB</a></li>
+                  					<li><a href="#">조직 및 담당업무</a></li>
+                  					<li><a href="#">사진DB</a></li>
+                  					<li><a href="#">오시는 길</a></li>
+                  					<li><a href="#">웹진</a></li>
+                  					<li><a href="#">재단소식</a></li>
+                  					<li><a href="#">자료실</a></li>
+                  					<li><a href="#">금정문화지도</a></li>
+                  				</ul>
+                  			</dd>
+                  		</dl>
+                  		<dl class="svc02">
+                  			<dt>예술인서비스
+                  				<a href="#" class="more">예술인서비스보기<i></i></a>
+                  			</dt>
+                  			<dd>
+                  				<ul>
+                  					<li><a href="#">ART人fo</a></li>
+                  					<li><a href="#">오시는 길</a></li>
+                  					<li><a href="#">청년꿀팁</a></li>
+                  					<li><a href="#">재단소식</a></li>
+                  					<li><a href="#">크라우드펀딩</a></li>
+                  					<li><a href="#">자료실</a></li>
+                  					<li><a href="#">재능마켓</a></li>
+                  					<li><a href="#">대관신청</a></li>
+                  					<li><a href="#">문화예술단체</a></li>
+                  					<li><a href="#">관련사이트</a></li>
+                  				</ul>
+                  			</dd>
+                  		</dl>
+                  	</div>
+                  </div>
+									<!-- 배너모음 -->
+									<div class="mConBox_4_2">
+										<dl>
+											<dt>배너모음</dt>
+											<dd>
+												<ul class="mbanSlide">
+													<li><a href="#"><img src="img/main/banner1.gif" alt=""></a></li>
+													<li><a href="#"><img src="img/main/banner2.gif" alt=""></a></li>
+													<li><a href="#"><img src="img/main/banner3.gif" alt=""></a></li>
+													<li><a href="#"><img src="img/main/banner4.gif" alt=""></a></li>
+													<li><a href="#"><img src="img/main/banner1.gif" alt=""></a></li>
+												</ul>
+												<div class="control">
+													<button class="stop-slide" type="button">정지</button><button class="start-slide" type="button" style="display:none">시작</button><button class="prev-slide" type="button">이전</button><button class="next-slide" type="button">다음</button>
+												</div>
+											</dd>
+										</dl>
+									</div>
+									<!-- //배너모음 -->                  
+              </div>
+            </div>
+          </div>
+
+				</div>
+				<!-- //콘텐츠 영역 -->
+			</div>
+			<!-- //container -->
+			<!-- footer -->
+			<footer id="footer">
+				<div class="footWrap">
+					<ul class="footMenu">
+						<li><a href="#">개인정보보호정책</a></li>
+						<li><a href="#">개인정보침해신고창구</a></li>
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#">찾아오시는 길</a></li>
+					</ul>
+					<address>부산 금정구 동부곡로6번길 29 4층 금정문화재단  TEL : 051-512-3455 </address>
+					<small>Copyrightⓒ 2016 GFAC. All rights reserved</small>
+					<!--<div class="botBtTop"><button type="button">위로</button></div>-->
+				</div>
+			</footer>
+			<!-- //footer -->
+		</div> 
+	</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>광안리 어방축제 Contents Makeup Guide</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="css/base.css" rel="stylesheet" type="text/css" >
+		<link href="css/common.css" rel="stylesheet" type="text/css" >
+		<link href="css/style.css" rel="stylesheet" type="text/css" >
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<style type="text/css">
+		<!--
+		body{margin-bottom:30px}
+		hr{margin:20px 0;display:block;border:1px dotted #ccc}
+		#content{position:relative;margin:0 auto;max-width:826px;width:100%}
+		h1{margin:15px 0 35px 0;padding-bottom:30px;font-size:25px;text-align:center;letter-spacing:-1px;border-bottom:1px solid #e0e0e0;}
+		h2.guid{margin:50px 0 30px;padding-bottom:10px;font-size:18px;border-bottom:1px dashed #ccc}
+		/*h2.title{margin-bottom:5px;}*/
+		h2 + h2.title{margin-top:5px}
+		h2.title:before,h2.title:after{content:''}
+		h2.tit{margin-bottom:0;}
+		h2.tit:before,h2.tit:after{content:''}
+		.guide_txt h2{margin:0}
+		.guide_txt h2:before{content:''}
+		-->
+		</style>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<!-- container -->
+			<div id="container">
+				<!-- 콘텐츠 영역 -->
+				<div id="content">
+					<div id="print">
+						<h1>콘텐츠 MARKUP GUIDE </h1>
+						<h2 class="guid">상단 안내글</h2>
+						<div class="guide_txt ic">
+							이곳은 우리구의 주요정책, 사업등의 자료를 널리 알려 구민과 함께 공유함으로써 구정에 대한 이해와 참여의 폭을 넓히고자 마련된 열린 정보 알림방입니다. 많은 이용바랍니다.
+						</div>
+						<div class="guide_txt">
+							이곳은 우리구의 주요정책, 사업등의 자료를 널리 알려 구민과 함께 공유함으로써 구정에 대한 이해와 참여의 폭을 넓히고자 마련된 열린 정보 알림방입니다. 많은 이용바랍니다.
+						</div>
+						<hr/>
+						<h2 class="guid">텝유형 #1 .tab_txt01, ul에 .li2 추가(2칸) (li2~li7)2칸~7칸으로 정의</h2>
+						<div class="tab_txt">
+							<ul class="li2">
+								<li><a href="#" class="on">민원처리지연 보상제</a></li>
+								<li><a href="#">행정사무착오 보상제 </a></li>
+								<li><a href="#">행정정보공개제도 </a></li>
+								<li><a href="#">민원공무원에 대한 주민반응설문조사</a></li>
+								<li><a href="#">하나로교통카드현금보충기설치</a></li>
+								<li><a href="#">민원여권과</a></li>
+								<li><a href="#">"전자민원G4C 인터넷 민원발급 서비스 안내 </a></li>
+								<li><a href="#">하나로교통카드현금보충기설치</a></li>
+								<li><a href="#">하나로교통카드현금보충기설치</a></li>
+								<li><a href="#">하나로교통카드현금보충기설치</a></li>
+							</ul>
+						</div>
+						<h2 class="guid">텝유형 #1 .tab_txt01, ul에 .li5 추가(5칸) (li2~li7)2칸~7칸으로 정의</h2>
+						<div class="tab_txt">
+							<ul class="li4">
+								<li><a href="#" class="on">민원처리지연</a></li>
+								<li><a href="#">행정정보공개제도</a></li>
+								<li><a href="#">민원여권과</a></li>
+								<li><a href="#">민원여권과</a></li>
+							</ul>
+						</div>
+						
+						<h2 class="guid">텝유형 #3 jquery사용</h2>
+						<div class="tab_txt">
+							<ul class="li3 bsw_tab_menu">
+								<li><a href="#tab_01" class="on">약관동의</a></li>
+								<li><a href="#tab_02">본인확인</a></li>
+								<li><a href="#tab_03">회원가입</a></li>
+							</ul>
+						</div>
+						<div id="tab_01" class="bsw_tab_con">
+							콘텐츠01
+						</div>
+						<div id="tab_02" class="bsw_tab_con">
+							콘텐츠02
+						</div>
+						<div id="tab_03" class="bsw_tab_con">
+							콘텐츠03
+						</div>
+						<hr/>
+						<h2 class="guid">h2~h4 유형 .title</h2>
+						<h2 class="title">태풍,해일,집중호우가 발생하였을 때 </h2>
+						<h3 class="title">태풍,해일,집중호우가 발생하였을 때</h3>
+						<h4 class="title">태풍,해일,집중호우가 발생하였을 때</h4>
+						<hr/>
+						<h2 class="guid">h2,h3.h4 다음에 오는 li는 .h_li로 정의</h2>
+						<h2 class="title">태풍,해일,집중호우가 발생하였을 때</h2>
+						<ul class="h_li">
+							<li>접수기간 : 연중계속 </li>
+							<li>제안자격 : 수영 구민 누구나 </li>
+							<li>제안분야 : 구정운영 전반【자유제안】 
+								<ul>
+									<li>경제, 환경, 교통, 문화, 복지 등 구정 업무 전반 </li>
+									<li>구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.
+										<ul>
+											<li>저지대, 상습침수지역 등 재해위험지구 주민은 신속히 대피한다.</li>
+											<li>피해발생이 예상되는 지역은 차량통행 및 외출을 자제한다.</li>
+											<li>집이 침수되었을 때에는 수도, 가스,전기 등을 차단한다.
+												<ul>
+													<li>저지대, 상습침수지역 등 재해위험지구 주민은 신속히 대피한다.</li>
+													<li>피해발생이 예상되는 지역은 차량통행 및 외출을 자제한다.</li>
+													<li>집이 침수되었을 때에는 수도, 가스,전기 등을 차단한다.</li>
+												</ul>
+											</li>
+										</ul>
+									</li> 
+									<li>구 세입증대 및 예산절감 방안 등 </li>
+								</ul>
+							</li>
+						</ul>
+						<hr/>
+						<h2 class="guid">li에 기본아이콘 .li_dot1</h2>
+						<ul class="li_dot1">
+							<li>접수기간 : 연중계속 </li>
+							<li>제안자격 : 수영 구민 누구나 </li>
+							<li>제안분야 : 구정운영 전반【자유제안】 
+								<ul>
+									<li>경제, 환경, 교통, 문화, 복지 등 구정 업무 전반 </li>
+									<li>구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.
+										<ul>
+											<li>저지대, 상습침수지역 등 재해위험지구 주민은 신속히 대피한다.</li>
+											<li>피해발생이 예상되는 지역은 차량통행 및 외출을 자제한다.</li>
+											<li>집이 침수되었을 때에는 수도, 가스,전기 등을 차단한다.
+												<ul>
+													<li>저지대, 상습침수지역 등 재해위험지구 주민은 신속히 대피한다.</li>
+													<li>피해발생이 예상되는 지역은 차량통행 및 외출을 자제한다.</li>
+													<li>집이 침수되었을 때에는 수도, 가스,전기 등을 차단한다.</li>
+												</ul>
+											</li>
+										</ul>
+									</li> 
+									<li>구 세입증대 및 예산절감 방안 등 </li>
+								</ul>
+							</li>
+						</ul>
+						<hr/>
+						<h2 class="guid">li에 기본아이콘 .li_dot2</h2>
+						<ul class="li_dot2">
+							<li>접수기간 : 연중계속 </li>
+							<li>제안자격 : 수영 구민 누구나 </li>
+							<li>제안분야 : 구정운영 전반【자유제안】 
+								<ul>
+									<li>경제, 환경, 교통, 문화, 복지 등 구정 업무 전반 </li>
+									<li>구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.</li> 
+									<li>구 세입증대 및 예산절감 방안 등 </li>
+								</ul>
+							</li>
+						</ul>
+						<hr/>
+						<h2 class="guid">li에 기본아이콘 .li_dot3</h2>
+						<ul class="li_dot3">
+							<li>접수기간 : 연중계속 </li>
+							<li>제안자격 : 수영 구민 누구나 </li>
+							<li>제안분야 : 구정운영 전반【자유제안】 
+								<ul>
+									<li>경제, 환경, 교통, 문화, 복지 등 구정 업무 전반 </li>
+									<li>구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.</li> 
+									<li>구 세입증대 및 예산절감 방안 등 </li>
+								</ul>
+							</li>
+						</ul>
+						<hr/>
+						<h2 class="guid">li에 기본아이콘 .li_dot4</h2>
+						<ul class="li_dot4">
+							<li>접수기간 : 연중계속 </li>
+							<li>제안자격 : 수영 구민 누구나 </li>
+							<li>제안분야 : 구정운영 전반【자유제안】 
+								<ul>
+									<li>경제, 환경, 교통, 문화, 복지 등 구정 업무 전반 </li>
+									<li>구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.</li> 
+									<li>구 세입증대 및 예산절감 방안 등 </li>
+								</ul>
+							</li>
+						</ul>
+						<hr/>
+						<h2 class="guid">li에 아이콘이 없는경우 .li_none</h2>
+						<ul class="li_none">
+							<li>접수기간 : 연중계속 </li>
+							<li>제안자격 : 수영 구민 누구나 </li>
+							<li>제안분야 : 구정운영 전반【자유제안】 
+								<ul>
+									<li>경제, 환경, 교통, 문화, 복지 등 구정 업무 전반 </li>
+									<li>구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.</li> 
+									<li>구 세입증대 및 예산절감 방안 등 </li>
+								</ul>
+							</li>
+						</ul>
+						<hr/>
+						<h2 class="guid">li에 숫자가 있을경우 .li_num</h2>
+						<ol class="li_num">
+							<li>접수기간 : 연중계속 </li>
+							<li>제안자격 : 수영 구민 누구나 </li>
+							<li>제안분야 : 구정운영 전반【자유제안】 
+								<ul>
+									<li>경제, 환경, 교통, 문화, 복지 등 구정 업무 전반 </li>
+									<li>구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.</li> 
+									<li>구 세입증대 및 예산절감 방안 등 </li>
+								</ul>
+							</li>
+						</ol><br/>
+						<ul class="li_dot1">
+							<li>접수기간 : 연중계속 </li>
+							<li>제안자격 : 수영 구민 누구나 </li>
+							<li>제안분야 : 구정운영 전반【자유제안】 
+								<ol class="li_num">
+									<li>경제, 환경, 교통, 문화, 복지 등 구정 업무 전반 </li>
+									<li>구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.</li> 
+									<li>구 세입증대 및 예산절감 방안 등 </li>
+								</ol>
+							</li>
+						</ul>
+						<hr/>
+						<h2 class="guid">li에 숫자가 있을경우 .li_num2</h2>
+						<ol class="li_num2">
+							<li><span class="num">1</span>수영을 하기 전에는 손,발 등의 경련을 방지하기 위해 반드시 준비운동을 한다.</li>
+							<li><span class="num">2</span>물에 처음 들어가기 전 심장에서 먼 부분부터(다리, 팔, 가슴 등의 순서)물을 적힌 후 들어간다. </li>
+							<li><span class="num">3</span>수영도중 몸에 소름이 돋고 피부가 당겨질 때 몸을 따뜻하게 감싸고 휴식을 취한다.이 경우는 다리에 쥐가 나거나 근육에 경련이 일어나 상당히 위험한 경우가 많으므로 특히 주의한다. </li>
+						</ol>
+						<hr/>
+						<h2 class="guid">li가 col로 나눠져 있을때(dli2~dli7)2칸~7칸으로 정의</h2>
+						<ul class="h_li dli3">
+							<li>지역경제활성화</li>
+							<li>문화ㆍ체육관광 </li>
+							<li>건설ㆍ주택정책</li>
+							<li>사회복지향상 </li>
+							<li>쾌적한 환경조성</li>
+							<li>재난관리</li>
+							<li>도로ㆍ교통시설</li>
+							<li>도시개발 촉진</li>
+							<li>일반행정ㆍ기타</li>
+						</ul>
+						<hr/>
+						<h2 class="guid">h2, h3, h4다음에 오는 p의 dot아이콘 #1 .h_dot</h2>
+						<h2 class="title">태풍,해일,집중호우가 발생하였을 때</h2>
+						<p class="h_dot">구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.</p>
+						<h3 class="title">태풍,해일,집중호우가 발생하였을 때</h3>
+						<p class="h_dot">구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.</p>
+						<h4 class="title">태풍,해일,집중호우가 발생하였을 때</h4>
+						<p class="h_dot">구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.</p>
+						<hr/>
+						<h2 class="guid">h2다음에 오는 p 정의 .h2_p</h2>
+						<h2 class="title">태풍,해일,집중호우가 발생하였을 때</h2>
+						<p class="h3_p">구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.</p>
+						<hr/>
+						<h2 class="guid">h3다음에 오는 p 정의 .h3_p</h2>
+						<h3 class="title">태풍,해일,집중호우가 발생하였을 때</h3>
+						<p class="h3_p">구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.</p>
+						<hr/>
+						<h2 class="guid">h4다음에 오는 p 정의 .h4_p</h2>
+						<h4 class="title">태풍,해일,집중호우가 발생하였을 때</h4>
+						<p class="h4_p">구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.</p>
+						<hr/>
+						<h2 class="guid">dot아이콘 #1 .dot1</h2>
+						<p class="dot1">구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.</p>
+						<h2 class="guid">dot아이콘 #2 .dot2</h2>
+						<p class="dot2">구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.</p>
+						<h2 class="guid">dot아이콘 #3 .dot3</h2>
+						<p class="dot3">구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.</p>
+						<h2 class="guid">dot아이콘 #4 .dot4</h2>
+						<p class="dot4">구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.</p>
+						<h2 class="guid">dot아이콘 #5 .dot5</h2>
+						<p class="dot5">구서쭈꾸미는 주방장이 직접 엄선한 쭈꾸미에 입맛을 자극하는 알싸한 매운맛의 고추장 양념을 버무려 익혀먹는 건강보양식입니다. 요리와 함께 나오는 콩나물과 밑반찬들은 쭈꾸미의 맛을 한층 북돋아주고 남은 양념에 볶아 먹는 밥 또한 일품입니다.</p>
+						<hr/>
+						<h2 class="guid">기본 표 정의 .t_typel</h2>
+						<p class="tbl_txt">(단위 내용)</p>
+						<table class="t_typel" border="1">
+							<caption>시설안내·특수보육시설 현황표입니다.</caption>
+							<thead>
+								<tr>
+									<th scope="col">유형</th>
+									<th scope="col">구분</th>
+									<th scope="col">시설명</th>
+									<th scope="col">주소 </th>
+									<th scope="col">전화번호</th>
+									<th scope="col">정원</th>
+								</tr>
+							</thead>
+							<tfoot>
+								<tr>
+									<th scope="row">영아전담</th>
+									<td>법인</td>
+									<td>은솔어린이집</td>
+									<td>수영동 493-23 </td>
+									<td>756-2662</td>
+									<td>39</td>
+								</tr>
+							</tfoot>
+							<tbody>
+								<tr>
+									<th scope="row">영아전담</th>
+									<td>민간</td>
+									<td>성모어린이집</td>
+									<td>망미1동 792-32 </td>
+									<td>751-9820</td>
+									<td>39</td>
+								</tr>
+								<tr>
+									<th scope="row">영아전담</th>
+									<td>민간</td>
+									<td>성모어린이집</td>
+									<td>망미1동 792-32 </td>
+									<td>751-9820</td>
+									<td>39</td>
+								</tr>
+							</tbody>
+						</table>
+						<br/>
+						<table class="t_typel" border="1">
+							<caption>시설안내·특수보육시설 현황표입니다.</caption>
+							<tbody>
+								<tr>
+									<th scope="row">영아전담</th>
+									<td>법인</td>
+									<td>은솔어린이집</td>
+									<td>수영동 493-23 </td>
+									<td>756-2662</td>
+									<td>39</td>
+								</tr>
+								<tr>
+									<th scope="row">영아전담</th>
+									<td>민간</td>
+									<td>성모어린이집</td>
+									<td>망미1동 792-32 </td>
+									<td>751-9820</td>
+									<td>39</td>
+								</tr>
+							</tbody>
+						</table>
+						<br/>
+						<table class="t_typel" border="1">
+							<caption>시설안내·특수보육시설 현황표입니다.</caption>
+							<tbody>
+								<tr>
+									<td>영아전담</td>
+									<td>법인</td>
+									<td>은솔어린이집</td>
+									<td>수영동 493-23 </td>
+									<td>756-2662</td>
+									<td>39</td>
+								</tr>
+								<tr>
+									<td>영아전담</td>
+									<td>민간</td>
+									<td>성모어린이집</td>
+									<td>망미1동 792-32 </td>
+									<td>751-9820</td>
+									<td>39</td>
+								</tr>
+							</tbody>
+						</table>
+						<h2 class="guid">표위 단위 및 내용 입력시 .tbl_txt 사용</h2>
+						<p class="tbl_txt">(단위 내용)</p>
+						<hr/>
+						<h2>h4다음에 오는 기본 표 정의(왼쪽 여백 div.ml10 추가)</h2>
+						<h4 class="title">태풍,해일,집중호우가 발생하였을 때</h4>
+						<div class="ml10">
+							<table class="t_typel" border="1">
+								<caption>시설안내·특수보육시설 현황표입니다.</caption>
+								<thead>
+									<tr>
+										<th scope="col">유형</th>
+										<th scope="col">구분</th>
+										<th scope="col">시설명</th>
+										<th scope="col">주소 </th>
+										<th scope="col">전화번호</th>
+										<th scope="col">정원</th>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<th scope="row">영아전담</th>
+										<td>법인</td>
+										<td>은솔어린이집</td>
+										<td>수영동 493-23 </td>
+										<td>756-2662</td>
+										<td>39</td>
+									</tr>
+								</tfoot>
+								<tbody>
+									<tr>
+										<th scope="row">영아전담</th>
+										<td>민간</td>
+										<td>성모어린이집</td>
+										<td>망미1동 792-32 </td>
+										<td>751-9820</td>
+										<td>39</td>
+									</tr>
+									<tr>
+										<th scope="row">영아전담</th>
+										<td>민간</td>
+										<td>성모어린이집</td>
+										<td>망미1동 792-32 </td>
+										<td>751-9820</td>
+										<td>39</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						
+						
+					</div>
+				</div>
+				<!-- //콘텐츠 영역 -->
+			</div>
+			<!-- //container -->
+		</div>
+	</body>
+</html>

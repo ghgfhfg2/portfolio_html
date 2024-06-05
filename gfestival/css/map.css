@@ -1,0 +1,156 @@
+@charset "utf-8";
+/****************************************/
+/* Name: 금정문화재단 문화지도
+/* PART: CONTENTS STYLE 
+/* Version: 1.0 / day: 2016-11-23
+/* Author: imtec 
+/****************************************/
+
+/*
+================================================================================
+콘텐츠
+================================================================================
+*/
+#wrapper{min-width:320px}
+#header{position:fixed;top:0;left:0;padding:12px 20px 0;width:100%;height:65px;background:#fff;border-bottom:1px solid #555;z-index:40}
+
+#header .logo{display:inline-block;margin-right:30px}
+
+/* 상단검색 */
+#header .topSearch{display:inline-block;width:250px;}
+#header .topSearch .searBox{position:relative;padding-right:38px;}
+#header .topSearch .searBox input[type="search"],
+#header .topSearch .searBox input[type="text"]{width:100%;padding:0 10px;height:38px;font-size:11px;color:#777;background:#f3f3f3;border:1px solid #afafaf;border-radius:0;-webkit-appearance: none}
+#header .topSearch .searBox input[type="submit"]{position:absolute;top:0;right:0;padding:0;width:38px;height:38px;overflow:hidden;text-indent:-999px;background:#afafaf url('../img/common/ic_search.png') no-repeat center center;cursor:pointer;border:0;border-radius:0;-webkit-appearance: none}
+
+
+.btnMenu, .btnSearch{display:none}
+
+/* 임시지도 */
+.root_daum_roughmap_landing{position:fixed !important;top:0;left:0;width:100% !important;height:100% !important}
+.root_daum_roughmap .wrap_map{height:100%}
+
+#mMenu{position:fixed;top:0;left:0;height:100%;transition: left 0.2s ease-in-out;z-index:30}
+/* 메뉴 */
+#mMenu #gnb{position:absolute;top:65px;left:0;margin-top:-65px;padding-top:65px;width:90px;height:100%;background:#363c48;z-index:5}
+#mMenu #gnb ul::after{display:block;clear:both;content:''}
+#mMenu #gnb ul{position:relative}
+#mMenu #gnb ul li{position:relative;height:90px;text-align:center;font-size:12px;border-bottom:1px solid #141820}
+#mMenu #gnb ul li a{display:block;padding-top:10px;height:100%;color:#a7abb2;background-color:#363c48;}
+#mMenu #gnb ul li span{display:block;margin:0 auto;width:45px;height:45px;opacity:0.7;background-repeat:no-repeat;background-position:center center}
+#mMenu #gnb ul li.ic1 span{background-image:url('../img/map/ic_menu1.png')}
+#mMenu #gnb ul li.ic2 span{background-image:url('../img/map/ic_menu2.png')}
+#mMenu #gnb ul li.ic3 span{background-image:url('../img/map/ic_menu3.png')}
+#mMenu #gnb ul li.ic4 span{background-image:url('../img/map/ic_menu4.png')}
+#mMenu #gnb ul li.ic5 span{background-image:url('../img/map/ic_menu5.png')}
+#mMenu #gnb ul li.ic6 span{background-image:url('../img/map/ic_menu6.png')}
+#mMenu #gnb ul li.ic7 span{background-image:url('../img/map/ic_menu7.png')}
+#mMenu #gnb ul li.on a{color:#fff;background-color:#3eb8dd}
+#mMenu #gnb ul li.on a span{opacity:1}
+#mMenu #gnb ul li.on::after{position:absolute;top:42%;right:-9px;width:9px;height:17px;content:'';background:url('../img/map/arrow.png') no-repeat}
+/* 목록 */
+#mMenu .gnbSub{position:absolute;top:0;left:-200px;padding-top:65px;width:200px;height:100%;background:#fff;transition: left 0.2s ease-in-out;border-right:1px solid #b6b6b6;z-index:4}
+#mMenu .gnbSub.on{left:90px;}
+#mMenu .gnbSub h2{position:absolute;top:100px;left:0;padding:30px 0 0 50px;width:100%;height:85px;font-size:17px;color:#fff;background-color:#538ae6;background-repeat:no-repeat;background-position:15px center;z-index:5}
+#mMenu .gnbSub h2.ic1{background-image:url('../../img/map/ic1.png')}
+#mMenu .gnbSub h2.ic2{background-image:url('../../img/map/ic2.png')}
+#mMenu .gnbSub h2.ic3{background-image:url('../../img/map/ic3.png')}
+#mMenu .gnbSub h2.ic4{background-image:url('../../img/map/ic4.png')}
+#mMenu .gnbSub h2.ic5{background-image:url('../../img/map/ic5.png')}
+#mMenu .gnbSub h2.ic6{background-image:url('../../img/map/ic6.png')}
+#mMenu .gnbSub h2.ic7{background-image:url('../../img/map/ic7.png')}
+#mMenu .gnbSub h2.ic8{background-image:url('../../img/map/ic8.png')}
+#mMenu .gnbSub h2.ic9{background-image:url('../../img/map/ic9.png')}
+#mMenu .gnbSub h2.ic10{background-image:url('../../img/map/ic10_2.png')}
+#mMenu .gnbSub .frame {position:relative;width: 100%;height: 100%;}
+#mMenu .gnbSub .frame .items{padding:10px 20px;height:100%;overflow:auto}
+#mMenu .gnbSub .frame .items > li{border-bottom:1px solid #cbcbcb}
+#mMenu .gnbSub .frame .items > li > a{display:block;font-size:14px;padding:10px 35px 10px 10px;font-weight:bold;background:url('../img/map/ic_me_dot_off.png') no-repeat right center}
+#mMenu .gnbSub .frame .items > li.open > a{color:#337fce;background:url('../img/map/ic_me_dot_on.png') no-repeat right center}
+#mMenu .gnbSub .frame .items > li > ul{display:none;padding:10px 0;background:#f2f2f2;border-top:1px solid #a9a9a9}
+#mMenu .gnbSub .frame .items > li > ul li a{display:block;padding:5px 10px 5px 25px;font-size:13px;background:url('../img/map/ic_me_s_dot_off.png') no-repeat 12px center}
+#mMenu .gnbSub .frame .items > li > a.on,
+#mMenu .gnbSub .frame .items > li > ul li a.on{color:#337fce;font-weight:bold;text-decoration:underline;background:url('../img/map/ic_me_s_dot_on.png') no-repeat 12px center}
+/* 검색보기 */
+#mMenu .gnbSub .searchForm{position:relative;padding:20px;}
+#mMenu .gnbSub .searchForm select{width:100%}
+#mMenu .gnbSub .searchForm .searBox{position:relative;margin-top:5px;padding-right:55px;}
+#mMenu .gnbSub .searchForm .searBox input[type="text"]{margin:0;width:100%;height:38px}
+#mMenu .gnbSub .searchForm .searBox input[type="submit"]{position:absolute;top:0;right:0;width:55px;height:38px;font-size:16px;color:#fff;background:#4285f4;border:0}
+#mMenu .gnbSub .resultBox{padding-bottom:110px;width:100%;height:100%}
+#mMenu .gnbSub .resultBox .no_data{padding:10px 10px 10px 35px;font-size:16px;background:url('../../img/map/ic_dot1.png') no-repeat 22px center;}
+#mMenu .gnbSub .gnbsClose{position:absolute;top:50%;right:-25px;width:25px;height:50px;text-indent:-999px;overflow:hidden;background:url('../img/map/ic_close2.png') no-repeat center center;background-color:rgba(0,0,0,0.5);background-size:10px;border-radius:0 5px 5px 0;z-index:10}
+
+.resulTxt{margin:20px 20px 0;padding-bottom:20px;border-bottom:1px  solid #ccc}
+.resulTxt b{color:#337ece}
+
+/* 좌표기본정보 */
+.info_window{position:absolute;padding:20px;width:290px;min-height:290px;background:#fff;border:1px solid #8d8d8d;z-index:10}
+.info_window .tit{display:block;margin-bottom:10px;font-size:16px;color:#333;font-weight:bold}
+.info_window .photo{display:block;margin-bottom:10px}
+.info_window .con{display:block;font-size:13px;color:#333}
+.info_window .btn{display:inline-block;width:70px;height:35px;text-align:center}
+.info_window .btn a{display:block;height:35px;color:#fff;font-weight:bold;line-height:35px;}
+.info_window .btn.bg1{background:#7f9cba}
+.info_window .btn.bg2{background:#538ae6}
+.info_window .btnClose{position:absolute;top:7px;right:7px;width:28px;height:28px;text-indent:-999px;overflow:hidden;background:url('../img/map/ic_close.png') no-repeat center center;}
+
+
+
+.iconImg{position:absolute;top:500px;left:800px;z-index:10}
+
+#mapPanel{position: absolute !important;height: 100% !important;}
+
+/*
+================================================================================
+반응형 콘텐츠
+================================================================================
+*/
+
+ /* PC Device */
+@media all and (min-width:979px){
+	#mMenu{left:0 !important}
+	.btnMenuClose{display:none}
+	#header .topSearch{display:inline-block !important}
+}
+
+ /* Mobile Device */
+@media all and (max-width:979px){
+	
+	#header .logo{display:block;margin:0;text-align:center}
+
+	.btnMenu{display:block;position:absolute;top:5px;left:20px;width:50px;height:50px;text-indent:-999px;overflow:hidden;background:url('../img/common/ic_mbmenu.png') no-repeat center center;z-index:110}
+	.btnSearch{display:block;position:absolute;top:5px;right:20px;width:50px;height:50px;text-indent:-999px;overflow:hidden;background:url('../img/map/ic_m_search.png') no-repeat center center;background-size:18px;z-index:110}
+	.btnSearch.on{background:url('../img/map/ic_close.png') no-repeat center center;}
+
+	#header .topSearch{display:none;position:absolute;top:65px;left:0;width:100%;background:#fff;border:10px solid #363c48}
+	#header .topSearch .searBox input[type="search"], #header .topSearch .searBox input[type="text"]{border:0}
+
+	#mMenu{left:-450px;z-index:50}
+	#mMenu.on{left:0}
+	#mMenu #gnb{top:0;margin-top:0;padding-top:0;}
+	
+	#mMenu .gnbSub{padding-top:0}
+	#mMenu .gnbSub .btnClose{top:0}
+	.btnMenuClose{display:none;position:fixed;top:10px;right:10px;width:50px;height:50px;text-indent:-999px;overflow:hidden;background:url('../img/map/ic_close2.png') no-repeat center center;background-color:rgba(35, 107, 165, 0.5);background-size:15px;border-radius:50%;z-index:50}
+
+	.wra_box{position:fixed;top:0;left:0;height:auto;z-index:200}
+	.fix_bg{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#000;opacity:0.7;z-index:40}
+	
+	.iconImg{display:none}
+}
+
+/* Tablet Device */
+@media all and (max-width:640px){
+	
+	#header{padding-top:16px}
+	#header .logo img{height:28px}
+	.btnMenu{left:0}
+	.btnSearch{right:0}
+	
+	#mMenu #gnb{overflow-y:auto;overflow-x:hidden}
+	#mMenu #gnb ul li{height:65px}
+	#mMenu #gnb ul li a{padding-top:5px}
+	#mMenu #gnb ul li span{width:30px;height:30px;background-size:auto 20px}
+	
+}
